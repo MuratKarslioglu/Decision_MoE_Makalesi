@@ -1,0 +1,122 @@
+{
+ "decisionmoe_b@s1": {
+  "mean_k": 1.3861468584405754,
+  "flops_fraction": 0.2515759606223021,
+  "k_distribution": {
+   "1": 9221,
+   "2": 3280,
+   "3": 306,
+   "4": 403
+  },
+  "mean_step_time_s": 0.04731730708542557,
+  "latency_ratio": 0.9878313016374379
+ },
+ "decisionmoe_b@s2": {
+  "mean_k": 1.7330809992429976,
+  "flops_fraction": 0.25299188446704046,
+  "k_distribution": {
+   "1": 4973,
+   "2": 7498,
+   "3": 31,
+   "4": 708
+  },
+  "mean_step_time_s": 0.04903942562911496,
+  "latency_ratio": 1.0237835294241
+ },
+ "decisionmoe_b": {
+  "mean_k": 1.3982588947766843,
+  "flops_fraction": 0.2516253928315882,
+  "k_distribution": {
+   "1": 9894,
+   "2": 1668,
+   "3": 1351,
+   "4": 297
+  },
+  "mean_step_time_s": 0.04879887251814025,
+  "latency_ratio": 1.0187615637340814
+ },
+ "fixed_mcdm_cosine": {
+  "mean_k": 2.0,
+  "flops_fraction": 0.5,
+  "k_distribution": {
+   "1": 0,
+   "2": 13210,
+   "3": 0,
+   "4": 0
+  },
+  "mean_step_time_s": 0.052558921997482626,
+  "latency_ratio": 1.097259153732055
+ },
+ "fixed_mcdm_no_utility": {
+  "mean_k": 2.0,
+  "flops_fraction": 0.5,
+  "k_distribution": {
+   "1": 0,
+   "2": 13210,
+   "3": 0,
+   "4": 0
+  },
+  "mean_step_time_s": 0.052339069724148514,
+  "latency_ratio": 1.0926693541277896
+ },
+ "ppo_direct_fixedk": {
+  "mean_k": 2.0,
+  "flops_fraction": 0.5,
+  "k_distribution": {
+   "1": 0,
+   "2": 13210,
+   "3": 0,
+   "4": 0
+  },
+  "mean_step_time_s": 0.0484469321553393,
+  "latency_ratio": 1.0114141949149564
+ },
+ "ppo_fixedk_cosine": {
+  "mean_k": 2.0,
+  "flops_fraction": 0.5,
+  "k_distribution": {
+   "1": 0,
+   "2": 13210,
+   "3": 0,
+   "4": 0
+  },
+  "mean_step_time_s": 0.053633345192298995,
+  "latency_ratio": 1.1196896116008592
+ },
+ "ppo_fixedk_no_utility": {
+  "mean_k": 2.0,
+  "flops_fraction": 0.5,
+  "k_distribution": {
+   "1": 0,
+   "2": 13210,
+   "3": 0,
+   "4": 0
+  },
+  "mean_step_time_s": 0.05251028738737199,
+  "latency_ratio": 1.0962438214325334
+ },
+ "standard_topk_k1": {
+  "mean_k": 1.0,
+  "flops_fraction": 0.25,
+  "k_distribution": {
+   "1": 13210,
+   "2": 0,
+   "3": 0,
+   "4": 0
+  },
+  "mean_step_time_s": 0.04151655823936338,
+  "latency_ratio": 0.8667305536017904
+ },
+ "standard_topk": {
+  "mean_k": 2.0,
+  "flops_fraction": 0.5,
+  "k_distribution": {
+   "1": 0,
+   "2": 13210,
+   "3": 0,
+   "4": 0
+  },
+  "mean_step_time_s": 0.04790019004964915,
+  "latency_ratio": 1.0
+ }
+}

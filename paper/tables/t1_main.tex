@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lccccccc}
+\toprule
+Method & Acc. & $\Delta$ vs Top-2 & $\Delta$ vs Top-1 & Halluc. & $\bar K$ & FLOPs & Lat. \\
+\midrule
+Top-2 (baseline) & 39.4 & -- & -0.2 [-1.1, +0.6] & 13.6 / 8.2 & 2.00 & 0.50 & 1.00 \\
+Top-1 & 39.7 & +0.2 [-0.6, +1.1] & -- & 13.9 / 8.2 & 1.00 & 0.25 & 0.89 \\
+Fixed-MCDM (no util.) & 39.9 & +0.5 [-0.5, +1.4] & +0.2 [-0.9, +1.4] & 12.8 / 7.8 & 2.00 & 0.50 & -- \\
+Fixed-MCDM & 40.0 & +0.5 [-0.4, +1.4] & +0.3 [-0.8, +1.4] & 12.8 / 7.8 & 2.00 & 0.50 & 1.08 \\
+PPO-K2 (no util.) & 40.0 & +0.5 [-0.4, +1.4] & +0.3 [-0.8, +1.4] & 12.8 / 7.8 & 2.00 & 0.50 & -- \\
+PPO-K2 & 40.0 & +0.5 [-0.2, +1.4] & +0.3 [-0.7, +1.3] & 13.2 / 8.2 & 2.00 & 0.50 & -- \\
+PPO-direct K2 & 39.7 & +0.3 [-0.4, +1.0] & +0.1 [-0.8, +1.0] & 14.3 / 8.6 & 2.00 & 0.50 & 1.01 \\
+DecisionMoE-B (Dyn-K) & 39.8 & +0.4 [-0.6, +1.4] & +0.2 [-0.8, +1.1] & 13.6 / 8.2 & 1.40 & 0.25 & 1.01 \\
+\bottomrule
+\end{tabular}
+\caption{Test results (1321 questions, seed 42). $\Delta$: paired accuracy difference in points vs. Top-2 / Top-1 with 95\% bootstrap CI. Halluc.: raw / after removing broken traps (\%). FLOPs: token-weighted fraction of the dense top-4 cost. Latency: controlled benchmark ratio vs. Top-2.}
+\label{tab:main}
+\end{table}

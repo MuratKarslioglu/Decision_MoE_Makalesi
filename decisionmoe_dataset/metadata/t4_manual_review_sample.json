@@ -1,0 +1,602 @@
+[
+ {
+  "id": "ai2d_3339_T4",
+  "image_id": "3339",
+  "image_path": "images/ai2d/3339.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a cat in the image?",
+  "answer": "None",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_1523_T4",
+  "image_id": "1523",
+  "image_path": "images/ai2d/1523.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a blue circle in the image?",
+  "answer": "No",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2353674_T4",
+  "image_id": "2353674",
+  "image_path": "images/gqa/2353674.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a person in the image?",
+  "answer": "none",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2339791_T4",
+  "image_id": "2339791",
+  "image_path": "images/gqa/2339791.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a stop sign in the image?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2324466_T4",
+  "image_id": "2324466",
+  "image_path": "images/gqa/2324466.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a dog in this image?",
+  "answer": "none",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_4032_T4",
+  "image_id": "4032",
+  "image_path": "images/ai2d/4032.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there an ocean in this image?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_3110_T4",
+  "image_id": "3110",
+  "image_path": "images/ai2d/3110.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a dog in this image?",
+  "answer": "None",
+  "language": "en"
+ },
+ {
+  "id": "textvqa_a45a08ab8b0812a1_T4",
+  "image_id": "a45a08ab8b0812a1",
+  "image_path": "images/textvqa/a45a08ab8b0812a1.jpg",
+  "source": "textvqa",
+  "question_type": "T4",
+  "question": "Is there a red car in this image?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_2845_T4",
+  "image_id": "2845",
+  "image_path": "images/ai2d/2845.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a clock in this image?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "gqa_3381_T4",
+  "image_id": "3381",
+  "image_path": "images/gqa/3381.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a person sitting under an umbrella in the image?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_1661_T4",
+  "image_id": "1661",
+  "image_path": "images/ai2d/1661.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a red car in this image?",
+  "answer": "No",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_1607_T4",
+  "image_id": "1607",
+  "image_path": "images/ai2d/1607.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a clock in the circuit diagram?",
+  "answer": "No",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_2993_T4",
+  "image_id": "2993",
+  "image_path": "images/ai2d/2993.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a depiction of a human head in the image?",
+  "answer": "No",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2321843_T4",
+  "image_id": "2321843",
+  "image_path": "images/gqa/2321843.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a cat in this image?",
+  "answer": "No",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2327279_T4",
+  "image_id": "2327279",
+  "image_path": "images/gqa/2327279.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a dog in this image?",
+  "answer": "none",
+  "language": "en"
+ },
+ {
+  "id": "textvqa_53abc3545e4b9b22_T4",
+  "image_id": "53abc3545e4b9b22",
+  "image_path": "images/textvqa/53abc3545e4b9b22.jpg",
+  "source": "textvqa",
+  "question_type": "T4",
+  "question": "Is there a dog in this image?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_1538_T4",
+  "image_id": "1538",
+  "image_path": "images/ai2d/1538.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a bridge in this image?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "textvqa_c6a66ea1bf90fff7_T4",
+  "image_id": "c6a66ea1bf90fff7",
+  "image_path": "images/textvqa/c6a66ea1bf90fff7.jpg",
+  "source": "textvqa",
+  "question_type": "T4",
+  "question": "Is there a dog in this image?",
+  "answer": "none",
+  "language": "en"
+ },
+ {
+  "id": "gqa_1498_T4",
+  "image_id": "1498",
+  "image_path": "images/gqa/1498.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a red car in the image?",
+  "answer": "None",
+  "language": "en"
+ },
+ {
+  "id": "gqa_285795_T4",
+  "image_id": "285795",
+  "image_path": "images/gqa/285795.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a person wearing a hat in the image?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2323628_T4",
+  "image_id": "2323628",
+  "image_path": "images/gqa/2323628.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a cat in this image?",
+  "answer": "None",
+  "language": "en"
+ },
+ {
+  "id": "textvqa_0516b96f324d3185_T4",
+  "image_id": "0516b96f324d3185",
+  "image_path": "images/textvqa/0516b96f324d3185.jpg",
+  "source": "textvqa",
+  "question_type": "T4",
+  "question": "Is there a dog in this image?",
+  "answer": "None",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2355234_T4",
+  "image_id": "2355234",
+  "image_path": "images/gqa/2355234.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a clock on the wall?",
+  "answer": "none",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_1175_T4",
+  "image_id": "1175",
+  "image_path": "images/ai2d/1175.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a clock in this image?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_4567_T4",
+  "image_id": "4567",
+  "image_path": "images/ai2d/4567.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a planet with an axial tilt of 90 degrees?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "gqa_3401_T4",
+  "image_id": "3401",
+  "image_path": "images/gqa/3401.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a person wearing a hat in the image?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2379186_T4",
+  "image_id": "2379186",
+  "image_path": "images/gqa/2379186.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a dog in this image?",
+  "answer": "none",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_4468_T4",
+  "image_id": "4468",
+  "image_path": "images/ai2d/4468.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a person standing next to each foot?",
+  "answer": "None",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2320586_T4",
+  "image_id": "2320586",
+  "image_path": "images/gqa/2320586.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a stop sign visible in the image?",
+  "answer": "No",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2377549_T4",
+  "image_id": "2377549",
+  "image_path": "images/gqa/2377549.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a tree in the background?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_2921_T4",
+  "image_id": "2921",
+  "image_path": "images/ai2d/2921.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a zebra in the image?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2403060_T4",
+  "image_id": "2403060",
+  "image_path": "images/gqa/2403060.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a cat in the image?",
+  "answer": "none",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_3019_T4",
+  "image_id": "3019",
+  "image_path": "images/ai2d/3019.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a 'Spathe' covering the 'Ovary'?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2392397_T4",
+  "image_id": "2392397",
+  "image_path": "images/gqa/2392397.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a bicycle in the image?",
+  "answer": "None",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2382711_T4",
+  "image_id": "2382711",
+  "image_path": "images/gqa/2382711.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a person in the image?",
+  "answer": "No",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2348548_T4",
+  "image_id": "2348548",
+  "image_path": "images/gqa/2348548.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a red car in the background?",
+  "answer": "none",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_1859_T4",
+  "image_id": "1859",
+  "image_path": "images/ai2d/1859.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a fish that is both a primary producer and a herbivore?",
+  "answer": "No",
+  "language": "en"
+ },
+ {
+  "id": "textvqa_0f93407aa9c41b11_T4",
+  "image_id": "0f93407aa9c41b11",
+  "image_path": "images/textvqa/0f93407aa9c41b11.jpg",
+  "source": "textvqa",
+  "question_type": "T4",
+  "question": "Is there a dog in this image?",
+  "answer": "None",
+  "language": "en"
+ },
+ {
+  "id": "textvqa_963bca9b622ecaa8_T4",
+  "image_id": "963bca9b622ecaa8",
+  "image_path": "images/textvqa/963bca9b622ecaa8.jpg",
+  "source": "textvqa",
+  "question_type": "T4",
+  "question": "Is there a mention of any animal in the text?",
+  "answer": "none",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_3688_T4",
+  "image_id": "3688",
+  "image_path": "images/ai2d/3688.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a 'Jejenum' organ in the image?",
+  "answer": "No",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2402862_T4",
+  "image_id": "2402862",
+  "image_path": "images/gqa/2402862.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a bird in the image?",
+  "answer": "none",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_2706_T4",
+  "image_id": "2706",
+  "image_path": "images/ai2d/2706.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a person standing on the moon?",
+  "answer": "None",
+  "language": "en"
+ },
+ {
+  "id": "textvqa_b2ae0f96dfbea5d8_T4",
+  "image_id": "b2ae0f96dfbea5d8",
+  "image_path": "images/textvqa/b2ae0f96dfbea5d8.jpg",
+  "source": "textvqa",
+  "question_type": "T4",
+  "question": "Is there a dog in this image?",
+  "answer": "none",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2361923_T4",
+  "image_id": "2361923",
+  "image_path": "images/gqa/2361923.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a dog in this image?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2393687_T4",
+  "image_id": "2393687",
+  "image_path": "images/gqa/2393687.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a green car in the image?",
+  "answer": "None",
+  "language": "en"
+ },
+ {
+  "id": "textvqa_e6331925eab49904_T4",
+  "image_id": "e6331925eab49904",
+  "image_path": "images/textvqa/e6331925eab49904.jpg",
+  "source": "textvqa",
+  "question_type": "T4",
+  "question": "Is there a red car in the image?",
+  "answer": "No",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_977_T4",
+  "image_id": "977",
+  "image_path": "images/ai2d/977.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a fish in the image?",
+  "answer": "No",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_2549_T4",
+  "image_id": "2549",
+  "image_path": "images/ai2d/2549.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is the new moon phase visible from Earth?",
+  "answer": "No",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_1928_T4",
+  "image_id": "1928",
+  "image_path": "images/ai2d/1928.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a cat in this image?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2326154_T4",
+  "image_id": "2326154",
+  "image_path": "images/gqa/2326154.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a person in the image?",
+  "answer": "No",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2360799_T4",
+  "image_id": "2360799",
+  "image_path": "images/gqa/2360799.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a dog in this image?",
+  "answer": "no",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_271_T4",
+  "image_id": "271",
+  "image_path": "images/ai2d/271.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a fish in this image?",
+  "answer": "none",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_3060_T4",
+  "image_id": "3060",
+  "image_path": "images/ai2d/3060.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a dog in this image?",
+  "answer": "none",
+  "language": "en"
+ },
+ {
+  "id": "textvqa_09ee0248306a8342_T4",
+  "image_id": "09ee0248306a8342",
+  "image_path": "images/textvqa/09ee0248306a8342.jpg",
+  "source": "textvqa",
+  "question_type": "T4",
+  "question": "Is there a red car in this image?",
+  "answer": "none",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2395537_T4",
+  "image_id": "2395537",
+  "image_path": "images/gqa/2395537.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a person standing near the airplane?",
+  "answer": "none",
+  "language": "en"
+ },
+ {
+  "id": "ai2d_4665_T4",
+  "image_id": "4665",
+  "image_path": "images/ai2d/4665.png",
+  "source": "ai2d",
+  "question_type": "T4",
+  "question": "Is there a person with a short neck?",
+  "answer": "No",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2398554_T4",
+  "image_id": "2398554",
+  "image_path": "images/gqa/2398554.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a dog in this image?",
+  "answer": "none",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2390108_T4",
+  "image_id": "2390108",
+  "image_path": "images/gqa/2390108.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a car in the image?",
+  "answer": "No",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2318939_T4",
+  "image_id": "2318939",
+  "image_path": "images/gqa/2318939.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a person wearing a hat in the image?",
+  "answer": "No",
+  "language": "en"
+ },
+ {
+  "id": "gqa_2349746_T4",
+  "image_id": "2349746",
+  "image_path": "images/gqa/2349746.jpg",
+  "source": "gqa",
+  "question_type": "T4",
+  "question": "Is there a dog in this image?",
+  "answer": "no",
+  "language": "en"
+ }
+]

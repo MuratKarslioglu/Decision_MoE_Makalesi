@@ -1,0 +1,30 @@
+# DecisionMoE - Dataset Generation Environment
+
+# Core ML / local VLM
+torch>=2.3.0
+torchvision>=0.18.0
+transformers>=4.49.0
+accelerate>=0.33.0
+qwen-vl-utils>=0.0.8
+
+# Image processing
+Pillow>=10.0.0
+
+# Dataset / numerical utilities
+numpy>=1.26.0
+pandas>=2.2.0
+scikit-learn>=1.4.0
+sentence-transformers>=3.0.0
+
+# I/O / configuration / progress
+requests>=2.31.0
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+PyYAML>=6.0.1
+
+# Testing
+pytest>=8.0.0
+pytest-cov>=5.0.0
+
+# Eski Groq pilotlarını istersek korumak için
+groq>=0.11.0pyarrow>=15.0.0

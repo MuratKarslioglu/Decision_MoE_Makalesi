@@ -1,0 +1,5 @@
+# Ablation variant: Sadece PPO (TOPSIS yok), K=2 sabit. PPO her adımda 4 expert için öncelik vektörü u_t üretir.
+name: ppo_direct_fixedk
+mode: direct        # topk | fixed_mcdm | policy | direct
+k: 2
+fixed_k: 2          # Alternatif A: K sabit

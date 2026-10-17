@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lcc}
+\toprule
+Routing & Acc. & Halluc. \\
+\midrule
+Top-1 & 39.8 & 13.9 \\
+Top-2 & 40.5 & 13.9 \\
+Top-3 & 40.2 & 13.9 \\
+Top-4 & 40.2 & 13.9 \\
+Random K=1 & 39.8 & 17.7 \\
+Random K=2 & 38.5 & 15.2 \\
+Fixed-MCDM K=2 & 39.5 & 13.9 \\
+Expert 0 only & 39.2 & 19.0 \\
+Expert 1 only & 40.5 & 11.4 \\
+Expert 2 only & 38.0 & 15.2 \\
+Expert 3 only & 39.8 & 13.9 \\
+\bottomrule
+\end{tabular}
+\caption{Routing sensitivity on 400 validation questions: accuracy and hallucination rate (\%) under different expert selections. All settings fall within a 2.5-point band.}
+\label{tab:sens}
+\end{table}

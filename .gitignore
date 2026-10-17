@@ -1,0 +1,34 @@
+# ortamlar ve önbellekler
+venv/
+venv_moe/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+.vscode/
+.idea/
+# gizli anahtarlar
+.env
+wandb/
+# loglar (üretim logları çok büyük olabilir)
+*log*.txt
+nohup.out
+.progress_eval_*.json
+# model/veri önbellekleri ve büyük yeniden üretilebilir veri
+cache_dir/
+dataset_workspace/
+decisionmoe_dataset/images/
+decisionmoe_dataset/raw/
+pope_data/images/
+# arşivler ve ara çıktılar (yeniden üretilebilir / yalnızca yerel kanıt)
+artifacts/archive_*/
+experiments/results/archive_*/
+experiments/results/routing_logs/
+# üçüncü taraf kod: klonlanır (scripts/setup_moe_env.sh), repoya gömülmez
+third_party/
+# model ağırlıkları (backbone HF'den indirilir)
+*.safetensors
+*.bin
+venv_ds/
+.coverage
+artifacts/experts_*/lora.pt

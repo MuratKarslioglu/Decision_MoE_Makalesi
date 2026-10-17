@@ -1,0 +1,18 @@
+# TOPSIS katmanı: kriter tanımları ve benefit/cost maskesi (Briefing §3.1)
+n_experts: 4
+n_criteria: 7
+criteria:
+  - {name: task_utility,    type: benefit}
+  - {name: modality_match,  type: benefit}
+  - {name: specialization,  type: benefit}
+  - {name: reliability,     type: benefit}
+  - {name: latency,         type: cost}
+  - {name: flops,           type: cost}
+  - {name: load_balance,    type: cost}
+eps: 1.0e-8        # sıfıra bölmeyi önlemek için
+k_min: 1           # hard constraint: K_t >= 1
+k_max: 4
+# criteria.py sabitleri (Briefing §3.1, §3.2)
+load_window: 100        # son T token (Load Balance, l_t)
+n_phases: 4             # perception / question / reasoning / generation
+n_modalities: 3         # text / image / mixed (m_t)

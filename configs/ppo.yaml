@@ -1,0 +1,37 @@
+# PPO ve reward ayarları (Briefing §3.3, §3.4). Hyperparameter'lar ilk koşuda ayarlanacak.
+reward:
+  lambda_accuracy: 1.00        # λ1
+  lambda_flops: 0.10           # λ2
+  lambda_latency: 0.05         # λ3
+  lambda_load_imbalance: 0.10  # λ4
+  lambda_hallucination: 0.20   # λ5
+action:
+  k_min: 1                     # hard constraint (reward hacking koruması)
+  k_max: 4
+  fallback_fixed_k: 2          # Alternatif A
+state:
+  hidden_dim: 2560
+  proj_dim: 64
+  # Briefing §3.2 toplamı 74 diyor ama bileşenler 64+3+1+1+4+4+1 = 78 eder; boyut bileşenlerden hesaplanır.
+  modality_dim: 3     # m_t
+  entropy_dim: 1      # d_t
+  uncertainty_dim: 1  # u_t
+  phase_dim: 4        # p_t
+  load_dim: 4         # l_t
+  budget_dim: 1       # c_t
+policy:
+  hidden_sizes: [128, 128]
+  dirichlet_min_concentration: 0.05   # alpha = softplus(x) + min; sıfır alpha'yı önler
+  direct_init_concentration: 10.0     # DIRECT (sadece PPO) kolu: nötr Dirichlet başlangıcı
+  simplex_eps: 1.0e-6                 # w_j >= eps, log_prob -inf olmasın
+ppo:
+  lr: 3.0e-4
+  clip_eps: 0.2
+  epochs: 4
+  minibatch_size: 64
+  gamma: 1.0              # bölümler kısa (≈ 11 adım); iskonto yok
+  gae_lambda: 0.95
+  vf_coef: 0.5
+  ent_coef: 0.01
+  max_grad_norm: 0.5
+  episodes_per_update: 64

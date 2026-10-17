@@ -1,0 +1,29 @@
+% İskelet: IJCV (Springer sn-jnl) şablonuna geçirilecek; burada genel article sınıfı kullanıldı. Metin kaynağı: paper/draft.md.
+% Bu makinede LaTeX kurulu değil; derleme denenmedi.
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{booktabs,graphicx,amsmath,amssymb,hyperref}
+\title{Does Expert Selection Matter? Multi-Criteria and Reinforcement-Learned Routing\\in a Sparsely Upcycled Vision-Language MoE}
+\author{}
+\begin{document}
+\maketitle
+\begin{abstract}\input{abstract}\end{abstract}% draft.md Abstract bölümünden
+\section{Introduction}   % draft.md §1
+\section{Related Work}   % draft.md §2
+\section{Method}         % draft.md §3
+\section{Experimental Setup} % draft.md §4
+\section{Results}
+\subsection{Expert selection does not matter}\input{tables/t5_sensitivity}
+\subsection{Main results}\input{tables/t1_main}\input{tables/t2_by_type}\input{tables/t3_seeds}
+\begin{figure}[t]\centering\includegraphics[width=\linewidth]{figures/f6_ablation.pdf}\caption{Test accuracy per variant.}\end{figure}
+\begin{figure}[t]\centering\includegraphics[width=\linewidth]{figures/f7_pareto.pdf}\caption{Accuracy vs. cost.}\end{figure}
+\begin{figure}[t]\centering\includegraphics[width=.8\linewidth]{figures/f3_k_by_type.pdf}\caption{Mean $K$ by question type.}\end{figure}
+\begin{figure}[t]\centering\includegraphics[width=\linewidth]{figures/f4_expert_by_type.pdf}\caption{Expert activation share by question type.}\end{figure}
+\begin{figure}[t]\centering\includegraphics[width=.8\linewidth]{figures/f5_criteria_weights.pdf}\caption{Learned mean criterion weights.}\end{figure}
+\subsection{Reward hacking}
+\begin{figure}[t]\centering\includegraphics[width=\linewidth]{figures/f2_reward_hacking.pdf}\caption{Step-averaged vs. token-weighted FLOPs reward.}\end{figure}
+\subsection{POPE}\input{tables/t4_pope}
+\section{Discussion and Limitations}
+\section{Conclusion}
+\bibliographystyle{plain}\bibliography{references}
+\end{document}

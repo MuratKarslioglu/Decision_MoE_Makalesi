@@ -1,0 +1,7 @@
+# λ2 taraması: DecisionMoE-B, FLOPs cezası λ2=0.3 (varsayılan DecisionMoE-B: 1.0). Dynamic-K, cosine proxy.
+name: decisionmoe_b_l03
+mode: policy
+k: 2
+fixed_k: null
+use_task_utility: true
+lambda_flops: 0.3

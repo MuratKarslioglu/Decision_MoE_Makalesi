@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lccc}
+\toprule
+Seed & Acc. & $\bar K$ & FLOPs \\
+\midrule
+42 & 39.8 & 1.40 & 0.252 \\
+1 & 39.8 & 1.39 & 0.252 \\
+2 & 39.6 & 1.73 & 0.253 \\
+mean $\pm$ std & 39.7 $\pm$ 0.1 & 1.51 $\pm$ 0.20 & 0.252 $\pm$ 0.001 \\
+\bottomrule
+\end{tabular}
+\caption{DecisionMoE-B over three seeds (test). Prefill uses $K{=}1$ in every seed; seed-to-seed variation in $\bar K$ comes from decode steps, which carry little weight in token-weighted FLOPs.}
+\label{tab:seeds}
+\end{table}

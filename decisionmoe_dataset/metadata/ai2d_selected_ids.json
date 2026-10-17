@@ -1,0 +1,5216 @@
+{
+  "source": "ai2d",
+  "random_seed": 42,
+  "selection_rule": "at least one text element and at least one graphical element",
+  "graphic_fields": [
+    "blobs",
+    "arrows",
+    "arrowHeads",
+    "containers",
+    "meaningfulSpaces"
+  ],
+  "num_valid_candidates": 4796,
+  "num_selected": 400,
+  "images": [
+    {
+      "image_name": "1858.png",
+      "annotation_file": "1858.png.json",
+      "text_count": 7,
+      "graphic_count": 23,
+      "graphic_counts": {
+        "blobs": 7,
+        "arrows": 8,
+        "arrowHeads": 8,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1185.png",
+      "annotation_file": "1185.png.json",
+      "text_count": 16,
+      "graphic_count": 17,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 16,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3099.png",
+      "annotation_file": "3099.png.json",
+      "text_count": 17,
+      "graphic_count": 35,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 17,
+        "arrowHeads": 17,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2876.png",
+      "annotation_file": "2876.png.json",
+      "text_count": 14,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 14,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2711.png",
+      "annotation_file": "2711.png.json",
+      "text_count": 10,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2081.png",
+      "annotation_file": "2081.png.json",
+      "text_count": 10,
+      "graphic_count": 19,
+      "graphic_counts": {
+        "blobs": 7,
+        "arrows": 6,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1788.png",
+      "annotation_file": "1788.png.json",
+      "text_count": 14,
+      "graphic_count": 50,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 25,
+        "arrowHeads": 25,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "694.png",
+      "annotation_file": "694.png.json",
+      "text_count": 5,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 2,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1672.png",
+      "annotation_file": "1672.png.json",
+      "text_count": 4,
+      "graphic_count": 5,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 2,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4186.png",
+      "annotation_file": "4186.png.json",
+      "text_count": 22,
+      "graphic_count": 46,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 20,
+        "arrowHeads": 20,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1235.png",
+      "annotation_file": "1235.png.json",
+      "text_count": 3,
+      "graphic_count": 18,
+      "graphic_counts": {
+        "blobs": 18,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1220.png",
+      "annotation_file": "1220.png.json",
+      "text_count": 11,
+      "graphic_count": 20,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 10,
+        "arrowHeads": 9,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1721.png",
+      "annotation_file": "1721.png.json",
+      "text_count": 3,
+      "graphic_count": 11,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2679.png",
+      "annotation_file": "2679.png.json",
+      "text_count": 8,
+      "graphic_count": 43,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 19,
+        "arrowHeads": 19,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2781.png",
+      "annotation_file": "2781.png.json",
+      "text_count": 7,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 3,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4808.png",
+      "annotation_file": "4808.png.json",
+      "text_count": 9,
+      "graphic_count": 4,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1197.png",
+      "annotation_file": "1197.png.json",
+      "text_count": 8,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 14,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "811.png",
+      "annotation_file": "811.png.json",
+      "text_count": 8,
+      "graphic_count": 26,
+      "graphic_counts": {
+        "blobs": 7,
+        "arrows": 10,
+        "arrowHeads": 9,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2531.png",
+      "annotation_file": "2531.png.json",
+      "text_count": 9,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 9,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "691.png",
+      "annotation_file": "691.png.json",
+      "text_count": 3,
+      "graphic_count": 11,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 5,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4168.png",
+      "annotation_file": "4168.png.json",
+      "text_count": 11,
+      "graphic_count": 25,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 10,
+        "arrowHeads": 10,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2691.png",
+      "annotation_file": "2691.png.json",
+      "text_count": 8,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4391.png",
+      "annotation_file": "4391.png.json",
+      "text_count": 17,
+      "graphic_count": 17,
+      "graphic_counts": {
+        "blobs": 15,
+        "arrows": 2,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3121.png",
+      "annotation_file": "3121.png.json",
+      "text_count": 24,
+      "graphic_count": 49,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 24,
+        "arrowHeads": 24,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1045.png",
+      "annotation_file": "1045.png.json",
+      "text_count": 6,
+      "graphic_count": 14,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 5,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2232.png",
+      "annotation_file": "2232.png.json",
+      "text_count": 8,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 3,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4193.png",
+      "annotation_file": "4193.png.json",
+      "text_count": 12,
+      "graphic_count": 23,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 11,
+        "arrowHeads": 11,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3583.png",
+      "annotation_file": "3583.png.json",
+      "text_count": 5,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 5,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "312.png",
+      "annotation_file": "312.png.json",
+      "text_count": 7,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 5,
+        "arrowHeads": 5,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2200.png",
+      "annotation_file": "2200.png.json",
+      "text_count": 9,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2653.png",
+      "annotation_file": "2653.png.json",
+      "text_count": 5,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 6,
+        "arrowHeads": 2,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3556.png",
+      "annotation_file": "3556.png.json",
+      "text_count": 5,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 5,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1786.png",
+      "annotation_file": "1786.png.json",
+      "text_count": 8,
+      "graphic_count": 32,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 12,
+        "arrowHeads": 12,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1714.png",
+      "annotation_file": "1714.png.json",
+      "text_count": 4,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 3,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3877.png",
+      "annotation_file": "3877.png.json",
+      "text_count": 7,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 6,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1744.png",
+      "annotation_file": "1744.png.json",
+      "text_count": 2,
+      "graphic_count": 10,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3721.png",
+      "annotation_file": "3721.png.json",
+      "text_count": 13,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 12,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3610.png",
+      "annotation_file": "3610.png.json",
+      "text_count": 14,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 12,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3019.png",
+      "annotation_file": "3019.png.json",
+      "text_count": 13,
+      "graphic_count": 14,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 13,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1327.png",
+      "annotation_file": "1327.png.json",
+      "text_count": 16,
+      "graphic_count": 14,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 13,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4468.png",
+      "annotation_file": "4468.png.json",
+      "text_count": 3,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "624.png",
+      "annotation_file": "624.png.json",
+      "text_count": 4,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1965.png",
+      "annotation_file": "1965.png.json",
+      "text_count": 7,
+      "graphic_count": 16,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 8,
+        "arrowHeads": 8,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3866.png",
+      "annotation_file": "3866.png.json",
+      "text_count": 8,
+      "graphic_count": 11,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 9,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1607.png",
+      "annotation_file": "1607.png.json",
+      "text_count": 3,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 3,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "743.png",
+      "annotation_file": "743.png.json",
+      "text_count": 9,
+      "graphic_count": 25,
+      "graphic_counts": {
+        "blobs": 17,
+        "arrows": 8,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3232.png",
+      "annotation_file": "3232.png.json",
+      "text_count": 21,
+      "graphic_count": 20,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 19,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3741.png",
+      "annotation_file": "3741.png.json",
+      "text_count": 9,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 6,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "937.png",
+      "annotation_file": "937.png.json",
+      "text_count": 6,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2484.png",
+      "annotation_file": "2484.png.json",
+      "text_count": 7,
+      "graphic_count": 20,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 6,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1526.png",
+      "annotation_file": "1526.png.json",
+      "text_count": 12,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 6,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1345.png",
+      "annotation_file": "1345.png.json",
+      "text_count": 10,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2746.png",
+      "annotation_file": "2746.png.json",
+      "text_count": 8,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3204.png",
+      "annotation_file": "3204.png.json",
+      "text_count": 6,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 6,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1615.png",
+      "annotation_file": "1615.png.json",
+      "text_count": 5,
+      "graphic_count": 11,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 6,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2783.png",
+      "annotation_file": "2783.png.json",
+      "text_count": 5,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 4,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1777.png",
+      "annotation_file": "1777.png.json",
+      "text_count": 13,
+      "graphic_count": 32,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 16,
+        "arrowHeads": 16,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3878.png",
+      "annotation_file": "3878.png.json",
+      "text_count": 8,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 7,
+        "arrowHeads": 5,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3120.png",
+      "annotation_file": "3120.png.json",
+      "text_count": 11,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 12,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4423.png",
+      "annotation_file": "4423.png.json",
+      "text_count": 7,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3765.png",
+      "annotation_file": "3765.png.json",
+      "text_count": 9,
+      "graphic_count": 10,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 9,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2256.png",
+      "annotation_file": "2256.png.json",
+      "text_count": 5,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3804.png",
+      "annotation_file": "3804.png.json",
+      "text_count": 19,
+      "graphic_count": 18,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 15,
+        "arrowHeads": 1,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3695.png",
+      "annotation_file": "3695.png.json",
+      "text_count": 10,
+      "graphic_count": 20,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 10,
+        "arrowHeads": 9,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2610.png",
+      "annotation_file": "2610.png.json",
+      "text_count": 9,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 5,
+        "arrowHeads": 2,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3038.png",
+      "annotation_file": "3038.png.json",
+      "text_count": 8,
+      "graphic_count": 10,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 9,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1541.png",
+      "annotation_file": "1541.png.json",
+      "text_count": 5,
+      "graphic_count": 14,
+      "graphic_counts": {
+        "blobs": 10,
+        "arrows": 4,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "232.png",
+      "annotation_file": "232.png.json",
+      "text_count": 7,
+      "graphic_count": 14,
+      "graphic_counts": {
+        "blobs": 7,
+        "arrows": 7,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "609.png",
+      "annotation_file": "609.png.json",
+      "text_count": 6,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 5,
+        "arrowHeads": 5,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2875.png",
+      "annotation_file": "2875.png.json",
+      "text_count": 8,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 6,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2261.png",
+      "annotation_file": "2261.png.json",
+      "text_count": 2,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4489.png",
+      "annotation_file": "4489.png.json",
+      "text_count": 23,
+      "graphic_count": 23,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 19,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3873.png",
+      "annotation_file": "3873.png.json",
+      "text_count": 12,
+      "graphic_count": 14,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 13,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3060.png",
+      "annotation_file": "3060.png.json",
+      "text_count": 11,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 12,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "78.png",
+      "annotation_file": "78.png.json",
+      "text_count": 10,
+      "graphic_count": 26,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 10,
+        "arrowHeads": 8,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2686.png",
+      "annotation_file": "2686.png.json",
+      "text_count": 5,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 4,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3464.png",
+      "annotation_file": "3464.png.json",
+      "text_count": 8,
+      "graphic_count": 4,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 3,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1420.png",
+      "annotation_file": "1420.png.json",
+      "text_count": 3,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2755.png",
+      "annotation_file": "2755.png.json",
+      "text_count": 9,
+      "graphic_count": 32,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 12,
+        "arrowHeads": 12,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1237.png",
+      "annotation_file": "1237.png.json",
+      "text_count": 8,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 9,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3399.png",
+      "annotation_file": "3399.png.json",
+      "text_count": 12,
+      "graphic_count": 25,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 12,
+        "arrowHeads": 12,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4032.png",
+      "annotation_file": "4032.png.json",
+      "text_count": 5,
+      "graphic_count": 5,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 4,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3043.png",
+      "annotation_file": "3043.png.json",
+      "text_count": 19,
+      "graphic_count": 30,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 28,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1501.png",
+      "annotation_file": "1501.png.json",
+      "text_count": 7,
+      "graphic_count": 26,
+      "graphic_counts": {
+        "blobs": 10,
+        "arrows": 8,
+        "arrowHeads": 8,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2621.png",
+      "annotation_file": "2621.png.json",
+      "text_count": 9,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 13,
+        "arrows": 2,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "858.png",
+      "annotation_file": "858.png.json",
+      "text_count": 8,
+      "graphic_count": 18,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 6,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3392.png",
+      "annotation_file": "3392.png.json",
+      "text_count": 15,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 14,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2633.png",
+      "annotation_file": "2633.png.json",
+      "text_count": 9,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 6,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4763.png",
+      "annotation_file": "4763.png.json",
+      "text_count": 3,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3993.png",
+      "annotation_file": "3993.png.json",
+      "text_count": 14,
+      "graphic_count": 17,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 8,
+        "arrowHeads": 8,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4463.png",
+      "annotation_file": "4463.png.json",
+      "text_count": 3,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2105.png",
+      "annotation_file": "2105.png.json",
+      "text_count": 12,
+      "graphic_count": 28,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 10,
+        "arrowHeads": 10,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3021.png",
+      "annotation_file": "3021.png.json",
+      "text_count": 5,
+      "graphic_count": 11,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 5,
+        "arrowHeads": 5,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2889.png",
+      "annotation_file": "2889.png.json",
+      "text_count": 19,
+      "graphic_count": 22,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 16,
+        "arrowHeads": 5,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "812.png",
+      "annotation_file": "812.png.json",
+      "text_count": 9,
+      "graphic_count": 32,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 16,
+        "arrowHeads": 16,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "646.png",
+      "annotation_file": "646.png.json",
+      "text_count": 1,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 8,
+        "arrowHeads": 5,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3006.png",
+      "annotation_file": "3006.png.json",
+      "text_count": 19,
+      "graphic_count": 28,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 26,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "992.png",
+      "annotation_file": "992.png.json",
+      "text_count": 18,
+      "graphic_count": 20,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 16,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4236.png",
+      "annotation_file": "4236.png.json",
+      "text_count": 5,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 6,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "985.png",
+      "annotation_file": "985.png.json",
+      "text_count": 29,
+      "graphic_count": 29,
+      "graphic_counts": {
+        "blobs": 20,
+        "arrows": 8,
+        "arrowHeads": 1,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4019.png",
+      "annotation_file": "4019.png.json",
+      "text_count": 6,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3744.png",
+      "annotation_file": "3744.png.json",
+      "text_count": 13,
+      "graphic_count": 14,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 13,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2683.png",
+      "annotation_file": "2683.png.json",
+      "text_count": 3,
+      "graphic_count": 37,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 16,
+        "arrowHeads": 16,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2070.png",
+      "annotation_file": "2070.png.json",
+      "text_count": 21,
+      "graphic_count": 44,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 22,
+        "arrowHeads": 22,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "484.png",
+      "annotation_file": "484.png.json",
+      "text_count": 10,
+      "graphic_count": 28,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 14,
+        "arrowHeads": 14,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4720.png",
+      "annotation_file": "4720.png.json",
+      "text_count": 27,
+      "graphic_count": 26,
+      "graphic_counts": {
+        "blobs": 26,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1700.png",
+      "annotation_file": "1700.png.json",
+      "text_count": 7,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 3,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1354.png",
+      "annotation_file": "1354.png.json",
+      "text_count": 5,
+      "graphic_count": 16,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 8,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1844.png",
+      "annotation_file": "1844.png.json",
+      "text_count": 11,
+      "graphic_count": 26,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 13,
+        "arrowHeads": 13,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2182.png",
+      "annotation_file": "2182.png.json",
+      "text_count": 8,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2235.png",
+      "annotation_file": "2235.png.json",
+      "text_count": 9,
+      "graphic_count": 17,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 5,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4188.png",
+      "annotation_file": "4188.png.json",
+      "text_count": 16,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 5,
+        "arrowHeads": 5,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1482.png",
+      "annotation_file": "1482.png.json",
+      "text_count": 8,
+      "graphic_count": 23,
+      "graphic_counts": {
+        "blobs": 11,
+        "arrows": 6,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3912.png",
+      "annotation_file": "3912.png.json",
+      "text_count": 12,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 6,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "389.png",
+      "annotation_file": "389.png.json",
+      "text_count": 6,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 8,
+        "arrowHeads": 7,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4532.png",
+      "annotation_file": "4532.png.json",
+      "text_count": 3,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "569.png",
+      "annotation_file": "569.png.json",
+      "text_count": 6,
+      "graphic_count": 14,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 7,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2923.png",
+      "annotation_file": "2923.png.json",
+      "text_count": 15,
+      "graphic_count": 22,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 10,
+        "arrowHeads": 10,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "752.png",
+      "annotation_file": "752.png.json",
+      "text_count": 12,
+      "graphic_count": 35,
+      "graphic_counts": {
+        "blobs": 17,
+        "arrows": 9,
+        "arrowHeads": 9,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1086.png",
+      "annotation_file": "1086.png.json",
+      "text_count": 8,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 8,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1883.png",
+      "annotation_file": "1883.png.json",
+      "text_count": 15,
+      "graphic_count": 36,
+      "graphic_counts": {
+        "blobs": 10,
+        "arrows": 13,
+        "arrowHeads": 13,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "630.png",
+      "annotation_file": "630.png.json",
+      "text_count": 3,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 3,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3036.png",
+      "annotation_file": "3036.png.json",
+      "text_count": 15,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 12,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3582.png",
+      "annotation_file": "3582.png.json",
+      "text_count": 24,
+      "graphic_count": 22,
+      "graphic_counts": {
+        "blobs": 12,
+        "arrows": 10,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1859.png",
+      "annotation_file": "1859.png.json",
+      "text_count": 22,
+      "graphic_count": 54,
+      "graphic_counts": {
+        "blobs": 18,
+        "arrows": 18,
+        "arrowHeads": 18,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3235.png",
+      "annotation_file": "3235.png.json",
+      "text_count": 17,
+      "graphic_count": 17,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 16,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4283.png",
+      "annotation_file": "4283.png.json",
+      "text_count": 15,
+      "graphic_count": 5,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 4,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2221.png",
+      "annotation_file": "2221.png.json",
+      "text_count": 5,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4425.png",
+      "annotation_file": "4425.png.json",
+      "text_count": 10,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 7,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1020.png",
+      "annotation_file": "1020.png.json",
+      "text_count": 9,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 9,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3010.png",
+      "annotation_file": "3010.png.json",
+      "text_count": 7,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 6,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4773.png",
+      "annotation_file": "4773.png.json",
+      "text_count": 15,
+      "graphic_count": 10,
+      "graphic_counts": {
+        "blobs": 10,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2378.png",
+      "annotation_file": "2378.png.json",
+      "text_count": 1,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 7,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4825.png",
+      "annotation_file": "4825.png.json",
+      "text_count": 5,
+      "graphic_count": 5,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1817.png",
+      "annotation_file": "1817.png.json",
+      "text_count": 11,
+      "graphic_count": 30,
+      "graphic_counts": {
+        "blobs": 12,
+        "arrows": 9,
+        "arrowHeads": 9,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3271.png",
+      "annotation_file": "3271.png.json",
+      "text_count": 16,
+      "graphic_count": 27,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 13,
+        "arrowHeads": 13,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2532.png",
+      "annotation_file": "2532.png.json",
+      "text_count": 8,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3832.png",
+      "annotation_file": "3832.png.json",
+      "text_count": 6,
+      "graphic_count": 5,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 4,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2247.png",
+      "annotation_file": "2247.png.json",
+      "text_count": 11,
+      "graphic_count": 19,
+      "graphic_counts": {
+        "blobs": 7,
+        "arrows": 6,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "649.png",
+      "annotation_file": "649.png.json",
+      "text_count": 7,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 7,
+        "arrowHeads": 7,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "579.png",
+      "annotation_file": "579.png.json",
+      "text_count": 5,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 5,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1000.png",
+      "annotation_file": "1000.png.json",
+      "text_count": 4,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3463.png",
+      "annotation_file": "3463.png.json",
+      "text_count": 21,
+      "graphic_count": 21,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 20,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4684.png",
+      "annotation_file": "4684.png.json",
+      "text_count": 8,
+      "graphic_count": 4,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1144.png",
+      "annotation_file": "1144.png.json",
+      "text_count": 8,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 8,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1861.png",
+      "annotation_file": "1861.png.json",
+      "text_count": 20,
+      "graphic_count": 77,
+      "graphic_counts": {
+        "blobs": 21,
+        "arrows": 28,
+        "arrowHeads": 28,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3751.png",
+      "annotation_file": "3751.png.json",
+      "text_count": 10,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 11,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3339.png",
+      "annotation_file": "3339.png.json",
+      "text_count": 11,
+      "graphic_count": 19,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 9,
+        "arrowHeads": 9,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2834.png",
+      "annotation_file": "2834.png.json",
+      "text_count": 4,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1437.png",
+      "annotation_file": "1437.png.json",
+      "text_count": 9,
+      "graphic_count": 28,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 22,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2845.png",
+      "annotation_file": "2845.png.json",
+      "text_count": 11,
+      "graphic_count": 10,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 9,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "859.png",
+      "annotation_file": "859.png.json",
+      "text_count": 1,
+      "graphic_count": 24,
+      "graphic_counts": {
+        "blobs": 10,
+        "arrows": 14,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1661.png",
+      "annotation_file": "1661.png.json",
+      "text_count": 11,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 6,
+        "arrowHeads": 1,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4665.png",
+      "annotation_file": "4665.png.json",
+      "text_count": 8,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1523.png",
+      "annotation_file": "1523.png.json",
+      "text_count": 2,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 1,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "599.png",
+      "annotation_file": "599.png.json",
+      "text_count": 5,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1972.png",
+      "annotation_file": "1972.png.json",
+      "text_count": 5,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 1,
+        "arrowHeads": 1,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1992.png",
+      "annotation_file": "1992.png.json",
+      "text_count": 2,
+      "graphic_count": 25,
+      "graphic_counts": {
+        "blobs": 23,
+        "arrows": 1,
+        "arrowHeads": 1,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4586.png",
+      "annotation_file": "4586.png.json",
+      "text_count": 6,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "726.png",
+      "annotation_file": "726.png.json",
+      "text_count": 22,
+      "graphic_count": 21,
+      "graphic_counts": {
+        "blobs": 21,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2274.png",
+      "annotation_file": "2274.png.json",
+      "text_count": 9,
+      "graphic_count": 19,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 7,
+        "arrowHeads": 7,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3023.png",
+      "annotation_file": "3023.png.json",
+      "text_count": 23,
+      "graphic_count": 18,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 17,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "558.png",
+      "annotation_file": "558.png.json",
+      "text_count": 8,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 7,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4198.png",
+      "annotation_file": "4198.png.json",
+      "text_count": 18,
+      "graphic_count": 29,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 12,
+        "arrowHeads": 12,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2628.png",
+      "annotation_file": "2628.png.json",
+      "text_count": 3,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 6,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "648.png",
+      "annotation_file": "648.png.json",
+      "text_count": 4,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2549.png",
+      "annotation_file": "2549.png.json",
+      "text_count": 10,
+      "graphic_count": 36,
+      "graphic_counts": {
+        "blobs": 9,
+        "arrows": 14,
+        "arrowHeads": 13,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3370.png",
+      "annotation_file": "3370.png.json",
+      "text_count": 17,
+      "graphic_count": 20,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 15,
+        "arrowHeads": 2,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4016.png",
+      "annotation_file": "4016.png.json",
+      "text_count": 10,
+      "graphic_count": 20,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 10,
+        "arrowHeads": 9,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3829.png",
+      "annotation_file": "3829.png.json",
+      "text_count": 11,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 11,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4307.png",
+      "annotation_file": "4307.png.json",
+      "text_count": 9,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 9,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4899.png",
+      "annotation_file": "4899.png.json",
+      "text_count": 9,
+      "graphic_count": 10,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 9,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4408.png",
+      "annotation_file": "4408.png.json",
+      "text_count": 10,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 9,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1937.png",
+      "annotation_file": "1937.png.json",
+      "text_count": 10,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 9,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2898.png",
+      "annotation_file": "2898.png.json",
+      "text_count": 11,
+      "graphic_count": 11,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 10,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2722.png",
+      "annotation_file": "2722.png.json",
+      "text_count": 10,
+      "graphic_count": 19,
+      "graphic_counts": {
+        "blobs": 9,
+        "arrows": 5,
+        "arrowHeads": 5,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1486.png",
+      "annotation_file": "1486.png.json",
+      "text_count": 5,
+      "graphic_count": 11,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 3,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3567.png",
+      "annotation_file": "3567.png.json",
+      "text_count": 12,
+      "graphic_count": 17,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 14,
+        "arrowHeads": 1,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1156.png",
+      "annotation_file": "1156.png.json",
+      "text_count": 11,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 11,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "757.png",
+      "annotation_file": "757.png.json",
+      "text_count": 10,
+      "graphic_count": 28,
+      "graphic_counts": {
+        "blobs": 9,
+        "arrows": 17,
+        "arrowHeads": 2,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2763.png",
+      "annotation_file": "2763.png.json",
+      "text_count": 8,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 8,
+        "arrowHeads": 2,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2690.png",
+      "annotation_file": "2690.png.json",
+      "text_count": 6,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "105.png",
+      "annotation_file": "105.png.json",
+      "text_count": 6,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1539.png",
+      "annotation_file": "1539.png.json",
+      "text_count": 7,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1447.png",
+      "annotation_file": "1447.png.json",
+      "text_count": 14,
+      "graphic_count": 17,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 8,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2754.png",
+      "annotation_file": "2754.png.json",
+      "text_count": 7,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 3,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1510.png",
+      "annotation_file": "1510.png.json",
+      "text_count": 2,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 2,
+        "arrowHeads": 2,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1232.png",
+      "annotation_file": "1232.png.json",
+      "text_count": 8,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 4,
+        "arrowHeads": 1,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3509.png",
+      "annotation_file": "3509.png.json",
+      "text_count": 25,
+      "graphic_count": 22,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 21,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1538.png",
+      "annotation_file": "1538.png.json",
+      "text_count": 3,
+      "graphic_count": 17,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 9,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4873.png",
+      "annotation_file": "4873.png.json",
+      "text_count": 16,
+      "graphic_count": 16,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 15,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2821.png",
+      "annotation_file": "2821.png.json",
+      "text_count": 2,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 3,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3124.png",
+      "annotation_file": "3124.png.json",
+      "text_count": 3,
+      "graphic_count": 4,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 3,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4660.png",
+      "annotation_file": "4660.png.json",
+      "text_count": 3,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2646.png",
+      "annotation_file": "2646.png.json",
+      "text_count": 3,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 2,
+        "arrowHeads": 2,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2021.png",
+      "annotation_file": "2021.png.json",
+      "text_count": 19,
+      "graphic_count": 74,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 37,
+        "arrowHeads": 37,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "888.png",
+      "annotation_file": "888.png.json",
+      "text_count": 5,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "928.png",
+      "annotation_file": "928.png.json",
+      "text_count": 4,
+      "graphic_count": 10,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 3,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4567.png",
+      "annotation_file": "4567.png.json",
+      "text_count": 9,
+      "graphic_count": 23,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 8,
+        "arrowHeads": 7,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2861.png",
+      "annotation_file": "2861.png.json",
+      "text_count": 11,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 11,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4569.png",
+      "annotation_file": "4569.png.json",
+      "text_count": 3,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4076.png",
+      "annotation_file": "4076.png.json",
+      "text_count": 6,
+      "graphic_count": 5,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 2,
+        "arrowHeads": 2,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2468.png",
+      "annotation_file": "2468.png.json",
+      "text_count": 6,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1726.png",
+      "annotation_file": "1726.png.json",
+      "text_count": 1,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 4,
+        "arrowHeads": 1,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1746.png",
+      "annotation_file": "1746.png.json",
+      "text_count": 9,
+      "graphic_count": 20,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 8,
+        "arrowHeads": 7,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4256.png",
+      "annotation_file": "4256.png.json",
+      "text_count": 4,
+      "graphic_count": 1,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3688.png",
+      "annotation_file": "3688.png.json",
+      "text_count": 14,
+      "graphic_count": 16,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 15,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "420.png",
+      "annotation_file": "420.png.json",
+      "text_count": 8,
+      "graphic_count": 20,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 10,
+        "arrowHeads": 10,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4105.png",
+      "annotation_file": "4105.png.json",
+      "text_count": 5,
+      "graphic_count": 18,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 8,
+        "arrowHeads": 8,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4524.png",
+      "annotation_file": "4524.png.json",
+      "text_count": 5,
+      "graphic_count": 4,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 1,
+        "arrowHeads": 1,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1407.png",
+      "annotation_file": "1407.png.json",
+      "text_count": 5,
+      "graphic_count": 1,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1758.png",
+      "annotation_file": "1758.png.json",
+      "text_count": 1,
+      "graphic_count": 1,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1460.png",
+      "annotation_file": "1460.png.json",
+      "text_count": 17,
+      "graphic_count": 21,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 10,
+        "arrowHeads": 10,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4043.png",
+      "annotation_file": "4043.png.json",
+      "text_count": 7,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 1,
+        "arrowHeads": 1,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3576.png",
+      "annotation_file": "3576.png.json",
+      "text_count": 14,
+      "graphic_count": 14,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 10,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1841.png",
+      "annotation_file": "1841.png.json",
+      "text_count": 5,
+      "graphic_count": 4,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 4,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2902.png",
+      "annotation_file": "2902.png.json",
+      "text_count": 8,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 6,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2479.png",
+      "annotation_file": "2479.png.json",
+      "text_count": 2,
+      "graphic_count": 2,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2467.png",
+      "annotation_file": "2467.png.json",
+      "text_count": 13,
+      "graphic_count": 31,
+      "graphic_counts": {
+        "blobs": 11,
+        "arrows": 10,
+        "arrowHeads": 10,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "625.png",
+      "annotation_file": "625.png.json",
+      "text_count": 5,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4388.png",
+      "annotation_file": "4388.png.json",
+      "text_count": 9,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2086.png",
+      "annotation_file": "2086.png.json",
+      "text_count": 16,
+      "graphic_count": 21,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 7,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2415.png",
+      "annotation_file": "2415.png.json",
+      "text_count": 8,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4491.png",
+      "annotation_file": "4491.png.json",
+      "text_count": 4,
+      "graphic_count": 4,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2911.png",
+      "annotation_file": "2911.png.json",
+      "text_count": 14,
+      "graphic_count": 30,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 15,
+        "arrowHeads": 14,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "158.png",
+      "annotation_file": "158.png.json",
+      "text_count": 6,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 4,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4347.png",
+      "annotation_file": "4347.png.json",
+      "text_count": 3,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "730.png",
+      "annotation_file": "730.png.json",
+      "text_count": 6,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1754.png",
+      "annotation_file": "1754.png.json",
+      "text_count": 7,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1381.png",
+      "annotation_file": "1381.png.json",
+      "text_count": 12,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 12,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "658.png",
+      "annotation_file": "658.png.json",
+      "text_count": 15,
+      "graphic_count": 39,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 18,
+        "arrowHeads": 16,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1109.png",
+      "annotation_file": "1109.png.json",
+      "text_count": 4,
+      "graphic_count": 4,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1719.png",
+      "annotation_file": "1719.png.json",
+      "text_count": 5,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2809.png",
+      "annotation_file": "2809.png.json",
+      "text_count": 11,
+      "graphic_count": 26,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 12,
+        "arrowHeads": 12,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2284.png",
+      "annotation_file": "2284.png.json",
+      "text_count": 9,
+      "graphic_count": 22,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 7,
+        "arrowHeads": 7,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4071.png",
+      "annotation_file": "4071.png.json",
+      "text_count": 5,
+      "graphic_count": 5,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 4,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4662.png",
+      "annotation_file": "4662.png.json",
+      "text_count": 4,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4630.png",
+      "annotation_file": "4630.png.json",
+      "text_count": 22,
+      "graphic_count": 11,
+      "graphic_counts": {
+        "blobs": 11,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2642.png",
+      "annotation_file": "2642.png.json",
+      "text_count": 15,
+      "graphic_count": 19,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 10,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4031.png",
+      "annotation_file": "4031.png.json",
+      "text_count": 10,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 11,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1445.png",
+      "annotation_file": "1445.png.json",
+      "text_count": 4,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2270.png",
+      "annotation_file": "2270.png.json",
+      "text_count": 13,
+      "graphic_count": 35,
+      "graphic_counts": {
+        "blobs": 11,
+        "arrows": 13,
+        "arrowHeads": 11,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "387.png",
+      "annotation_file": "387.png.json",
+      "text_count": 6,
+      "graphic_count": 14,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 7,
+        "arrowHeads": 7,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1012.png",
+      "annotation_file": "1012.png.json",
+      "text_count": 6,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3954.png",
+      "annotation_file": "3954.png.json",
+      "text_count": 9,
+      "graphic_count": 17,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 8,
+        "arrowHeads": 8,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3024.png",
+      "annotation_file": "3024.png.json",
+      "text_count": 13,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 8,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4435.png",
+      "annotation_file": "4435.png.json",
+      "text_count": 4,
+      "graphic_count": 4,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3174.png",
+      "annotation_file": "3174.png.json",
+      "text_count": 5,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 7,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4197.png",
+      "annotation_file": "4197.png.json",
+      "text_count": 8,
+      "graphic_count": 27,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 11,
+        "arrowHeads": 11,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "770.png",
+      "annotation_file": "770.png.json",
+      "text_count": 9,
+      "graphic_count": 39,
+      "graphic_counts": {
+        "blobs": 27,
+        "arrows": 8,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "467.png",
+      "annotation_file": "467.png.json",
+      "text_count": 7,
+      "graphic_count": 18,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 9,
+        "arrowHeads": 9,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2197.png",
+      "annotation_file": "2197.png.json",
+      "text_count": 20,
+      "graphic_count": 20,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 6,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2464.png",
+      "annotation_file": "2464.png.json",
+      "text_count": 1,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3259.png",
+      "annotation_file": "3259.png.json",
+      "text_count": 9,
+      "graphic_count": 10,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 9,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2671.png",
+      "annotation_file": "2671.png.json",
+      "text_count": 11,
+      "graphic_count": 16,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 7,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1444.png",
+      "annotation_file": "1444.png.json",
+      "text_count": 4,
+      "graphic_count": 4,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "952.png",
+      "annotation_file": "952.png.json",
+      "text_count": 5,
+      "graphic_count": 5,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "67.png",
+      "annotation_file": "67.png.json",
+      "text_count": 14,
+      "graphic_count": 19,
+      "graphic_counts": {
+        "blobs": 7,
+        "arrows": 6,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1463.png",
+      "annotation_file": "1463.png.json",
+      "text_count": 9,
+      "graphic_count": 1,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3385.png",
+      "annotation_file": "3385.png.json",
+      "text_count": 15,
+      "graphic_count": 11,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 10,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1430.png",
+      "annotation_file": "1430.png.json",
+      "text_count": 11,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 9,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1378.png",
+      "annotation_file": "1378.png.json",
+      "text_count": 13,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 14,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "99.png",
+      "annotation_file": "99.png.json",
+      "text_count": 3,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 2,
+        "arrowHeads": 2,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4597.png",
+      "annotation_file": "4597.png.json",
+      "text_count": 6,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4790.png",
+      "annotation_file": "4790.png.json",
+      "text_count": 8,
+      "graphic_count": 17,
+      "graphic_counts": {
+        "blobs": 17,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "584.png",
+      "annotation_file": "584.png.json",
+      "text_count": 5,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 12,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2216.png",
+      "annotation_file": "2216.png.json",
+      "text_count": 7,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 6,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1428.png",
+      "annotation_file": "1428.png.json",
+      "text_count": 12,
+      "graphic_count": 19,
+      "graphic_counts": {
+        "blobs": 10,
+        "arrows": 9,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4827.png",
+      "annotation_file": "4827.png.json",
+      "text_count": 4,
+      "graphic_count": 4,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1618.png",
+      "annotation_file": "1618.png.json",
+      "text_count": 1,
+      "graphic_count": 10,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 5,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2434.png",
+      "annotation_file": "2434.png.json",
+      "text_count": 7,
+      "graphic_count": 18,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 6,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1519.png",
+      "annotation_file": "1519.png.json",
+      "text_count": 19,
+      "graphic_count": 34,
+      "graphic_counts": {
+        "blobs": 18,
+        "arrows": 16,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1514.png",
+      "annotation_file": "1514.png.json",
+      "text_count": 3,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 3,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "280.png",
+      "annotation_file": "280.png.json",
+      "text_count": 14,
+      "graphic_count": 39,
+      "graphic_counts": {
+        "blobs": 11,
+        "arrows": 14,
+        "arrowHeads": 14,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4051.png",
+      "annotation_file": "4051.png.json",
+      "text_count": 5,
+      "graphic_count": 5,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 4,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1928.png",
+      "annotation_file": "1928.png.json",
+      "text_count": 9,
+      "graphic_count": 37,
+      "graphic_counts": {
+        "blobs": 9,
+        "arrows": 14,
+        "arrowHeads": 14,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "878.png",
+      "annotation_file": "878.png.json",
+      "text_count": 14,
+      "graphic_count": 22,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 7,
+        "arrowHeads": 7,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2885.png",
+      "annotation_file": "2885.png.json",
+      "text_count": 6,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 6,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "950.png",
+      "annotation_file": "950.png.json",
+      "text_count": 30,
+      "graphic_count": 29,
+      "graphic_counts": {
+        "blobs": 29,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "13.png",
+      "annotation_file": "13.png.json",
+      "text_count": 18,
+      "graphic_count": 34,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 17,
+        "arrowHeads": 16,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1633.png",
+      "annotation_file": "1633.png.json",
+      "text_count": 5,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 8,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4166.png",
+      "annotation_file": "4166.png.json",
+      "text_count": 19,
+      "graphic_count": 26,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 10,
+        "arrowHeads": 10,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "986.png",
+      "annotation_file": "986.png.json",
+      "text_count": 12,
+      "graphic_count": 10,
+      "graphic_counts": {
+        "blobs": 10,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "842.png",
+      "annotation_file": "842.png.json",
+      "text_count": 6,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "521.png",
+      "annotation_file": "521.png.json",
+      "text_count": 4,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 5,
+        "arrowHeads": 2,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3404.png",
+      "annotation_file": "3404.png.json",
+      "text_count": 10,
+      "graphic_count": 11,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 10,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2993.png",
+      "annotation_file": "2993.png.json",
+      "text_count": 16,
+      "graphic_count": 20,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 17,
+        "arrowHeads": 2,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2572.png",
+      "annotation_file": "2572.png.json",
+      "text_count": 12,
+      "graphic_count": 2,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3389.png",
+      "annotation_file": "3389.png.json",
+      "text_count": 12,
+      "graphic_count": 18,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 17,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2829.png",
+      "annotation_file": "2829.png.json",
+      "text_count": 9,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 6,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3027.png",
+      "annotation_file": "3027.png.json",
+      "text_count": 9,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 7,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3994.png",
+      "annotation_file": "3994.png.json",
+      "text_count": 8,
+      "graphic_count": 17,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 8,
+        "arrowHeads": 8,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "201.png",
+      "annotation_file": "201.png.json",
+      "text_count": 15,
+      "graphic_count": 18,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 11,
+        "arrowHeads": 7,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3283.png",
+      "annotation_file": "3283.png.json",
+      "text_count": 23,
+      "graphic_count": 21,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 19,
+        "arrowHeads": 1,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4451.png",
+      "annotation_file": "4451.png.json",
+      "text_count": 3,
+      "graphic_count": 10,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 3,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3403.png",
+      "annotation_file": "3403.png.json",
+      "text_count": 35,
+      "graphic_count": 30,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 28,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1551.png",
+      "annotation_file": "1551.png.json",
+      "text_count": 3,
+      "graphic_count": 11,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "107.png",
+      "annotation_file": "107.png.json",
+      "text_count": 3,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 3,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "446.png",
+      "annotation_file": "446.png.json",
+      "text_count": 11,
+      "graphic_count": 28,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 14,
+        "arrowHeads": 14,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "825.png",
+      "annotation_file": "825.png.json",
+      "text_count": 4,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "177.png",
+      "annotation_file": "177.png.json",
+      "text_count": 9,
+      "graphic_count": 5,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 4,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1559.png",
+      "annotation_file": "1559.png.json",
+      "text_count": 2,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 4,
+        "arrowHeads": 2,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "636.png",
+      "annotation_file": "636.png.json",
+      "text_count": 5,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 6,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2638.png",
+      "annotation_file": "2638.png.json",
+      "text_count": 6,
+      "graphic_count": 20,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 8,
+        "arrowHeads": 8,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4812.png",
+      "annotation_file": "4812.png.json",
+      "text_count": 8,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 3,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2023.png",
+      "annotation_file": "2023.png.json",
+      "text_count": 11,
+      "graphic_count": 64,
+      "graphic_counts": {
+        "blobs": 10,
+        "arrows": 27,
+        "arrowHeads": 27,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3649.png",
+      "annotation_file": "3649.png.json",
+      "text_count": 6,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 6,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1520.png",
+      "annotation_file": "1520.png.json",
+      "text_count": 5,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 9,
+        "arrows": 4,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2871.png",
+      "annotation_file": "2871.png.json",
+      "text_count": 7,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 6,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "380.png",
+      "annotation_file": "380.png.json",
+      "text_count": 8,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 8,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3172.png",
+      "annotation_file": "3172.png.json",
+      "text_count": 4,
+      "graphic_count": 1,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2219.png",
+      "annotation_file": "2219.png.json",
+      "text_count": 5,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4308.png",
+      "annotation_file": "4308.png.json",
+      "text_count": 10,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 9,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "679.png",
+      "annotation_file": "679.png.json",
+      "text_count": 3,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3301.png",
+      "annotation_file": "3301.png.json",
+      "text_count": 8,
+      "graphic_count": 17,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 8,
+        "arrowHeads": 8,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "568.png",
+      "annotation_file": "568.png.json",
+      "text_count": 5,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1056.png",
+      "annotation_file": "1056.png.json",
+      "text_count": 2,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 6,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "762.png",
+      "annotation_file": "762.png.json",
+      "text_count": 8,
+      "graphic_count": 19,
+      "graphic_counts": {
+        "blobs": 9,
+        "arrows": 8,
+        "arrowHeads": 2,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3279.png",
+      "annotation_file": "3279.png.json",
+      "text_count": 18,
+      "graphic_count": 30,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 15,
+        "arrowHeads": 14,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1796.png",
+      "annotation_file": "1796.png.json",
+      "text_count": 11,
+      "graphic_count": 23,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 9,
+        "arrowHeads": 9,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2038.png",
+      "annotation_file": "2038.png.json",
+      "text_count": 12,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 13,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1890.png",
+      "annotation_file": "1890.png.json",
+      "text_count": 6,
+      "graphic_count": 10,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 3,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1821.png",
+      "annotation_file": "1821.png.json",
+      "text_count": 3,
+      "graphic_count": 18,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 6,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3079.png",
+      "annotation_file": "3079.png.json",
+      "text_count": 9,
+      "graphic_count": 10,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 9,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3149.png",
+      "annotation_file": "3149.png.json",
+      "text_count": 6,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 6,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2619.png",
+      "annotation_file": "2619.png.json",
+      "text_count": 9,
+      "graphic_count": 33,
+      "graphic_counts": {
+        "blobs": 17,
+        "arrows": 8,
+        "arrowHeads": 8,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3602.png",
+      "annotation_file": "3602.png.json",
+      "text_count": 5,
+      "graphic_count": 11,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 5,
+        "arrowHeads": 5,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2567.png",
+      "annotation_file": "2567.png.json",
+      "text_count": 9,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3015.png",
+      "annotation_file": "3015.png.json",
+      "text_count": 23,
+      "graphic_count": 21,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 20,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4809.png",
+      "annotation_file": "4809.png.json",
+      "text_count": 12,
+      "graphic_count": 21,
+      "graphic_counts": {
+        "blobs": 11,
+        "arrows": 5,
+        "arrowHeads": 5,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2921.png",
+      "annotation_file": "2921.png.json",
+      "text_count": 8,
+      "graphic_count": 17,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 8,
+        "arrowHeads": 8,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1383.png",
+      "annotation_file": "1383.png.json",
+      "text_count": 5,
+      "graphic_count": 35,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 17,
+        "arrowHeads": 17,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1711.png",
+      "annotation_file": "1711.png.json",
+      "text_count": 7,
+      "graphic_count": 2,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3110.png",
+      "annotation_file": "3110.png.json",
+      "text_count": 7,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1332.png",
+      "annotation_file": "1332.png.json",
+      "text_count": 5,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 10,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1023.png",
+      "annotation_file": "1023.png.json",
+      "text_count": 3,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3532.png",
+      "annotation_file": "3532.png.json",
+      "text_count": 7,
+      "graphic_count": 10,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 6,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2009.png",
+      "annotation_file": "2009.png.json",
+      "text_count": 16,
+      "graphic_count": 28,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 10,
+        "arrowHeads": 10,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "300.png",
+      "annotation_file": "300.png.json",
+      "text_count": 11,
+      "graphic_count": 40,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 20,
+        "arrowHeads": 20,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4337.png",
+      "annotation_file": "4337.png.json",
+      "text_count": 10,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 10,
+        "arrows": 2,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "740.png",
+      "annotation_file": "740.png.json",
+      "text_count": 1,
+      "graphic_count": 2,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4230.png",
+      "annotation_file": "4230.png.json",
+      "text_count": 2,
+      "graphic_count": 5,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 1,
+        "arrowHeads": 1,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "809.png",
+      "annotation_file": "809.png.json",
+      "text_count": 7,
+      "graphic_count": 27,
+      "graphic_counts": {
+        "blobs": 9,
+        "arrows": 9,
+        "arrowHeads": 9,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1072.png",
+      "annotation_file": "1072.png.json",
+      "text_count": 9,
+      "graphic_count": 10,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 9,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1579.png",
+      "annotation_file": "1579.png.json",
+      "text_count": 1,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2153.png",
+      "annotation_file": "2153.png.json",
+      "text_count": 6,
+      "graphic_count": 14,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 5,
+        "arrowHeads": 5,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "696.png",
+      "annotation_file": "696.png.json",
+      "text_count": 8,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 1,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1267.png",
+      "annotation_file": "1267.png.json",
+      "text_count": 4,
+      "graphic_count": 16,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 7,
+        "arrowHeads": 7,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3798.png",
+      "annotation_file": "3798.png.json",
+      "text_count": 10,
+      "graphic_count": 10,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 9,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "977.png",
+      "annotation_file": "977.png.json",
+      "text_count": 6,
+      "graphic_count": 6,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "747.png",
+      "annotation_file": "747.png.json",
+      "text_count": 3,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2145.png",
+      "annotation_file": "2145.png.json",
+      "text_count": 7,
+      "graphic_count": 18,
+      "graphic_counts": {
+        "blobs": 6,
+        "arrows": 6,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4246.png",
+      "annotation_file": "4246.png.json",
+      "text_count": 6,
+      "graphic_count": 2,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 1,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1986.png",
+      "annotation_file": "1986.png.json",
+      "text_count": 17,
+      "graphic_count": 33,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 20,
+        "arrowHeads": 13,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1315.png",
+      "annotation_file": "1315.png.json",
+      "text_count": 9,
+      "graphic_count": 16,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 7,
+        "arrowHeads": 7,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3344.png",
+      "annotation_file": "3344.png.json",
+      "text_count": 3,
+      "graphic_count": 1,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3764.png",
+      "annotation_file": "3764.png.json",
+      "text_count": 15,
+      "graphic_count": 14,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 13,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "130.png",
+      "annotation_file": "130.png.json",
+      "text_count": 5,
+      "graphic_count": 19,
+      "graphic_counts": {
+        "blobs": 9,
+        "arrows": 5,
+        "arrowHeads": 5,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3713.png",
+      "annotation_file": "3713.png.json",
+      "text_count": 11,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 11,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2614.png",
+      "annotation_file": "2614.png.json",
+      "text_count": 7,
+      "graphic_count": 11,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 5,
+        "arrowHeads": 2,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "291.png",
+      "annotation_file": "291.png.json",
+      "text_count": 10,
+      "graphic_count": 18,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 7,
+        "arrowHeads": 6,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1790.png",
+      "annotation_file": "1790.png.json",
+      "text_count": 10,
+      "graphic_count": 14,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 7,
+        "arrowHeads": 7,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3683.png",
+      "annotation_file": "3683.png.json",
+      "text_count": 19,
+      "graphic_count": 19,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 18,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "801.png",
+      "annotation_file": "801.png.json",
+      "text_count": 12,
+      "graphic_count": 38,
+      "graphic_counts": {
+        "blobs": 10,
+        "arrows": 14,
+        "arrowHeads": 14,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2195.png",
+      "annotation_file": "2195.png.json",
+      "text_count": 4,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 5,
+        "arrowHeads": 5,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2812.png",
+      "annotation_file": "2812.png.json",
+      "text_count": 17,
+      "graphic_count": 52,
+      "graphic_counts": {
+        "blobs": 10,
+        "arrows": 33,
+        "arrowHeads": 9,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2255.png",
+      "annotation_file": "2255.png.json",
+      "text_count": 2,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 5,
+        "arrowHeads": 5,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2365.png",
+      "annotation_file": "2365.png.json",
+      "text_count": 8,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 5,
+        "arrowHeads": 5,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4114.png",
+      "annotation_file": "4114.png.json",
+      "text_count": 8,
+      "graphic_count": 11,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1184.png",
+      "annotation_file": "1184.png.json",
+      "text_count": 15,
+      "graphic_count": 14,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 13,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2383.png",
+      "annotation_file": "2383.png.json",
+      "text_count": 5,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 4,
+        "arrowHeads": 4,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3522.png",
+      "annotation_file": "3522.png.json",
+      "text_count": 9,
+      "graphic_count": 9,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 8,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "411.png",
+      "annotation_file": "411.png.json",
+      "text_count": 9,
+      "graphic_count": 23,
+      "graphic_counts": {
+        "blobs": 9,
+        "arrows": 7,
+        "arrowHeads": 7,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "29.png",
+      "annotation_file": "29.png.json",
+      "text_count": 12,
+      "graphic_count": 46,
+      "graphic_counts": {
+        "blobs": 0,
+        "arrows": 23,
+        "arrowHeads": 23,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "223.png",
+      "annotation_file": "223.png.json",
+      "text_count": 3,
+      "graphic_count": 15,
+      "graphic_counts": {
+        "blobs": 8,
+        "arrows": 7,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1831.png",
+      "annotation_file": "1831.png.json",
+      "text_count": 12,
+      "graphic_count": 52,
+      "graphic_counts": {
+        "blobs": 12,
+        "arrows": 20,
+        "arrowHeads": 20,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3896.png",
+      "annotation_file": "3896.png.json",
+      "text_count": 5,
+      "graphic_count": 5,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 4,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1292.png",
+      "annotation_file": "1292.png.json",
+      "text_count": 4,
+      "graphic_count": 4,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4551.png",
+      "annotation_file": "4551.png.json",
+      "text_count": 3,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 3,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2706.png",
+      "annotation_file": "2706.png.json",
+      "text_count": 18,
+      "graphic_count": 77,
+      "graphic_counts": {
+        "blobs": 17,
+        "arrows": 34,
+        "arrowHeads": 26,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2537.png",
+      "annotation_file": "2537.png.json",
+      "text_count": 6,
+      "graphic_count": 4,
+      "graphic_counts": {
+        "blobs": 4,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4474.png",
+      "annotation_file": "4474.png.json",
+      "text_count": 3,
+      "graphic_count": 2,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3653.png",
+      "annotation_file": "3653.png.json",
+      "text_count": 23,
+      "graphic_count": 21,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 18,
+        "arrowHeads": 2,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3321.png",
+      "annotation_file": "3321.png.json",
+      "text_count": 12,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 11,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2744.png",
+      "annotation_file": "2744.png.json",
+      "text_count": 8,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 3,
+        "arrowHeads": 3,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "271.png",
+      "annotation_file": "271.png.json",
+      "text_count": 16,
+      "graphic_count": 58,
+      "graphic_counts": {
+        "blobs": 13,
+        "arrows": 23,
+        "arrowHeads": 22,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1175.png",
+      "annotation_file": "1175.png.json",
+      "text_count": 13,
+      "graphic_count": 27,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 13,
+        "arrowHeads": 13,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2490.png",
+      "annotation_file": "2490.png.json",
+      "text_count": 5,
+      "graphic_count": 5,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4012.png",
+      "annotation_file": "4012.png.json",
+      "text_count": 4,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 1,
+        "arrowHeads": 1,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3494.png",
+      "annotation_file": "3494.png.json",
+      "text_count": 15,
+      "graphic_count": 31,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 15,
+        "arrowHeads": 15,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3125.png",
+      "annotation_file": "3125.png.json",
+      "text_count": 5,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 7,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1525.png",
+      "annotation_file": "1525.png.json",
+      "text_count": 5,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 5,
+        "arrowHeads": 5,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3129.png",
+      "annotation_file": "3129.png.json",
+      "text_count": 8,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 7,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3664.png",
+      "annotation_file": "3664.png.json",
+      "text_count": 7,
+      "graphic_count": 8,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 7,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4839.png",
+      "annotation_file": "4839.png.json",
+      "text_count": 8,
+      "graphic_count": 5,
+      "graphic_counts": {
+        "blobs": 5,
+        "arrows": 0,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "4021.png",
+      "annotation_file": "4021.png.json",
+      "text_count": 18,
+      "graphic_count": 3,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 2,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "3514.png",
+      "annotation_file": "3514.png.json",
+      "text_count": 16,
+      "graphic_count": 16,
+      "graphic_counts": {
+        "blobs": 2,
+        "arrows": 14,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "1204.png",
+      "annotation_file": "1204.png.json",
+      "text_count": 12,
+      "graphic_count": 12,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 11,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "189.png",
+      "annotation_file": "189.png.json",
+      "text_count": 6,
+      "graphic_count": 7,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 4,
+        "arrowHeads": 2,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    },
+    {
+      "image_name": "2996.png",
+      "annotation_file": "2996.png.json",
+      "text_count": 12,
+      "graphic_count": 13,
+      "graphic_counts": {
+        "blobs": 1,
+        "arrows": 12,
+        "arrowHeads": 0,
+        "containers": 0,
+        "meaningfulSpaces": 0
+      }
+    }
+  ]
+}

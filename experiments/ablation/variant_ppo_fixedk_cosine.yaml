@@ -1,0 +1,6 @@
+# Ablation variant: PPO + Fixed-K, cosine proxy
+name: ppo_fixedk_cosine
+mode: policy            # topk | fixed_mcdm | policy
+k: 2                # sabit K (topk / fixed_mcdm)
+fixed_k: 2         # policy modunda Alternatif A (K sabit); null = Dynamic-K
+use_task_utility: true

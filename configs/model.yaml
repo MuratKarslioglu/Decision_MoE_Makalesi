@@ -1,0 +1,22 @@
+# Backbone ayarları (Briefing §2). 8 GB VRAM (RTX 5060) için quantization gerekir.
+backbone:
+  hf_id: LanguageBind/MoE-LLaVA-Phi2-2.7B-4e
+  tokenizer_id: microsoft/phi-2
+  n_experts: 4
+  default_top_k: 2
+  hidden_dim: 2560
+  freeze: true
+quantization:
+  mode: nf4             # int8 | nf4 | none  (none ~11 GB VRAM ister)
+  skip_modules: [lm_head, wg, image_tower, mm_projector]   # kuantize edilmez: gate (wg), kule, projektör
+  compute_dtype: float16
+image:
+  tower_id: openai/clip-vit-large-patch14-336
+smoke_test:
+  prompt: "Describe the image briefly."
+  max_new_tokens: 24
+prototype:
+  split: train                      # yalnızca train split'ten hesaplanır (sızıntı olmaz)
+  n_samples: 400                    # kaynak/tip dengeli örnekleme
+  seed: 42
+  out: artifacts/prototypes.pt

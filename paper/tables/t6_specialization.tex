@@ -1,0 +1,10 @@
+\begin{tabular}{lrrrcc}
+\toprule
+Model & $n$ & Top-2 & Oracle & Oracle$-$Top-2 (pp) & Right$-$wrong expert (pp) \\
+\midrule
+orijinal (n=400) & 400 & 0.450 & 0.445 & -0.5 [-2.2, +1.2] & -0.2 [-2.2, +1.7] \\
+LoRA & 1074 & 0.485 & 0.496 & +1.1 [-1.2, +3.4] & +4.4 [+2.2, +6.8] \\
+LoRA+kontrast & 1074 & 0.484 & 0.510 & +2.6 [+0.5, +4.8] & +5.5 [+3.5, +7.6] \\
+LoRA+güçlü kontrast & 1074 & 0.496 & 0.505 & +0.8 [-1.5, +3.3] & +3.3 [+1.0, +5.5] \\
+\bottomrule
+\end{tabular}

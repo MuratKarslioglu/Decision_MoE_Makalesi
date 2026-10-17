@@ -1,0 +1,7 @@
+# Ablation variant: DecisionMoE-A (Full, no utility)
+name: decisionmoe_a
+mode: policy            # topk | fixed_mcdm | policy
+k: 2                # sabit K (topk / fixed_mcdm)
+fixed_k: null         # policy modunda Alternatif A (K sabit); null = Dynamic-K
+use_task_utility: false
+lambda_flops: 1.0   # F_t token ağırlıklı olduğundan λ2 ölçeklendi (eski adım-bazlı tanımda 0.1)

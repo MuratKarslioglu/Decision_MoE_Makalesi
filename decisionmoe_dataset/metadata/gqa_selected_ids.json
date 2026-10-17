@@ -1,0 +1,3011 @@
+{
+  "source": "gqa",
+  "split": "val",
+  "random_seed": 42,
+  "selection_rule": "spatial-rich images ranked by 2 * spatial_question_count + spatial_relation_count",
+  "total_candidates": 10235,
+  "high_quality_pool_size": 1500,
+  "num_selected": 500,
+  "images": [
+    {
+      "image_id": "1159498",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 166,
+      "score": 172
+    },
+    {
+      "image_id": "1159529",
+      "spatial_question_count": 4,
+      "spatial_relation_count": 102,
+      "score": 110
+    },
+    {
+      "image_id": "1159745",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 180,
+      "score": 194
+    },
+    {
+      "image_id": "1159778",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 92,
+      "score": 114
+    },
+    {
+      "image_id": "1160003",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 115,
+      "score": 115
+    },
+    {
+      "image_id": "1160057",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 120,
+      "score": 132
+    },
+    {
+      "image_id": "1160074",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 156,
+      "score": 190
+    },
+    {
+      "image_id": "1160249",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 174,
+      "score": 180
+    },
+    {
+      "image_id": "1242",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 108,
+      "score": 124
+    },
+    {
+      "image_id": "1498",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 100,
+      "score": 110
+    },
+    {
+      "image_id": "1592103",
+      "spatial_question_count": 35,
+      "spatial_relation_count": 174,
+      "score": 244
+    },
+    {
+      "image_id": "1592134",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 116,
+      "score": 126
+    },
+    {
+      "image_id": "1592215",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 152,
+      "score": 168
+    },
+    {
+      "image_id": "1592369",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 130,
+      "score": 132
+    },
+    {
+      "image_id": "1592783",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 96,
+      "score": 112
+    },
+    {
+      "image_id": "1592829",
+      "spatial_question_count": 15,
+      "spatial_relation_count": 174,
+      "score": 204
+    },
+    {
+      "image_id": "1593169",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 106,
+      "score": 124
+    },
+    {
+      "image_id": "1593195",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 120,
+      "score": 138
+    },
+    {
+      "image_id": "1593244",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 192,
+      "score": 198
+    },
+    {
+      "image_id": "2315924",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 122,
+      "score": 126
+    },
+    {
+      "image_id": "2316209",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 202,
+      "score": 212
+    },
+    {
+      "image_id": "2316535",
+      "spatial_question_count": 15,
+      "spatial_relation_count": 122,
+      "score": 152
+    },
+    {
+      "image_id": "2316553",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 109,
+      "score": 111
+    },
+    {
+      "image_id": "2317322",
+      "spatial_question_count": 29,
+      "spatial_relation_count": 195,
+      "score": 253
+    },
+    {
+      "image_id": "2317344",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 202,
+      "score": 222
+    },
+    {
+      "image_id": "2317381",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 139,
+      "score": 153
+    },
+    {
+      "image_id": "2317542",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 120,
+      "score": 144
+    },
+    {
+      "image_id": "2317553",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 125,
+      "score": 143
+    },
+    {
+      "image_id": "2317656",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 164,
+      "score": 168
+    },
+    {
+      "image_id": "2318191",
+      "spatial_question_count": 4,
+      "spatial_relation_count": 166,
+      "score": 174
+    },
+    {
+      "image_id": "2318852",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 213,
+      "score": 223
+    },
+    {
+      "image_id": "2318939",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 282,
+      "score": 298
+    },
+    {
+      "image_id": "2318983",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 88,
+      "score": 110
+    },
+    {
+      "image_id": "2319456",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 109,
+      "score": 115
+    },
+    {
+      "image_id": "2319473",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 96,
+      "score": 116
+    },
+    {
+      "image_id": "2319534",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 110,
+      "score": 124
+    },
+    {
+      "image_id": "2319596",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 117,
+      "score": 117
+    },
+    {
+      "image_id": "2319675",
+      "spatial_question_count": 27,
+      "spatial_relation_count": 155,
+      "score": 209
+    },
+    {
+      "image_id": "2319956",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 118,
+      "score": 138
+    },
+    {
+      "image_id": "2320129",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 238,
+      "score": 272
+    },
+    {
+      "image_id": "2320189",
+      "spatial_question_count": 4,
+      "spatial_relation_count": 136,
+      "score": 144
+    },
+    {
+      "image_id": "2320242",
+      "spatial_question_count": 42,
+      "spatial_relation_count": 320,
+      "score": 404
+    },
+    {
+      "image_id": "2320586",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 147,
+      "score": 151
+    },
+    {
+      "image_id": "2320675",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 148,
+      "score": 170
+    },
+    {
+      "image_id": "2320864",
+      "spatial_question_count": 14,
+      "spatial_relation_count": 82,
+      "score": 110
+    },
+    {
+      "image_id": "2321507",
+      "spatial_question_count": 25,
+      "spatial_relation_count": 222,
+      "score": 272
+    },
+    {
+      "image_id": "2321569",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 106,
+      "score": 120
+    },
+    {
+      "image_id": "2321647",
+      "spatial_question_count": 18,
+      "spatial_relation_count": 198,
+      "score": 234
+    },
+    {
+      "image_id": "2321676",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 222,
+      "score": 256
+    },
+    {
+      "image_id": "2321843",
+      "spatial_question_count": 4,
+      "spatial_relation_count": 108,
+      "score": 116
+    },
+    {
+      "image_id": "2322199",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 120,
+      "score": 132
+    },
+    {
+      "image_id": "2322880",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 600,
+      "score": 606
+    },
+    {
+      "image_id": "2323268",
+      "spatial_question_count": 23,
+      "spatial_relation_count": 226,
+      "score": 272
+    },
+    {
+      "image_id": "2323628",
+      "spatial_question_count": 22,
+      "spatial_relation_count": 348,
+      "score": 392
+    },
+    {
+      "image_id": "2323780",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 92,
+      "score": 116
+    },
+    {
+      "image_id": "2323821",
+      "spatial_question_count": 16,
+      "spatial_relation_count": 86,
+      "score": 118
+    },
+    {
+      "image_id": "2323992",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 132,
+      "score": 152
+    },
+    {
+      "image_id": "2324380",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 108,
+      "score": 112
+    },
+    {
+      "image_id": "2324452",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 186,
+      "score": 192
+    },
+    {
+      "image_id": "2324466",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 80,
+      "score": 114
+    },
+    {
+      "image_id": "2324724",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 174,
+      "score": 184
+    },
+    {
+      "image_id": "2324842",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 108,
+      "score": 114
+    },
+    {
+      "image_id": "2324917",
+      "spatial_question_count": 29,
+      "spatial_relation_count": 140,
+      "score": 198
+    },
+    {
+      "image_id": "2324921",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 174,
+      "score": 174
+    },
+    {
+      "image_id": "2325219",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 134,
+      "score": 146
+    },
+    {
+      "image_id": "2325505",
+      "spatial_question_count": 4,
+      "spatial_relation_count": 102,
+      "score": 110
+    },
+    {
+      "image_id": "2325919",
+      "spatial_question_count": 15,
+      "spatial_relation_count": 99,
+      "score": 129
+    },
+    {
+      "image_id": "2325937",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 127,
+      "score": 137
+    },
+    {
+      "image_id": "2326154",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 250,
+      "score": 252
+    },
+    {
+      "image_id": "2326274",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 133,
+      "score": 137
+    },
+    {
+      "image_id": "2326282",
+      "spatial_question_count": 18,
+      "spatial_relation_count": 74,
+      "score": 110
+    },
+    {
+      "image_id": "2326327",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 132,
+      "score": 148
+    },
+    {
+      "image_id": "2326436",
+      "spatial_question_count": 20,
+      "spatial_relation_count": 124,
+      "score": 164
+    },
+    {
+      "image_id": "2326510",
+      "spatial_question_count": 14,
+      "spatial_relation_count": 81,
+      "score": 109
+    },
+    {
+      "image_id": "2326679",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 101,
+      "score": 123
+    },
+    {
+      "image_id": "2326760",
+      "spatial_question_count": 22,
+      "spatial_relation_count": 126,
+      "score": 170
+    },
+    {
+      "image_id": "2327007",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 117,
+      "score": 127
+    },
+    {
+      "image_id": "2327035",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 118,
+      "score": 118
+    },
+    {
+      "image_id": "2327279",
+      "spatial_question_count": 16,
+      "spatial_relation_count": 288,
+      "score": 320
+    },
+    {
+      "image_id": "2327496",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 118,
+      "score": 134
+    },
+    {
+      "image_id": "2327592",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 142,
+      "score": 158
+    },
+    {
+      "image_id": "2328521",
+      "spatial_question_count": 19,
+      "spatial_relation_count": 84,
+      "score": 122
+    },
+    {
+      "image_id": "2328560",
+      "spatial_question_count": 22,
+      "spatial_relation_count": 130,
+      "score": 174
+    },
+    {
+      "image_id": "2328576",
+      "spatial_question_count": 19,
+      "spatial_relation_count": 84,
+      "score": 122
+    },
+    {
+      "image_id": "2328788",
+      "spatial_question_count": 22,
+      "spatial_relation_count": 180,
+      "score": 224
+    },
+    {
+      "image_id": "2330",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 108,
+      "score": 120
+    },
+    {
+      "image_id": "2331434",
+      "spatial_question_count": 36,
+      "spatial_relation_count": 229,
+      "score": 301
+    },
+    {
+      "image_id": "2333881",
+      "spatial_question_count": 25,
+      "spatial_relation_count": 60,
+      "score": 110
+    },
+    {
+      "image_id": "2334149",
+      "spatial_question_count": 14,
+      "spatial_relation_count": 84,
+      "score": 112
+    },
+    {
+      "image_id": "2334343",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 145,
+      "score": 165
+    },
+    {
+      "image_id": "2335241",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 1306,
+      "score": 1308
+    },
+    {
+      "image_id": "2335318",
+      "spatial_question_count": 4,
+      "spatial_relation_count": 126,
+      "score": 134
+    },
+    {
+      "image_id": "2335384",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 155,
+      "score": 177
+    },
+    {
+      "image_id": "2335787",
+      "spatial_question_count": 34,
+      "spatial_relation_count": 68,
+      "score": 136
+    },
+    {
+      "image_id": "2336142",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 143,
+      "score": 157
+    },
+    {
+      "image_id": "2337001",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 150,
+      "score": 156
+    },
+    {
+      "image_id": "2337213",
+      "spatial_question_count": 25,
+      "spatial_relation_count": 119,
+      "score": 169
+    },
+    {
+      "image_id": "2337232",
+      "spatial_question_count": 13,
+      "spatial_relation_count": 98,
+      "score": 124
+    },
+    {
+      "image_id": "2337861",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 352,
+      "score": 354
+    },
+    {
+      "image_id": "2337945",
+      "spatial_question_count": 20,
+      "spatial_relation_count": 136,
+      "score": 176
+    },
+    {
+      "image_id": "2338191",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 136,
+      "score": 156
+    },
+    {
+      "image_id": "2338286",
+      "spatial_question_count": 22,
+      "spatial_relation_count": 81,
+      "score": 125
+    },
+    {
+      "image_id": "2339141",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 112,
+      "score": 112
+    },
+    {
+      "image_id": "2339791",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 136,
+      "score": 136
+    },
+    {
+      "image_id": "2339853",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 126,
+      "score": 142
+    },
+    {
+      "image_id": "2340042",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 94,
+      "score": 116
+    },
+    {
+      "image_id": "2340235",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 310,
+      "score": 316
+    },
+    {
+      "image_id": "2340467",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 122,
+      "score": 132
+    },
+    {
+      "image_id": "2340541",
+      "spatial_question_count": 21,
+      "spatial_relation_count": 120,
+      "score": 162
+    },
+    {
+      "image_id": "2341549",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 166,
+      "score": 166
+    },
+    {
+      "image_id": "2341555",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 162,
+      "score": 168
+    },
+    {
+      "image_id": "2342004",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 124,
+      "score": 140
+    },
+    {
+      "image_id": "2342152",
+      "spatial_question_count": 19,
+      "spatial_relation_count": 85,
+      "score": 123
+    },
+    {
+      "image_id": "2342705",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 168,
+      "score": 180
+    },
+    {
+      "image_id": "2342793",
+      "spatial_question_count": 26,
+      "spatial_relation_count": 66,
+      "score": 118
+    },
+    {
+      "image_id": "2342847",
+      "spatial_question_count": 29,
+      "spatial_relation_count": 94,
+      "score": 152
+    },
+    {
+      "image_id": "2342977",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 124,
+      "score": 126
+    },
+    {
+      "image_id": "2342988",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 94,
+      "score": 114
+    },
+    {
+      "image_id": "2343201",
+      "spatial_question_count": 32,
+      "spatial_relation_count": 62,
+      "score": 126
+    },
+    {
+      "image_id": "2343415",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 108,
+      "score": 132
+    },
+    {
+      "image_id": "2343442",
+      "spatial_question_count": 14,
+      "spatial_relation_count": 90,
+      "score": 118
+    },
+    {
+      "image_id": "2343718",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 163,
+      "score": 173
+    },
+    {
+      "image_id": "2343793",
+      "spatial_question_count": 27,
+      "spatial_relation_count": 69,
+      "score": 123
+    },
+    {
+      "image_id": "2343999",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 148,
+      "score": 154
+    },
+    {
+      "image_id": "2344169",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 183,
+      "score": 203
+    },
+    {
+      "image_id": "2344801",
+      "spatial_question_count": 35,
+      "spatial_relation_count": 291,
+      "score": 361
+    },
+    {
+      "image_id": "2344867",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 100,
+      "score": 122
+    },
+    {
+      "image_id": "2345193",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 136,
+      "score": 160
+    },
+    {
+      "image_id": "2345698",
+      "spatial_question_count": 28,
+      "spatial_relation_count": 63,
+      "score": 119
+    },
+    {
+      "image_id": "2345910",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 418,
+      "score": 420
+    },
+    {
+      "image_id": "2346143",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 251,
+      "score": 257
+    },
+    {
+      "image_id": "2346165",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 94,
+      "score": 114
+    },
+    {
+      "image_id": "2346327",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 152,
+      "score": 158
+    },
+    {
+      "image_id": "2346467",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 156,
+      "score": 162
+    },
+    {
+      "image_id": "2346625",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 168,
+      "score": 182
+    },
+    {
+      "image_id": "2346628",
+      "spatial_question_count": 4,
+      "spatial_relation_count": 114,
+      "score": 122
+    },
+    {
+      "image_id": "2346669",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 150,
+      "score": 162
+    },
+    {
+      "image_id": "2347006",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 144,
+      "score": 146
+    },
+    {
+      "image_id": "2347030",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 121,
+      "score": 133
+    },
+    {
+      "image_id": "2347236",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 154,
+      "score": 160
+    },
+    {
+      "image_id": "2347295",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 110,
+      "score": 110
+    },
+    {
+      "image_id": "2347528",
+      "spatial_question_count": 14,
+      "spatial_relation_count": 121,
+      "score": 149
+    },
+    {
+      "image_id": "2348442",
+      "spatial_question_count": 22,
+      "spatial_relation_count": 66,
+      "score": 110
+    },
+    {
+      "image_id": "2348548",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 118,
+      "score": 140
+    },
+    {
+      "image_id": "2349040",
+      "spatial_question_count": 14,
+      "spatial_relation_count": 88,
+      "score": 116
+    },
+    {
+      "image_id": "2349334",
+      "spatial_question_count": 21,
+      "spatial_relation_count": 178,
+      "score": 220
+    },
+    {
+      "image_id": "2349511",
+      "spatial_question_count": 18,
+      "spatial_relation_count": 89,
+      "score": 125
+    },
+    {
+      "image_id": "2349532",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 182,
+      "score": 188
+    },
+    {
+      "image_id": "2349746",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 106,
+      "score": 122
+    },
+    {
+      "image_id": "2350015",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 228,
+      "score": 252
+    },
+    {
+      "image_id": "2350119",
+      "spatial_question_count": 21,
+      "spatial_relation_count": 124,
+      "score": 166
+    },
+    {
+      "image_id": "2350499",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 220,
+      "score": 222
+    },
+    {
+      "image_id": "2350540",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 106,
+      "score": 110
+    },
+    {
+      "image_id": "2350644",
+      "spatial_question_count": 15,
+      "spatial_relation_count": 166,
+      "score": 196
+    },
+    {
+      "image_id": "2350774",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 128,
+      "score": 128
+    },
+    {
+      "image_id": "2351035",
+      "spatial_question_count": 16,
+      "spatial_relation_count": 78,
+      "score": 110
+    },
+    {
+      "image_id": "2351317",
+      "spatial_question_count": 4,
+      "spatial_relation_count": 186,
+      "score": 194
+    },
+    {
+      "image_id": "2351672",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 136,
+      "score": 140
+    },
+    {
+      "image_id": "2351773",
+      "spatial_question_count": 19,
+      "spatial_relation_count": 73,
+      "score": 111
+    },
+    {
+      "image_id": "2352253",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 156,
+      "score": 168
+    },
+    {
+      "image_id": "2352686",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 109,
+      "score": 123
+    },
+    {
+      "image_id": "2352692",
+      "spatial_question_count": 24,
+      "spatial_relation_count": 69,
+      "score": 117
+    },
+    {
+      "image_id": "2353040",
+      "spatial_question_count": 28,
+      "spatial_relation_count": 80,
+      "score": 136
+    },
+    {
+      "image_id": "2353108",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 103,
+      "score": 137
+    },
+    {
+      "image_id": "2353599",
+      "spatial_question_count": 18,
+      "spatial_relation_count": 163,
+      "score": 199
+    },
+    {
+      "image_id": "2353674",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 212,
+      "score": 212
+    },
+    {
+      "image_id": "2353781",
+      "spatial_question_count": 23,
+      "spatial_relation_count": 210,
+      "score": 256
+    },
+    {
+      "image_id": "2353864",
+      "spatial_question_count": 16,
+      "spatial_relation_count": 142,
+      "score": 174
+    },
+    {
+      "image_id": "2353890",
+      "spatial_question_count": 29,
+      "spatial_relation_count": 65,
+      "score": 123
+    },
+    {
+      "image_id": "2354196",
+      "spatial_question_count": 23,
+      "spatial_relation_count": 158,
+      "score": 204
+    },
+    {
+      "image_id": "2354426",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 150,
+      "score": 154
+    },
+    {
+      "image_id": "2355234",
+      "spatial_question_count": 30,
+      "spatial_relation_count": 88,
+      "score": 148
+    },
+    {
+      "image_id": "2355481",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 102,
+      "score": 112
+    },
+    {
+      "image_id": "2355636",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 113,
+      "score": 135
+    },
+    {
+      "image_id": "2355685",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 282,
+      "score": 296
+    },
+    {
+      "image_id": "2355736",
+      "spatial_question_count": 33,
+      "spatial_relation_count": 239,
+      "score": 305
+    },
+    {
+      "image_id": "2355777",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 145,
+      "score": 151
+    },
+    {
+      "image_id": "2355790",
+      "spatial_question_count": 15,
+      "spatial_relation_count": 216,
+      "score": 246
+    },
+    {
+      "image_id": "2355898",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 152,
+      "score": 170
+    },
+    {
+      "image_id": "2356290",
+      "spatial_question_count": 26,
+      "spatial_relation_count": 79,
+      "score": 131
+    },
+    {
+      "image_id": "2356371",
+      "spatial_question_count": 14,
+      "spatial_relation_count": 82,
+      "score": 110
+    },
+    {
+      "image_id": "2356576",
+      "spatial_question_count": 20,
+      "spatial_relation_count": 72,
+      "score": 112
+    },
+    {
+      "image_id": "2356592",
+      "spatial_question_count": 22,
+      "spatial_relation_count": 262,
+      "score": 306
+    },
+    {
+      "image_id": "2358845",
+      "spatial_question_count": 20,
+      "spatial_relation_count": 101,
+      "score": 141
+    },
+    {
+      "image_id": "2359158",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 146,
+      "score": 156
+    },
+    {
+      "image_id": "2359174",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 120,
+      "score": 136
+    },
+    {
+      "image_id": "2359495",
+      "spatial_question_count": 19,
+      "spatial_relation_count": 130,
+      "score": 168
+    },
+    {
+      "image_id": "2359539",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 178,
+      "score": 194
+    },
+    {
+      "image_id": "2359715",
+      "spatial_question_count": 29,
+      "spatial_relation_count": 138,
+      "score": 196
+    },
+    {
+      "image_id": "2359742",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 176,
+      "score": 182
+    },
+    {
+      "image_id": "2359792",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 116,
+      "score": 136
+    },
+    {
+      "image_id": "2359824",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 102,
+      "score": 120
+    },
+    {
+      "image_id": "2360173",
+      "spatial_question_count": 30,
+      "spatial_relation_count": 82,
+      "score": 142
+    },
+    {
+      "image_id": "2360620",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 108,
+      "score": 110
+    },
+    {
+      "image_id": "2360799",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 106,
+      "score": 128
+    },
+    {
+      "image_id": "2360831",
+      "spatial_question_count": 25,
+      "spatial_relation_count": 106,
+      "score": 156
+    },
+    {
+      "image_id": "2361006",
+      "spatial_question_count": 15,
+      "spatial_relation_count": 198,
+      "score": 228
+    },
+    {
+      "image_id": "2361038",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 98,
+      "score": 116
+    },
+    {
+      "image_id": "2361213",
+      "spatial_question_count": 21,
+      "spatial_relation_count": 207,
+      "score": 249
+    },
+    {
+      "image_id": "2361501",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 146,
+      "score": 150
+    },
+    {
+      "image_id": "2361618",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 298,
+      "score": 318
+    },
+    {
+      "image_id": "2361744",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 159,
+      "score": 159
+    },
+    {
+      "image_id": "2361923",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 320,
+      "score": 334
+    },
+    {
+      "image_id": "2361984",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 182,
+      "score": 182
+    },
+    {
+      "image_id": "2362041",
+      "spatial_question_count": 18,
+      "spatial_relation_count": 84,
+      "score": 120
+    },
+    {
+      "image_id": "2362109",
+      "spatial_question_count": 13,
+      "spatial_relation_count": 98,
+      "score": 124
+    },
+    {
+      "image_id": "2362149",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 128,
+      "score": 130
+    },
+    {
+      "image_id": "2362410",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 198,
+      "score": 222
+    },
+    {
+      "image_id": "2362562",
+      "spatial_question_count": 33,
+      "spatial_relation_count": 71,
+      "score": 137
+    },
+    {
+      "image_id": "2362719",
+      "spatial_question_count": 14,
+      "spatial_relation_count": 122,
+      "score": 150
+    },
+    {
+      "image_id": "2362806",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 206,
+      "score": 210
+    },
+    {
+      "image_id": "2362842",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 160,
+      "score": 164
+    },
+    {
+      "image_id": "2363269",
+      "spatial_question_count": 22,
+      "spatial_relation_count": 159,
+      "score": 203
+    },
+    {
+      "image_id": "2363419",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 102,
+      "score": 122
+    },
+    {
+      "image_id": "2363444",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 104,
+      "score": 118
+    },
+    {
+      "image_id": "2363671",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 178,
+      "score": 212
+    },
+    {
+      "image_id": "2363706",
+      "spatial_question_count": 15,
+      "spatial_relation_count": 88,
+      "score": 118
+    },
+    {
+      "image_id": "2363711",
+      "spatial_question_count": 13,
+      "spatial_relation_count": 198,
+      "score": 224
+    },
+    {
+      "image_id": "2363853",
+      "spatial_question_count": 36,
+      "spatial_relation_count": 167,
+      "score": 239
+    },
+    {
+      "image_id": "2363859",
+      "spatial_question_count": 30,
+      "spatial_relation_count": 121,
+      "score": 181
+    },
+    {
+      "image_id": "2363931",
+      "spatial_question_count": 28,
+      "spatial_relation_count": 200,
+      "score": 256
+    },
+    {
+      "image_id": "2363947",
+      "spatial_question_count": 13,
+      "spatial_relation_count": 88,
+      "score": 114
+    },
+    {
+      "image_id": "2364538",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 204,
+      "score": 222
+    },
+    {
+      "image_id": "2364797",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 118,
+      "score": 120
+    },
+    {
+      "image_id": "2364858",
+      "spatial_question_count": 25,
+      "spatial_relation_count": 79,
+      "score": 129
+    },
+    {
+      "image_id": "2364911",
+      "spatial_question_count": 23,
+      "spatial_relation_count": 177,
+      "score": 223
+    },
+    {
+      "image_id": "2365264",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 146,
+      "score": 180
+    },
+    {
+      "image_id": "2365742",
+      "spatial_question_count": 37,
+      "spatial_relation_count": 36,
+      "score": 110
+    },
+    {
+      "image_id": "2365760",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 117,
+      "score": 139
+    },
+    {
+      "image_id": "2365901",
+      "spatial_question_count": 18,
+      "spatial_relation_count": 177,
+      "score": 213
+    },
+    {
+      "image_id": "2366127",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 100,
+      "score": 120
+    },
+    {
+      "image_id": "2366195",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 292,
+      "score": 310
+    },
+    {
+      "image_id": "2366550",
+      "spatial_question_count": 13,
+      "spatial_relation_count": 168,
+      "score": 194
+    },
+    {
+      "image_id": "2366663",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 109,
+      "score": 127
+    },
+    {
+      "image_id": "2366688",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 126,
+      "score": 138
+    },
+    {
+      "image_id": "2367184",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 99,
+      "score": 119
+    },
+    {
+      "image_id": "2367305",
+      "spatial_question_count": 16,
+      "spatial_relation_count": 240,
+      "score": 272
+    },
+    {
+      "image_id": "2367570",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 200,
+      "score": 210
+    },
+    {
+      "image_id": "2367586",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 102,
+      "score": 114
+    },
+    {
+      "image_id": "2367678",
+      "spatial_question_count": 30,
+      "spatial_relation_count": 152,
+      "score": 212
+    },
+    {
+      "image_id": "2368249",
+      "spatial_question_count": 19,
+      "spatial_relation_count": 88,
+      "score": 126
+    },
+    {
+      "image_id": "2368280",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 114,
+      "score": 132
+    },
+    {
+      "image_id": "2368384",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 156,
+      "score": 158
+    },
+    {
+      "image_id": "2368495",
+      "spatial_question_count": 13,
+      "spatial_relation_count": 99,
+      "score": 125
+    },
+    {
+      "image_id": "2368884",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 108,
+      "score": 114
+    },
+    {
+      "image_id": "2368908",
+      "spatial_question_count": 16,
+      "spatial_relation_count": 84,
+      "score": 116
+    },
+    {
+      "image_id": "2368952",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 262,
+      "score": 272
+    },
+    {
+      "image_id": "2368963",
+      "spatial_question_count": 39,
+      "spatial_relation_count": 147,
+      "score": 225
+    },
+    {
+      "image_id": "2368981",
+      "spatial_question_count": 13,
+      "spatial_relation_count": 181,
+      "score": 207
+    },
+    {
+      "image_id": "2368984",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 336,
+      "score": 346
+    },
+    {
+      "image_id": "2369041",
+      "spatial_question_count": 13,
+      "spatial_relation_count": 96,
+      "score": 122
+    },
+    {
+      "image_id": "2369338",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 114,
+      "score": 124
+    },
+    {
+      "image_id": "2369640",
+      "spatial_question_count": 27,
+      "spatial_relation_count": 96,
+      "score": 150
+    },
+    {
+      "image_id": "2369857",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 126,
+      "score": 144
+    },
+    {
+      "image_id": "2369899",
+      "spatial_question_count": 37,
+      "spatial_relation_count": 196,
+      "score": 270
+    },
+    {
+      "image_id": "2369996",
+      "spatial_question_count": 21,
+      "spatial_relation_count": 72,
+      "score": 114
+    },
+    {
+      "image_id": "2371134",
+      "spatial_question_count": 24,
+      "spatial_relation_count": 170,
+      "score": 218
+    },
+    {
+      "image_id": "2371178",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 165,
+      "score": 175
+    },
+    {
+      "image_id": "2371241",
+      "spatial_question_count": 24,
+      "spatial_relation_count": 172,
+      "score": 220
+    },
+    {
+      "image_id": "2371579",
+      "spatial_question_count": 13,
+      "spatial_relation_count": 204,
+      "score": 230
+    },
+    {
+      "image_id": "2371677",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 96,
+      "score": 116
+    },
+    {
+      "image_id": "2371990",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 128,
+      "score": 140
+    },
+    {
+      "image_id": "2372539",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 148,
+      "score": 170
+    },
+    {
+      "image_id": "2372555",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 138,
+      "score": 172
+    },
+    {
+      "image_id": "2372693",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 164,
+      "score": 176
+    },
+    {
+      "image_id": "2372814",
+      "spatial_question_count": 4,
+      "spatial_relation_count": 120,
+      "score": 128
+    },
+    {
+      "image_id": "2373119",
+      "spatial_question_count": 19,
+      "spatial_relation_count": 150,
+      "score": 188
+    },
+    {
+      "image_id": "2373259",
+      "spatial_question_count": 37,
+      "spatial_relation_count": 172,
+      "score": 246
+    },
+    {
+      "image_id": "2373967",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 101,
+      "score": 119
+    },
+    {
+      "image_id": "2374101",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 87,
+      "score": 109
+    },
+    {
+      "image_id": "2374319",
+      "spatial_question_count": 18,
+      "spatial_relation_count": 82,
+      "score": 118
+    },
+    {
+      "image_id": "2374595",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 268,
+      "score": 278
+    },
+    {
+      "image_id": "2374759",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 89,
+      "score": 111
+    },
+    {
+      "image_id": "2374997",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 146,
+      "score": 146
+    },
+    {
+      "image_id": "2375491",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 96,
+      "score": 110
+    },
+    {
+      "image_id": "2375580",
+      "spatial_question_count": 23,
+      "spatial_relation_count": 119,
+      "score": 165
+    },
+    {
+      "image_id": "2375648",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 306,
+      "score": 340
+    },
+    {
+      "image_id": "2375785",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 262,
+      "score": 264
+    },
+    {
+      "image_id": "2375907",
+      "spatial_question_count": 16,
+      "spatial_relation_count": 552,
+      "score": 584
+    },
+    {
+      "image_id": "2375976",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 86,
+      "score": 110
+    },
+    {
+      "image_id": "2376011",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 96,
+      "score": 112
+    },
+    {
+      "image_id": "2376081",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 250,
+      "score": 272
+    },
+    {
+      "image_id": "2376094",
+      "spatial_question_count": 21,
+      "spatial_relation_count": 218,
+      "score": 260
+    },
+    {
+      "image_id": "2376266",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 89,
+      "score": 113
+    },
+    {
+      "image_id": "2376307",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 110,
+      "score": 122
+    },
+    {
+      "image_id": "2376805",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 132,
+      "score": 148
+    },
+    {
+      "image_id": "2376818",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 114,
+      "score": 120
+    },
+    {
+      "image_id": "2376953",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 104,
+      "score": 114
+    },
+    {
+      "image_id": "2377150",
+      "spatial_question_count": 14,
+      "spatial_relation_count": 95,
+      "score": 123
+    },
+    {
+      "image_id": "2377283",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 198,
+      "score": 200
+    },
+    {
+      "image_id": "2377467",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 459,
+      "score": 475
+    },
+    {
+      "image_id": "2377549",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 122,
+      "score": 124
+    },
+    {
+      "image_id": "2377598",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 112,
+      "score": 116
+    },
+    {
+      "image_id": "2377794",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 122,
+      "score": 146
+    },
+    {
+      "image_id": "2377926",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 102,
+      "score": 112
+    },
+    {
+      "image_id": "2378022",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 155,
+      "score": 175
+    },
+    {
+      "image_id": "2378055",
+      "spatial_question_count": 27,
+      "spatial_relation_count": 78,
+      "score": 132
+    },
+    {
+      "image_id": "2378436",
+      "spatial_question_count": 13,
+      "spatial_relation_count": 114,
+      "score": 140
+    },
+    {
+      "image_id": "2379",
+      "spatial_question_count": 20,
+      "spatial_relation_count": 249,
+      "score": 289
+    },
+    {
+      "image_id": "2379186",
+      "spatial_question_count": 13,
+      "spatial_relation_count": 94,
+      "score": 120
+    },
+    {
+      "image_id": "2379799",
+      "spatial_question_count": 20,
+      "spatial_relation_count": 71,
+      "score": 111
+    },
+    {
+      "image_id": "2380291",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 99,
+      "score": 119
+    },
+    {
+      "image_id": "2380732",
+      "spatial_question_count": 16,
+      "spatial_relation_count": 116,
+      "score": 148
+    },
+    {
+      "image_id": "2381255",
+      "spatial_question_count": 52,
+      "spatial_relation_count": 179,
+      "score": 283
+    },
+    {
+      "image_id": "2382374",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 115,
+      "score": 117
+    },
+    {
+      "image_id": "2382611",
+      "spatial_question_count": 19,
+      "spatial_relation_count": 77,
+      "score": 115
+    },
+    {
+      "image_id": "2382711",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 106,
+      "score": 118
+    },
+    {
+      "image_id": "2383270",
+      "spatial_question_count": 15,
+      "spatial_relation_count": 80,
+      "score": 110
+    },
+    {
+      "image_id": "2383595",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 93,
+      "score": 115
+    },
+    {
+      "image_id": "2383658",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 154,
+      "score": 154
+    },
+    {
+      "image_id": "2384647",
+      "spatial_question_count": 19,
+      "spatial_relation_count": 88,
+      "score": 126
+    },
+    {
+      "image_id": "2384710",
+      "spatial_question_count": 20,
+      "spatial_relation_count": 71,
+      "score": 111
+    },
+    {
+      "image_id": "2384795",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 106,
+      "score": 112
+    },
+    {
+      "image_id": "2384811",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 118,
+      "score": 120
+    },
+    {
+      "image_id": "2384847",
+      "spatial_question_count": 21,
+      "spatial_relation_count": 112,
+      "score": 154
+    },
+    {
+      "image_id": "2385070",
+      "spatial_question_count": 24,
+      "spatial_relation_count": 63,
+      "score": 111
+    },
+    {
+      "image_id": "2385133",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 145,
+      "score": 169
+    },
+    {
+      "image_id": "2385163",
+      "spatial_question_count": 27,
+      "spatial_relation_count": 110,
+      "score": 164
+    },
+    {
+      "image_id": "2385193",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 172,
+      "score": 188
+    },
+    {
+      "image_id": "2386936",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 238,
+      "score": 254
+    },
+    {
+      "image_id": "2386979",
+      "spatial_question_count": 15,
+      "spatial_relation_count": 84,
+      "score": 114
+    },
+    {
+      "image_id": "2388187",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 112,
+      "score": 136
+    },
+    {
+      "image_id": "2388404",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 110,
+      "score": 128
+    },
+    {
+      "image_id": "2388570",
+      "spatial_question_count": 13,
+      "spatial_relation_count": 140,
+      "score": 166
+    },
+    {
+      "image_id": "2388665",
+      "spatial_question_count": 25,
+      "spatial_relation_count": 67,
+      "score": 117
+    },
+    {
+      "image_id": "2389152",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 175,
+      "score": 195
+    },
+    {
+      "image_id": "2389205",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 158,
+      "score": 178
+    },
+    {
+      "image_id": "2389268",
+      "spatial_question_count": 47,
+      "spatial_relation_count": 40,
+      "score": 134
+    },
+    {
+      "image_id": "2390094",
+      "spatial_question_count": 4,
+      "spatial_relation_count": 104,
+      "score": 112
+    },
+    {
+      "image_id": "2390108",
+      "spatial_question_count": 35,
+      "spatial_relation_count": 104,
+      "score": 174
+    },
+    {
+      "image_id": "2390319",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 128,
+      "score": 138
+    },
+    {
+      "image_id": "2390608",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 122,
+      "score": 156
+    },
+    {
+      "image_id": "2391218",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 114,
+      "score": 130
+    },
+    {
+      "image_id": "2391752",
+      "spatial_question_count": 18,
+      "spatial_relation_count": 89,
+      "score": 125
+    },
+    {
+      "image_id": "2391763",
+      "spatial_question_count": 65,
+      "spatial_relation_count": 102,
+      "score": 232
+    },
+    {
+      "image_id": "2392147",
+      "spatial_question_count": 28,
+      "spatial_relation_count": 238,
+      "score": 294
+    },
+    {
+      "image_id": "2392318",
+      "spatial_question_count": 20,
+      "spatial_relation_count": 102,
+      "score": 142
+    },
+    {
+      "image_id": "2392397",
+      "spatial_question_count": 21,
+      "spatial_relation_count": 75,
+      "score": 117
+    },
+    {
+      "image_id": "2392698",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 115,
+      "score": 127
+    },
+    {
+      "image_id": "2393309",
+      "spatial_question_count": 25,
+      "spatial_relation_count": 197,
+      "score": 247
+    },
+    {
+      "image_id": "2393431",
+      "spatial_question_count": 23,
+      "spatial_relation_count": 76,
+      "score": 122
+    },
+    {
+      "image_id": "2393602",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 134,
+      "score": 148
+    },
+    {
+      "image_id": "2393687",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 128,
+      "score": 152
+    },
+    {
+      "image_id": "2394146",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 98,
+      "score": 114
+    },
+    {
+      "image_id": "2394202",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 171,
+      "score": 181
+    },
+    {
+      "image_id": "2394980",
+      "spatial_question_count": 40,
+      "spatial_relation_count": 135,
+      "score": 215
+    },
+    {
+      "image_id": "2395204",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 118,
+      "score": 120
+    },
+    {
+      "image_id": "2395361",
+      "spatial_question_count": 37,
+      "spatial_relation_count": 104,
+      "score": 178
+    },
+    {
+      "image_id": "2395374",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 114,
+      "score": 128
+    },
+    {
+      "image_id": "2395537",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 108,
+      "score": 130
+    },
+    {
+      "image_id": "2395555",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 118,
+      "score": 118
+    },
+    {
+      "image_id": "2395949",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 117,
+      "score": 141
+    },
+    {
+      "image_id": "2396106",
+      "spatial_question_count": 14,
+      "spatial_relation_count": 168,
+      "score": 196
+    },
+    {
+      "image_id": "2397082",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 116,
+      "score": 136
+    },
+    {
+      "image_id": "2397116",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 120,
+      "score": 126
+    },
+    {
+      "image_id": "2397559",
+      "spatial_question_count": 18,
+      "spatial_relation_count": 85,
+      "score": 121
+    },
+    {
+      "image_id": "2397600",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 184,
+      "score": 198
+    },
+    {
+      "image_id": "2397720",
+      "spatial_question_count": 30,
+      "spatial_relation_count": 73,
+      "score": 133
+    },
+    {
+      "image_id": "2397998",
+      "spatial_question_count": 22,
+      "spatial_relation_count": 107,
+      "score": 151
+    },
+    {
+      "image_id": "2398108",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 100,
+      "score": 116
+    },
+    {
+      "image_id": "2398554",
+      "spatial_question_count": 19,
+      "spatial_relation_count": 87,
+      "score": 125
+    },
+    {
+      "image_id": "2399909",
+      "spatial_question_count": 15,
+      "spatial_relation_count": 108,
+      "score": 138
+    },
+    {
+      "image_id": "2399993",
+      "spatial_question_count": 14,
+      "spatial_relation_count": 123,
+      "score": 151
+    },
+    {
+      "image_id": "2400084",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 96,
+      "score": 110
+    },
+    {
+      "image_id": "2400343",
+      "spatial_question_count": 26,
+      "spatial_relation_count": 122,
+      "score": 174
+    },
+    {
+      "image_id": "2400603",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 136,
+      "score": 150
+    },
+    {
+      "image_id": "2400609",
+      "spatial_question_count": 4,
+      "spatial_relation_count": 222,
+      "score": 230
+    },
+    {
+      "image_id": "2400618",
+      "spatial_question_count": 13,
+      "spatial_relation_count": 199,
+      "score": 225
+    },
+    {
+      "image_id": "2400651",
+      "spatial_question_count": 18,
+      "spatial_relation_count": 96,
+      "score": 132
+    },
+    {
+      "image_id": "2400911",
+      "spatial_question_count": 18,
+      "spatial_relation_count": 158,
+      "score": 194
+    },
+    {
+      "image_id": "2401037",
+      "spatial_question_count": 21,
+      "spatial_relation_count": 132,
+      "score": 174
+    },
+    {
+      "image_id": "2401215",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 175,
+      "score": 209
+    },
+    {
+      "image_id": "2401325",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 106,
+      "score": 122
+    },
+    {
+      "image_id": "2401498",
+      "spatial_question_count": 22,
+      "spatial_relation_count": 90,
+      "score": 134
+    },
+    {
+      "image_id": "2401506",
+      "spatial_question_count": 27,
+      "spatial_relation_count": 124,
+      "score": 178
+    },
+    {
+      "image_id": "2402671",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 146,
+      "score": 148
+    },
+    {
+      "image_id": "2402763",
+      "spatial_question_count": 20,
+      "spatial_relation_count": 136,
+      "score": 176
+    },
+    {
+      "image_id": "2402862",
+      "spatial_question_count": 15,
+      "spatial_relation_count": 129,
+      "score": 159
+    },
+    {
+      "image_id": "2402947",
+      "spatial_question_count": 32,
+      "spatial_relation_count": 491,
+      "score": 555
+    },
+    {
+      "image_id": "2402999",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 188,
+      "score": 190
+    },
+    {
+      "image_id": "2403060",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 80,
+      "score": 114
+    },
+    {
+      "image_id": "2403230",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 240,
+      "score": 264
+    },
+    {
+      "image_id": "2403375",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 110,
+      "score": 110
+    },
+    {
+      "image_id": "2403496",
+      "spatial_question_count": 24,
+      "spatial_relation_count": 176,
+      "score": 224
+    },
+    {
+      "image_id": "2403905",
+      "spatial_question_count": 21,
+      "spatial_relation_count": 78,
+      "score": 120
+    },
+    {
+      "image_id": "2403960",
+      "spatial_question_count": 27,
+      "spatial_relation_count": 71,
+      "score": 125
+    },
+    {
+      "image_id": "2404130",
+      "spatial_question_count": 36,
+      "spatial_relation_count": 100,
+      "score": 172
+    },
+    {
+      "image_id": "2404363",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 114,
+      "score": 148
+    },
+    {
+      "image_id": "2405250",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 102,
+      "score": 114
+    },
+    {
+      "image_id": "2405397",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 261,
+      "score": 285
+    },
+    {
+      "image_id": "2405545",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 167,
+      "score": 171
+    },
+    {
+      "image_id": "2405722",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 79,
+      "score": 113
+    },
+    {
+      "image_id": "2405830",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 117,
+      "score": 119
+    },
+    {
+      "image_id": "2405925",
+      "spatial_question_count": 26,
+      "spatial_relation_count": 101,
+      "score": 153
+    },
+    {
+      "image_id": "2406329",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 230,
+      "score": 242
+    },
+    {
+      "image_id": "2406370",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 116,
+      "score": 134
+    },
+    {
+      "image_id": "2406460",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 260,
+      "score": 284
+    },
+    {
+      "image_id": "2406480",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 228,
+      "score": 228
+    },
+    {
+      "image_id": "2406500",
+      "spatial_question_count": 33,
+      "spatial_relation_count": 64,
+      "score": 130
+    },
+    {
+      "image_id": "2406620",
+      "spatial_question_count": 27,
+      "spatial_relation_count": 113,
+      "score": 167
+    },
+    {
+      "image_id": "2406807",
+      "spatial_question_count": 23,
+      "spatial_relation_count": 120,
+      "score": 166
+    },
+    {
+      "image_id": "2407005",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 144,
+      "score": 168
+    },
+    {
+      "image_id": "2407148",
+      "spatial_question_count": 24,
+      "spatial_relation_count": 97,
+      "score": 145
+    },
+    {
+      "image_id": "2407415",
+      "spatial_question_count": 18,
+      "spatial_relation_count": 104,
+      "score": 140
+    },
+    {
+      "image_id": "2407481",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 90,
+      "score": 110
+    },
+    {
+      "image_id": "2407675",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 136,
+      "score": 152
+    },
+    {
+      "image_id": "2407802",
+      "spatial_question_count": 14,
+      "spatial_relation_count": 134,
+      "score": 162
+    },
+    {
+      "image_id": "2409036",
+      "spatial_question_count": 16,
+      "spatial_relation_count": 126,
+      "score": 158
+    },
+    {
+      "image_id": "2409219",
+      "spatial_question_count": 34,
+      "spatial_relation_count": 268,
+      "score": 336
+    },
+    {
+      "image_id": "2409346",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 94,
+      "score": 128
+    },
+    {
+      "image_id": "2409543",
+      "spatial_question_count": 35,
+      "spatial_relation_count": 124,
+      "score": 194
+    },
+    {
+      "image_id": "2409545",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 176,
+      "score": 198
+    },
+    {
+      "image_id": "2409592",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 102,
+      "score": 124
+    },
+    {
+      "image_id": "2409655",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 94,
+      "score": 110
+    },
+    {
+      "image_id": "2409707",
+      "spatial_question_count": 26,
+      "spatial_relation_count": 125,
+      "score": 177
+    },
+    {
+      "image_id": "2409782",
+      "spatial_question_count": 16,
+      "spatial_relation_count": 84,
+      "score": 116
+    },
+    {
+      "image_id": "2409909",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 166,
+      "score": 184
+    },
+    {
+      "image_id": "2410072",
+      "spatial_question_count": 14,
+      "spatial_relation_count": 135,
+      "score": 163
+    },
+    {
+      "image_id": "2410223",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 140,
+      "score": 152
+    },
+    {
+      "image_id": "2410585",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 532,
+      "score": 554
+    },
+    {
+      "image_id": "2410613",
+      "spatial_question_count": 10,
+      "spatial_relation_count": 128,
+      "score": 148
+    },
+    {
+      "image_id": "2410866",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 116,
+      "score": 116
+    },
+    {
+      "image_id": "2411038",
+      "spatial_question_count": 25,
+      "spatial_relation_count": 108,
+      "score": 158
+    },
+    {
+      "image_id": "2411104",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 120,
+      "score": 130
+    },
+    {
+      "image_id": "2411832",
+      "spatial_question_count": 24,
+      "spatial_relation_count": 73,
+      "score": 121
+    },
+    {
+      "image_id": "2411995",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 121,
+      "score": 131
+    },
+    {
+      "image_id": "2412027",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 126,
+      "score": 138
+    },
+    {
+      "image_id": "2412053",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 154,
+      "score": 166
+    },
+    {
+      "image_id": "2412339",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 144,
+      "score": 158
+    },
+    {
+      "image_id": "2412363",
+      "spatial_question_count": 66,
+      "spatial_relation_count": 332,
+      "score": 464
+    },
+    {
+      "image_id": "2412369",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 100,
+      "score": 118
+    },
+    {
+      "image_id": "2412382",
+      "spatial_question_count": 18,
+      "spatial_relation_count": 164,
+      "score": 200
+    },
+    {
+      "image_id": "2412469",
+      "spatial_question_count": 13,
+      "spatial_relation_count": 124,
+      "score": 150
+    },
+    {
+      "image_id": "2412502",
+      "spatial_question_count": 26,
+      "spatial_relation_count": 114,
+      "score": 166
+    },
+    {
+      "image_id": "2412682",
+      "spatial_question_count": 19,
+      "spatial_relation_count": 81,
+      "score": 119
+    },
+    {
+      "image_id": "2412800",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 152,
+      "score": 156
+    },
+    {
+      "image_id": "2413023",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 118,
+      "score": 132
+    },
+    {
+      "image_id": "2413059",
+      "spatial_question_count": 4,
+      "spatial_relation_count": 133,
+      "score": 141
+    },
+    {
+      "image_id": "2413159",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 102,
+      "score": 116
+    },
+    {
+      "image_id": "2413251",
+      "spatial_question_count": 14,
+      "spatial_relation_count": 87,
+      "score": 115
+    },
+    {
+      "image_id": "2413257",
+      "spatial_question_count": 7,
+      "spatial_relation_count": 148,
+      "score": 162
+    },
+    {
+      "image_id": "2413341",
+      "spatial_question_count": 16,
+      "spatial_relation_count": 134,
+      "score": 166
+    },
+    {
+      "image_id": "2414353",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 184,
+      "score": 218
+    },
+    {
+      "image_id": "2415414",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 206,
+      "score": 216
+    },
+    {
+      "image_id": "2415597",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 124,
+      "score": 136
+    },
+    {
+      "image_id": "2415663",
+      "spatial_question_count": 14,
+      "spatial_relation_count": 150,
+      "score": 178
+    },
+    {
+      "image_id": "2416035",
+      "spatial_question_count": 47,
+      "spatial_relation_count": 250,
+      "score": 344
+    },
+    {
+      "image_id": "2416063",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 188,
+      "score": 206
+    },
+    {
+      "image_id": "2416133",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 152,
+      "score": 156
+    },
+    {
+      "image_id": "2416195",
+      "spatial_question_count": 22,
+      "spatial_relation_count": 81,
+      "score": 125
+    },
+    {
+      "image_id": "2416222",
+      "spatial_question_count": 27,
+      "spatial_relation_count": 102,
+      "score": 156
+    },
+    {
+      "image_id": "2416294",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 115,
+      "score": 127
+    },
+    {
+      "image_id": "2416649",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 94,
+      "score": 112
+    },
+    {
+      "image_id": "2416928",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 152,
+      "score": 162
+    },
+    {
+      "image_id": "2417499",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 132,
+      "score": 144
+    },
+    {
+      "image_id": "2417888",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 76,
+      "score": 110
+    },
+    {
+      "image_id": "2417910",
+      "spatial_question_count": 23,
+      "spatial_relation_count": 80,
+      "score": 126
+    },
+    {
+      "image_id": "2463",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 147,
+      "score": 151
+    },
+    {
+      "image_id": "2846",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 132,
+      "score": 134
+    },
+    {
+      "image_id": "285728",
+      "spatial_question_count": 15,
+      "spatial_relation_count": 134,
+      "score": 164
+    },
+    {
+      "image_id": "285765",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 132,
+      "score": 134
+    },
+    {
+      "image_id": "285795",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 108,
+      "score": 110
+    },
+    {
+      "image_id": "2861",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 88,
+      "score": 122
+    },
+    {
+      "image_id": "3124",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 124,
+      "score": 126
+    },
+    {
+      "image_id": "314",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 93,
+      "score": 117
+    },
+    {
+      "image_id": "3250",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 164,
+      "score": 166
+    },
+    {
+      "image_id": "3381",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 446,
+      "score": 458
+    },
+    {
+      "image_id": "3401",
+      "spatial_question_count": 4,
+      "spatial_relation_count": 222,
+      "score": 230
+    },
+    {
+      "image_id": "3455",
+      "spatial_question_count": 12,
+      "spatial_relation_count": 662,
+      "score": 686
+    },
+    {
+      "image_id": "3612",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 166,
+      "score": 166
+    },
+    {
+      "image_id": "3701",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 276,
+      "score": 288
+    },
+    {
+      "image_id": "3898",
+      "spatial_question_count": 21,
+      "spatial_relation_count": 216,
+      "score": 258
+    },
+    {
+      "image_id": "3920",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 126,
+      "score": 128
+    },
+    {
+      "image_id": "4063",
+      "spatial_question_count": 26,
+      "spatial_relation_count": 82,
+      "score": 134
+    },
+    {
+      "image_id": "4364",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 119,
+      "score": 125
+    },
+    {
+      "image_id": "4498",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 186,
+      "score": 186
+    },
+    {
+      "image_id": "45",
+      "spatial_question_count": 17,
+      "spatial_relation_count": 80,
+      "score": 114
+    },
+    {
+      "image_id": "4559",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 244,
+      "score": 254
+    },
+    {
+      "image_id": "4596",
+      "spatial_question_count": 5,
+      "spatial_relation_count": 100,
+      "score": 110
+    },
+    {
+      "image_id": "4609",
+      "spatial_question_count": 13,
+      "spatial_relation_count": 119,
+      "score": 145
+    },
+    {
+      "image_id": "4648",
+      "spatial_question_count": 30,
+      "spatial_relation_count": 118,
+      "score": 178
+    },
+    {
+      "image_id": "4652",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 152,
+      "score": 164
+    },
+    {
+      "image_id": "4693",
+      "spatial_question_count": 1,
+      "spatial_relation_count": 175,
+      "score": 177
+    },
+    {
+      "image_id": "4888",
+      "spatial_question_count": 30,
+      "spatial_relation_count": 120,
+      "score": 180
+    },
+    {
+      "image_id": "4900",
+      "spatial_question_count": 35,
+      "spatial_relation_count": 166,
+      "score": 236
+    },
+    {
+      "image_id": "498003",
+      "spatial_question_count": 9,
+      "spatial_relation_count": 140,
+      "score": 158
+    },
+    {
+      "image_id": "498121",
+      "spatial_question_count": 21,
+      "spatial_relation_count": 142,
+      "score": 184
+    },
+    {
+      "image_id": "498231",
+      "spatial_question_count": 14,
+      "spatial_relation_count": 154,
+      "score": 182
+    },
+    {
+      "image_id": "498276",
+      "spatial_question_count": 4,
+      "spatial_relation_count": 190,
+      "score": 198
+    },
+    {
+      "image_id": "61526",
+      "spatial_question_count": 0,
+      "spatial_relation_count": 176,
+      "score": 176
+    },
+    {
+      "image_id": "713222",
+      "spatial_question_count": 2,
+      "spatial_relation_count": 152,
+      "score": 156
+    },
+    {
+      "image_id": "713397",
+      "spatial_question_count": 22,
+      "spatial_relation_count": 72,
+      "score": 116
+    },
+    {
+      "image_id": "713423",
+      "spatial_question_count": 11,
+      "spatial_relation_count": 212,
+      "score": 234
+    },
+    {
+      "image_id": "713628",
+      "spatial_question_count": 26,
+      "spatial_relation_count": 144,
+      "score": 196
+    },
+    {
+      "image_id": "713692",
+      "spatial_question_count": 21,
+      "spatial_relation_count": 116,
+      "score": 158
+    },
+    {
+      "image_id": "713765",
+      "spatial_question_count": 3,
+      "spatial_relation_count": 150,
+      "score": 156
+    },
+    {
+      "image_id": "713793",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 162,
+      "score": 178
+    },
+    {
+      "image_id": "713860",
+      "spatial_question_count": 6,
+      "spatial_relation_count": 110,
+      "score": 122
+    },
+    {
+      "image_id": "882",
+      "spatial_question_count": 8,
+      "spatial_relation_count": 95,
+      "score": 111
+    },
+    {
+      "image_id": "90",
+      "spatial_question_count": 23,
+      "spatial_relation_count": 116,
+      "score": 162
+    }
+  ]
+}

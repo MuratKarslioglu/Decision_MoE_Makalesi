@@ -1,0 +1,7 @@
+# Ablation variant: DecisionMoE-B (Full, cosine proxy)
+name: decisionmoe_b
+mode: policy            # topk | fixed_mcdm | policy
+k: 2                # sabit K (topk / fixed_mcdm)
+fixed_k: null         # policy modunda Alternatif A (K sabit); null = Dynamic-K
+use_task_utility: true
+lambda_flops: 1.0   # F_t token ağırlıklı olduğundan λ2 ölçeklendi (eski adım-bazlı tanımda 0.1)

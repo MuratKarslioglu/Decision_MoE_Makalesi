@@ -1,0 +1,47 @@
+{
+ "gpu": "NVIDIA GeForce RTX 5060",
+ "n": 100,
+ "reps": 3,
+ "variants": {
+  "standard_topk": {
+   "ms_per_question_mean": 552.5883239367977,
+   "ms_per_question_std": 0.5954172542532385,
+   "ms_per_step_mean": 55.25883239367977,
+   "ms_per_step_std": 0.059541725425323856,
+   "steps_per_question": 10.0,
+   "ratio_vs_standard_topk": 1.0
+  },
+  "standard_topk_k1": {
+   "ms_per_question_mean": 492.61194055977586,
+   "ms_per_question_std": 0.26466437761793343,
+   "ms_per_step_mean": 49.26119405597759,
+   "ms_per_step_std": 0.026466437761793346,
+   "steps_per_question": 10.0,
+   "ratio_vs_standard_topk": 0.8914628109589199
+  },
+  "fixed_mcdm_cosine": {
+   "ms_per_question_mean": 595.9396407598009,
+   "ms_per_question_std": 0.6332954999221126,
+   "ms_per_step_mean": 59.59396407598009,
+   "ms_per_step_std": 0.06332954999221127,
+   "steps_per_question": 10.0,
+   "ratio_vs_standard_topk": 1.078451380431197
+  },
+  "ppo_direct_fixedk": {
+   "ms_per_question_mean": 560.5724023569686,
+   "ms_per_question_std": 0.3598620766323608,
+   "ms_per_step_mean": 56.05724023569686,
+   "ms_per_step_std": 0.035986207663236076,
+   "steps_per_question": 10.0,
+   "ratio_vs_standard_topk": 1.0144485108973893
+  },
+  "decisionmoe_b": {
+   "ms_per_question_mean": 556.7184866569005,
+   "ms_per_question_std": 0.7488696438417002,
+   "ms_per_step_mean": 55.67184866569005,
+   "ms_per_step_std": 0.07488696438417002,
+   "steps_per_question": 10.0,
+   "ratio_vs_standard_topk": 1.0074742127931302
+  }
+ }
+}

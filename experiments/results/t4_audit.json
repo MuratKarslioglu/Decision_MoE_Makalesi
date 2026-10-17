@@ -1,0 +1,161 @@
+{
+ "method": "model-destekli görsel doğrulama (insan değil)",
+ "verdicts": {
+  "ai2d_1204_T4": {
+   "verdict": "genuine",
+   "note": "çiçek açmış, tomurcuk yok"
+  },
+  "ai2d_1460_T4": {
+   "verdict": "genuine",
+   "note": "yanardağ şeması, nehir yok"
+  },
+  "ai2d_1859_T4": {
+   "verdict": "genuine",
+   "note": "balık hem üretici hem otçul değil"
+  },
+  "ai2d_2744_T4": {
+   "verdict": "amb",
+   "note": "Dünya görüntüsünde dağ silsilesi etiketi yok"
+  },
+  "ai2d_3019_T4": {
+   "verdict": "broken",
+   "note": "'Spathe, covering the ovary' etiketi var"
+  },
+  "ai2d_3024_T4": {
+   "verdict": "broken",
+   "note": "sepal etiketi sol tarafta"
+  },
+  "ai2d_3399_T4": {
+   "verdict": "amb",
+   "note": "akrep şeması etiketsiz, baş konumu belirsiz"
+  },
+  "ai2d_3713_T4": {
+   "verdict": "broken",
+   "note": "pankreas midenin altında"
+  },
+  "ai2d_387_T4": {
+   "verdict": "genuine",
+   "note": "mavi nesne yok"
+  },
+  "ai2d_4166_T4": {
+   "verdict": "broken",
+   "note": "'Sediment' düğümü var"
+  },
+  "ai2d_4186_T4": {
+   "verdict": "broken",
+   "note": "'(lithification)' yazıyor"
+  },
+  "ai2d_4198_T4": {
+   "verdict": "genuine",
+   "note": "magmadan çökel kayaya doğrudan yol yok"
+  },
+  "ai2d_985_T4": {
+   "verdict": "amb",
+   "note": "umbel çiçek düzeni; soru belirsiz"
+  },
+  "coco_000000203095_T4": {
+   "verdict": "broken",
+   "note": "ocak (gaz) görüntüde var"
+  },
+  "coco_000000372260_T4": {
+   "verdict": "genuine",
+   "note": "kaldırımda yürüyen kişi yok (saat direği)"
+  },
+  "gqa_2362842_T4": {
+   "verdict": "broken",
+   "note": "soldaki kişi yeşil şapkalı"
+  },
+  "gqa_2368963_T4": {
+   "verdict": "broken",
+   "note": "sol kenarda yatak var"
+  },
+  "textvqa_24ff7b14c346f28f_T4": {
+   "verdict": "broken",
+   "note": "NFL logolu şapka var"
+  },
+  "textvqa_2eb7fb9fb90cff35_T4": {
+   "verdict": "amb",
+   "note": "LEGO oyuncak araç kutuları; gerçek araba yok"
+  },
+  "textvqa_74df2b91b22a3198_T4": {
+   "verdict": "genuine",
+   "note": "köpek yok"
+  },
+  "textvqa_95fa33240de709aa_T4": {
+   "verdict": "broken",
+   "note": "plakada GRAND CANYON STATE yazıyor"
+  },
+  "textvqa_a41d362539616318_T4": {
+   "verdict": "genuine",
+   "note": "sepette (kovada) kişi yok"
+  },
+  "coco_000000040471_T4": {
+   "verdict": "amb",
+   "note": "pencere önünde yuvarlak nesne var, ocağın üstünde mi belirsiz"
+  },
+  "coco_000000094751_T4": {
+   "verdict": "genuine",
+   "note": "bisiklet yok"
+  },
+  "coco_000000176799_T4": {
+   "verdict": "amb",
+   "note": "soru kendi içinde çelişkili ('görünmeyen bayrak')"
+  },
+  "gqa_1159745_T4": {
+   "verdict": "broken",
+   "note": "yakalayıcının kaskı siyah"
+  },
+  "gqa_1592134_T4": {
+   "verdict": "amb",
+   "note": "uzaktaki işçilerin yelekleri; siyah gömlek belirsiz"
+  },
+  "gqa_2320586_T4": {
+   "verdict": "genuine",
+   "note": "'DO NOT STOP ON TRACKS' tabelası var, dur işareti değil"
+  },
+  "gqa_2355736_T4": {
+   "verdict": "broken",
+   "note": "sağda bankta mavi-yeşil gömlekli oturan kişi var"
+  },
+  "gqa_2369041_T4": {
+   "verdict": "amb",
+   "note": "şapka bandı rengi seçilemiyor"
+  },
+  "gqa_2379799_T4": {
+   "verdict": "broken",
+   "note": "uzak yamaçta küçük kayakçı figürleri görünüyor"
+  },
+  "gqa_2395949_T4": {
+   "verdict": "amb",
+   "note": "başında kamera olan kişi: seyirci kalabalığında belirsiz"
+  },
+  "gqa_2399993_T4": {
+   "verdict": "amb",
+   "note": "'NO ENTRY' ve kamyon yasağı ayrı levhalar (aynı direkte)"
+  },
+  "gqa_2407005_T4": {
+   "verdict": "broken",
+   "note": "küçük köpek var"
+  },
+  "textvqa_050bf08413b35ab1_T4": {
+   "verdict": "broken",
+   "note": "'The Bell Jar' kitabı yığında görünüyor"
+  },
+  "textvqa_5219e8fbb20ebd73_T4": {
+   "verdict": "genuine",
+   "note": "A tuşu görünmüyor (Y U I O G H J K L M N B)"
+  },
+  "textvqa_7dc343117870b6ad_T4": {
+   "verdict": "amb",
+   "note": "40 tabelası arkasında turuncu ışıklı sinyal/lamba"
+  },
+  "textvqa_8d9a8547825d645e_T4": {
+   "verdict": "broken",
+   "note": "kitap kapaklarında silahlı adam çizimi var"
+  },
+  "textvqa_a861b419b2044b43_T4": {
+   "verdict": "broken",
+   "note": "'Editions des Eaux-Vives, Zurich' yazıyor"
+  }
+ }
+}

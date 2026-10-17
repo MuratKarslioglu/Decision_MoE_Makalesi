@@ -1,0 +1,6 @@
+# Ablation variant: Standard Top-K (RL yok, MCDM yok)
+name: standard_topk
+mode: topk            # topk | fixed_mcdm | policy
+k: 2                # sabit K (topk / fixed_mcdm)
+fixed_k: null         # policy modunda Alternatif A (K sabit); null = Dynamic-K
+use_task_utility: true

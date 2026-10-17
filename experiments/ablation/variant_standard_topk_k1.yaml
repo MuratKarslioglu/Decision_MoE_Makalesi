@@ -1,0 +1,6 @@
+# Ek baseline: Standard Top-1 (RL yok, MCDM yok). Duyarlılık testinde K=2 ile aynı doğruluğu verdi; FLOPs %50.
+name: standard_topk_k1
+mode: topk
+k: 1
+fixed_k: null
+use_task_utility: true

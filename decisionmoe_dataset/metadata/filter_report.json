@@ -1,0 +1,48 @@
+{
+ "raw": 9061,
+ "dropped": {
+  "rule2_t4_object_present": 174,
+  "rule4_duplicate": 84
+ },
+ "coco_t4_validation": {
+  "present": 174,
+  "ok": 594,
+  "unverified": 30
+ },
+ "final": 8803,
+ "by_type": {
+  "T1": 1999,
+  "T2": 1072,
+  "T3": 1977,
+  "T4": 1821,
+  "T5": 1934
+ },
+ "by_source": {
+  "ai2d": 1840,
+  "coco": 3404,
+  "gqa": 2240,
+  "textvqa": 1319
+ },
+ "by_source_type": {
+  "ai2d/T1": 400,
+  "ai2d/T2": 269,
+  "ai2d/T3": 386,
+  "ai2d/T4": 398,
+  "ai2d/T5": 387,
+  "coco/T1": 800,
+  "coco/T2": 402,
+  "coco/T3": 797,
+  "coco/T4": 624,
+  "coco/T5": 781,
+  "gqa/T1": 500,
+  "gqa/T2": 255,
+  "gqa/T3": 498,
+  "gqa/T4": 500,
+  "gqa/T5": 487,
+  "textvqa/T1": 299,
+  "textvqa/T2": 146,
+  "textvqa/T3": 296,
+  "textvqa/T4": 299,
+  "textvqa/T5": 279
+ }
+}

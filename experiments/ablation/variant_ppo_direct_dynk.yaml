@@ -1,0 +1,6 @@
+# Ablation variant: Sadece PPO (TOPSIS yok), Dynamic-K. PPO u_t ve K_t ∈ {1..4} üretir.
+name: ppo_direct_dynk
+mode: direct        # topk | fixed_mcdm | policy | direct
+k: 2
+fixed_k: null       # Dynamic-K
+lambda_flops: 1.0   # F_t token ağırlıklı olduğundan λ2 ölçeklendi (eski adım-bazlı tanımda 0.1)

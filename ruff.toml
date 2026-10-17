@@ -1,0 +1,10 @@
+# Proje lint ayarı: gerçek hataları yakalar (F: kullanılmayan import/değişken, E/W: sözdizimi/boşluk, B: olası hata)
+line-length = 140
+target-version = "py312"
+
+[lint]
+select = ["E", "F", "W", "B"]
+ignore = ["E501", "E702", "E701", "E731", "E741", "B905"]   # satır uzunluğu, tek satırda ';' ve lambda stil tercihleri serbest
+
+[lint.per-file-ignores]
+"tests/*" = ["B011", "B017"]
