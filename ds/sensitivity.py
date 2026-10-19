@@ -28,9 +28,11 @@ def main() -> None:
     proc, model = dsloader.load_ds()
     ds = DecisionMoEDataset("val")
     items = ds.items[:: max(1, len(ds.items) // N)][:N]
-    res = {}
+    res = json.loads(OUT.read_text())["results"] if OUT.exists() else {}      # kaldığı yerden devam
     for mode, k in CONFIGS:
         name = f"{mode}_k{k}"
+        if name in res:
+            continue
         r = DSRouter(model, mode, k)
         t0, ok = time.time(), []
         for it in items:

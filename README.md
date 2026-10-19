@@ -2,7 +2,7 @@
 
 **MoE tabanlı görsel-dil modellerinde çok kriterli karar verme (TOPSIS) ve pekiştirmeli öğrenme (PPO) ile expert yönlendirme**
 
-`Python 3.12` · `PyTorch` · `MoE-LLaVA-Phi2-2.7B×4` · `TOPSIS + PPO` · `Dynamic-K`
+`Python 3.12` · `PyTorch` · `MoE-LLaVA-Phi2-2.7B×4` · `DeepSeek-VL2-Tiny` · `TOPSIS + PPO` · `Dynamic-K`
 
 **İçindekiler:** [Bulgular](#1-ne-yapıyor-ne-buldu) · [Depo yapısı](#2-depo-yapısı) · [Kurulum](#3-kurulum) · [Süreç](#4-baştan-sona-süreç) · [Testler](#5-testler) · [Tekrarlanabilirlik](#6-tekrarlanabilirlik-notları)
 
@@ -13,7 +13,8 @@
 | Soru | Expert seçimi doğruluğu gerçekten etkiliyor mu? |
 | Yöntem | 5 kriter → TOPSIS skoru; ağırlık ve K (1–4) PPO politikasından |
 | Veri | 8803 soru, 5 soru tipi, COCO/AI2D/GQA/TextVQA + POPE doğrulaması |
-| Sonuç | Backbone expert seçimine duyarsız; K=1, K=2 ile eşit doğrulukta yarı FLOPs |
+| Sonuç | MoE-LLaVA expert seçimine duyarsız (K=1 ≈ K=2). DeepSeek-VL2-Tiny'de seçim çok önemli; uyarlanır K yalnızca uzun üretimli çoktan seçmeli akıl yürütmede (AI2D) Top-K sınırını geçiyor (+2–3 puan, ön bulgu) |
+| Durum (19 Ekim) | Deneyler sürüyor (ek seed'ler); TOPSIS/MCDM bileşeni DeepSeek'te ek fayda sağlamadı; ayrıntı aşağıda ve `DEVIATIONS.md` D10–D13 |
 | Makale | `paper/` (taslak, tablolar, şekiller) |
 
 > **Not:** Eğitilmiş expert LoRA ağırlıkları (`artifacts/experts_*/lora.pt`, ~100 MB/adet) GitHub sınırı nedeniyle depoda yoktur;
@@ -50,7 +51,7 @@ Ana bulgular (test seti, 1321 soru, tek seed; ayrıntı ve güven aralıkları `
 - **MCDM'nin maliyeti:** sabit-MCDM gecikmesi top-2'ye göre ~%8–9 (karar matrisi %57, TOPSIS %36 — profil
   `profile_router.py`). Dynamic-K bunu K düşüşüyle geri ödüyor (1.007×) ama K=1 baseline'ı (0.89×) daha hızlı.
 
-Makalenin konumu: **negatif/analiz sonucu** — routing'in doğruluğa etkisi yok, ödül tasarımı kritik, RL K=1'e yakınsıyor.
+Makalenin konumu: **analiz sonucu** — MoE-LLaVA'da routing'in doğruluğa etkisi yok; DeepSeek-VL2-Tiny'de etkisi büyük ama gate Top-K kısa cevaplı görevde zaten yakın-optimal; uyarlanır K ancak uzun üretimli akıl yürütmede kazandırıyor. Ödül tasarımı kritik.
 
 ## 2. Depo yapısı
 
@@ -205,3 +206,23 @@ ruff check src scripts tests paper
 `scripts/diagnose_experts.py` (expert çıktı benzerliği) → `scripts/train_experts.py` (alan başına expert LoRA, isteğe bağlı kontrast) →
 `scripts/domain_sensitivity.py` (alan × expert doğruluk matrisi) → `scripts/compute_domain_prototypes.py` + `scripts/run_spec.sh` (Top-2, fixed MCDM, PPO-direct; `DM_TAG=spec`) →
 `scripts/analyze_specialization.py` (özet + `paper/tables/t6_specialization.tex`). Sonuç: bkz. `paper/draft.md` §5.7.
+
+## İkinci backbone: DeepSeek-VL2-Tiny (`ds/`, venv_ds)
+64 doğal uzman expert + 2 paylaşımlı, top-6, 12 katman (3.37B, nf4). Tüm betikler `venv_ds` ile; görev `DS_TASK=synth|ai2d` ortam değişkeniyle seçilir (`ds/task.py`).
+
+| Adım | Betik | Çıktı (`experiments/results/`) |
+|---|---|---|
+| Duyarlılık (val 400) | `ds/sensitivity.py` | `ds_sensitivity_val.json`: rastgele→0, en iyi expert çıkınca −8.8 puan |
+| Dynamic-K PPO + test (sentetik, kısa cevap) | `scripts/run_ds.sh`, `ds/train_dynk.py`, `ds/eval_test.py` | `ds_eval_test.json`; `scripts/analyze_ds.py` → `ds_pareto_summary.json`, `paper/tables/t7_ds_pareto.tex`, `paper/figures/f8_ds_pareto.*` |
+| POPE + ek seed | `scripts/run_ds2.sh`, `ds/pope_ds.py` | `ds_pope.json`, `ds_eval_test.json` (l015s1/s2) |
+| Doğal uzmanlaşma | `ds/specialization.py` | `ds_specialization.json`: kullanım kısmen alan-spesifik, ablasyon alan-spesifik değil |
+| TOPSIS 64 expert (oracle alan) | `ds/mcdm.py`, `ds/mcdm_test.py` | `ds_mcdm_{val,test}.json`: test'te Top-3'ten fark yok |
+| Pilot: expert havuzu (IO) | `ds/pool_pilot.py` | `ds_pool_pilot.json`: havuz küçülünce doğruluk çöküyor (no-go) |
+| Pilot: token-düzeyi uyarlanır K sezgiseli | `ds/topp_pilot.py` | `ds_topp_pilot.json`: kısa cevap rejiminde Top-K sınırını geçmiyor |
+| Pilot: uzun üretim rejimi | `ds/cot_pilot.py`, `scripts/prepare_ai2d.py` | `ds_cot_pilot.json`: bu rejimde K belirleyici |
+| AI2D akıl yürütme: PPO + test (597 soru) | `scripts/run_ds3.sh` (`DS_TASK=ai2d`) | `ds_eval_ai2d_{val,test}.json` |
+| AI2D pekiştirme (sezgisel τ taraması, ek seed'ler) | `scripts/run_ds4.sh` | `ds_eval_ai2d_test.json` (**sürüyor**) |
+
+AI2D verisi `scripts/prepare_ai2d.py` ile indirilir (`ai2d_data/`, depoda yok; bölme görüntü özetine göre: train 2150 / val 341 / test 597).
+
+**Bulgular (ayrıntı: `paper/draft.md` §5.8):** kısa cevaplı sentetik sette Top-3 ≈ Top-6 yarı FLOPs ile ve Dynamic-K Top-K sınırının en fazla +0.3–0.6 puan üstünde (çoğu GA sıfırı kapsıyor). Uzun üretimli AI2D'de sınır eğimli (Top-6 0.633, Top-3 0.518, Top-2 0.461, Top-1 0.313) ve eşleşen FLOPs'ta PPO λ=0.4 +2.1 [+0.3,+4.0], λ=0.8 +2.6 [+0.6,+4.7] puan, ancak basit sezgisel (τ=0.5) de +3.3 [+0.2,+6.2]: kazanç uyarlanır K'dan geliyor, PPO'nun sezgisele üstünlüğü kanıtlanmadı; tek seed, ek seed'ler sürüyor. TOPSIS bileşeni DeepSeek'te ek fayda sağlamadı.

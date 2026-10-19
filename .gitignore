@@ -1,6 +1,7 @@
 # ortamlar ve önbellekler
 venv/
 venv_moe/
+venv_ds/
 __pycache__/
 .pytest_cache/
 .ruff_cache/
@@ -32,3 +33,9 @@ third_party/
 venv_ds/
 .coverage
 artifacts/experts_*/lora.pt
+
+# uzmanlaşma LoRA ağırlıkları (her biri ~100 MB; scripts/train_experts.py ile yeniden üretilir)
+artifacts/experts_*/lora.pt
+logs/
+
+ai2d_data/

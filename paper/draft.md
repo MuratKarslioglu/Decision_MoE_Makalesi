@@ -15,6 +15,7 @@ this by itself — K→1 on prefill — but never beats the Top-1 baseline, and 
 *game* the efficiency term (reported FLOPs 0.33, true token-weighted 0.99). (iv) 7.5% of references in our benchmark are
 demonstrably wrong and 44% of flagged "hallucinations" are broken traps, which changes conclusions about hallucination.
 (v) Even after we *manufacture* expert specialisation (per-domain expert LoRA with a contrastive loss), the right expert beats the wrong one by only 3–6 points, an oracle router gains at most 2.6 points over Top-2, and neither fixed MCDM nor a PPO policy beats Top-2 on the specialised model (Δ ≤ 0.4 points, CIs include 0).
+(vi) On a second backbone with natural, much larger expert diversity (DeepSeek-VL2-Tiny, 64 routed experts, top-6), the picture reverses: random expert choice drops accuracy to 0, removing the single best expert costs 8.8 points, and Top-3 (half the FLOPs) is within 0.8 points of Top-6. A PPO Dynamic-K policy lands on or marginally above the Top-K accuracy/FLOPs curve (+0.3 to +0.6 points at matched cost, only one of three CIs excluding 0), but expert usage is only weakly domain-specific. Routing matters when experts are diverse; whether it can be *improved* beyond gate Top-K remains open.
 We argue that routing research should report such sensitivity analyses and token-weighted costs.
 
 ## 1 Introduction
@@ -25,11 +26,12 @@ We argue that routing research should report such sensitivity analyses and token
   3. **Reward-hacking case study**: step-averaged FLOPs reward is exploited (Fig. 2); token-weighted reward fixes it.
   4. **Benchmark audit**: label-noise and broken-trap analysis changes the hallucination conclusions.
   5. Controlled latency study: where MCDM routing cost comes from (decision matrix 57%, TOPSIS 36%).
+  6. **Two-backbone comparison**: on MoE-LLaVA (4 near-interchangeable experts) routing is irrelevant; on DeepSeek-VL2-Tiny (64 diverse experts) it is decisive, Top-3 keeps accuracy at half the FLOPs, and a PPO Dynamic-K policy sits on or marginally above the Top-K frontier (§5.8).
 
 ## 2 Related work
 Sparse upcycling and MoE VLMs (MoE-LLaVA); routing analyses (expert similarity after upcycling, DeRS); adaptive-K routing
 (Ada-K, dynamic expert allocation); RL for routing; MCDM/TOPSIS; hallucination benchmarks (POPE); reward hacking in RL.
-*(Referanslar eklenecek — doğrulanmış künyeler `references.bib` içinde toplanacak.)*
+*(Tüm 12 künye `references.bib` içinde web ile doğrulandı: upcycling \cite{komatsuzaki2023upcycling}, MoE-LLaVA \cite{lin2024moellava}, DeepSeek-VL2 \cite{wu2024deepseekvl2}, DeRS \cite{huang2025ders}, Ada-K \cite{yue2025adak}, POPE \cite{li2023pope}, PPO/GAE \cite{schulman2017ppo,schulman2016gae}, TOPSIS \cite{hwang1981madm}, reward gaming \cite{skalse2022reward,amodei2016concrete}.)*
 
 ## 3 Method
 **Setting.** Frozen MoE-LLaVA-Phi2-2.7B×4 (4 experts per MoE layer, nf4-quantised, 8 GB GPU). The router replaces the gate
@@ -100,15 +102,26 @@ a stronger contrast (λ=2, m=1) *reduced* it to +3.3 [+1.0,+5.5]. Oracle routing
 Test (1,321, specialised model of the contrast run): Top-2 0.466; fixed MCDM with domain prototypes 0.463 (Δ −0.4 [−1.3,+0.5]); PPO-direct 0.466 (Δ −0.1 [−1.1,+0.9]); no domain shows a difference.
 Fine-tuning itself raised accuracy (0.394 → 0.466 on test), but that gain is shared by all experts and is not a routing effect. Caveat: LoRA training used train-split questions from the same distribution as the test set.
 
+### 5.8 A second backbone: DeepSeek-VL2-Tiny (Table 7, Fig. 8; `ds/`, `experiments/results/ds_*.json`)
+DeepSeek-VL2-Tiny (3.37B parameters, nf4; 12 MoE layers, 64 routed + 2 shared experts, top-6 gate) is run on the same questions with one (K_t) decision per generation step shared by all layers; FLOPs are token-weighted over routed experts.
+**Sensitivity (400 val).** Top-6 0.435; random 6 experts 0.000; bottom-6 0.000; dropping the top-ranked expert (skip-top) 0.348 (−8.8 pp); Top-3 0.425, Top-2 0.423, Top-1 0.373. Unlike §5.1, expert identity matters enormously.
+**Pareto (test, 1,321; Table 7).** Top-6 0.471 (FLOPs 1.00), Top-4 0.463 (0.67), Top-3 0.463 (0.50), Top-2 0.443 (0.33), Top-1 0.407 (0.17). Top-3 is −0.8 [−2.0,+0.3] pp vs Top-6 at half the cost.
+Dynamic-K policies (PPO, λ=0.05/0.15/0.40): 0.466 @0.667, 0.447 @0.335, 0.413 @0.168. At matched FLOPs vs Top-K: +0.30 [+0.08,+0.61], +0.38 [−0.15,+0.91], +0.60 [−0.53,+1.74] pp.
+The policy uses small K in prefill (1–4) and larger K in decode (3–5), which is what token-weighted cost rewards. Honest reading: Dynamic-K matches or marginally exceeds the Top-K frontier; it does not dominate it.
+**Natural specialisation (150/domain, `ds_specialization.json`).** Jaccard overlap of each domain's 10 most-used experts: 0.39–0.56 between diagram/scene-text and the others, 0.92 between the two photo domains. Banning a domain's top-10 experts does not hurt that domain more than other domains (e.g. diagram 0.493→0.480; scene-text 0.507→0.507; random-ban control 0.453–0.507; n=150 so ±4 pp is noise): usage is partly domain-specific, function is redundant.
+**TOPSIS over 64 experts (K=3, domain given by oracle, `ds/mcdm.py`, `ds_mcdm_{val,test}.json`).** Criteria per layer: gate probability, domain prior (train usage share), specialisation, load. Sanity: gate-only TOPSIS = Top-3 exactly. Val (400): the best of five weightings (0.4/0.3/0.2/0.1) beat Top-3 by +1.7 [+0.25,+3.5] pp, but a heavier prior weight hurt (0.2/0.8: −3.0 [−6.3,+0.3]). Selected on val and confirmed once on test (1,321): 0.462 vs Top-3 0.463 (−0.08 [−0.68,+0.53]; 0.7/0.3 weighting: +0.08 [−0.45,+0.61]). The val gain was selection noise: even with an oracle domain label, MCDM re-ranking does not improve on the gate.
+**POPE (3,000 questions, `ds_pope.json`).** Top-6 0.886, Top-3 0.889, Top-2 0.887, dyn_l015 0.887 (FLOPs 0.334, K=2 throughout; identical predictions to Top-2), dyn_l005 0.887. All paired differences vs Top-6 are within ±0.8 pp (e.g. Top-2 +0.13 [−0.53,+0.80]): yes/no object presence needs no more than 2 of 6 experts, so POPE gives no evidence for or against adaptive K. Unlike §5.4, no PPO policy is worse out of distribution.
+**Seeds (dyn, λ=0.15, test).** seed 0: 0.447 @0.335 (K_prefill 2); seed 1: 0.415 @0.169 (collapsed to K=1 in prefill); seed 2: 0.445 @0.335. Each lands on the Top-K frontier at its own cost (vs Top-1 +0.75 [−0.30,+1.82]; vs Top-2 +0.23 [−0.15,+0.61]), but the operating point is seed-dependent, so λ does not fix the budget.
+
 ## 6 Discussion and limitations
 - Why routing is flat: experts are functionally different but the tasks do not reward choosing among them; even manufactured specialisation leaves an oracle ceiling of ≤2.6 points (§5.7). (Earlier draft claim that experts are 'nearly identical' is only true in weight space.) DecisionMoE-style routing would
-  need diverse experts (e.g. trained-from-scratch or heavily fine-tuned MoE) — **single backbone** is our main limitation.
+  need diverse experts (e.g. trained-from-scratch or heavily fine-tuned MoE) — a second backbone (§5.8) confirms that routing matters once experts are diverse.
 - Criteria Reliability/Latency were not measured (constant), nf4 quantisation, one external benchmark, model-assisted audit with a
   single labeller (no inter-annotator agreement), audit covers only flagged T4 questions.
-- Dynamic-K never beats the K=1 baseline; the positive claim is limited to "RL finds K=1 automatically and cheaply".
+- On MoE-LLaVA, Dynamic-K never beats the K=1 baseline; on DeepSeek-VL2-Tiny it is on or marginally above the Top-K frontier (§5.8). We do not claim a large Pareto gain.
 
 ## 7 Conclusion
-Routing sophistication cannot help when experts are interchangeable. Report routing-sensitivity analyses, use token-weighted
+Routing sophistication cannot help when experts are interchangeable, and on a backbone with diverse experts the gate's Top-K is already a strong frontier that a learned Dynamic-K policy only matches or marginally exceeds. Report routing-sensitivity analyses, use token-weighted
 costs in rewards and metrics, and audit benchmark labels before drawing hallucination conclusions.
 
 ## Reproducibility

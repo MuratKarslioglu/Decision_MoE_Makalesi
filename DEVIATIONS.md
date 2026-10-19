@@ -65,3 +65,19 @@ Makalenin Yöntem ve Sınırlılıklar bölümleri için kayıt. Her madde kodda
 Backbone'a expert-LoRA eklendi (`src/backbone/expert_lora.py`, `DM_EXPERT_LORA` ortam değişkeniyle yüklenir); orijinal sonuçlar etkilenmez.
 Alanlar `src/data/domains.py`; eğitim `scripts/train_experts.py` (yalnızca train split); alan prototipleri `scripts/compute_domain_prototypes.py`
 (`artifacts/prototypes_spec.pt`); `DM_TAG` dosya adlarına `_spec` ekler. Sınırlama: LoRA ve test aynı dağılımdan; PPO yalnızca 80 güncelleme ve tek seed; decisionmoe_b bu profilde koşulmadı.
+
+
+## D10 — İkinci backbone: DeepSeek-VL2-Tiny (17–19 Ekim)
+`ds/` altında bağımsız hat (`venv_ds`, transformers 4.38.2); `ds/dsrouter.py` gate'i yamalar (modlar: topk, random, bottom, skip_top, dyn, mcdm, pool, pool_random, topp), yamasız denklik `ds/equiv_test.py`. Karar granülerliği: üretim adımı başına tek K, tüm katmanlarda paylaşılır (`topp` modu hariç: token ve katman başına). FLOPs yalnızca yönlendirilen expertlerin token-ağırlıklı payıdır (paylaşılan expertler, dikkat ve vision hariç). nf4; vision/projector/lm_head nicemlenmedi.
+
+## D11 — Negatif/boş sonuçlar (silinmedi, makalede raporlanır)
+- TOPSIS 64 expert (alan oracle): val'de seçilen en iyi ayar test'te Top-3'ü geçmedi (−0.08 [−0.68,+0.53] puan). Val'deki +1.7 seçim gürültüsüydü.
+- Expert havuzu (IO tezi, `pool_pilot`): m=16 havuz −32.5 puan, m=32 −11.5; gate-kütle havuzu rastgeleden anlamlı iyi değil. IO/önbellek yönü bırakıldı.
+- Token-düzeyi eşik sezgiseli kısa cevap rejiminde Top-K sınırını geçmedi (val 400, 9 τ, karışıma göre −0.1…+1.4 puan, GA sıfırı kapsıyor).
+- Dynamic-K PPO sentetik sette: tek seed'de bir politika K=1'e çöktü (`l015s1`); çalışma noktası seed'e bağlı.
+
+## D12 — AI2D uzun üretim rejimi (19 Ekim; ön bulgu)
+Görev: AI2D resmi test (lmms-lab/ai2d), çoktan seçmeli, "adım adım düşün" istemi, en fazla 128 token, doğruluk = son `Answer: X` harfi. Bölme görüntü özetine göre (diyagram bölümler arası paylaşılmaz). Eşleşen FLOPs karşılaştırması iki Top-K noktası arası doğrusal karışıma göredir. Riskler: (i) DeepSeek-VL2 AI2D üzerinde eğitilmiş olabilir (sızıntı olasılığı bilinmiyor); (ii) τ ve λ değerleri val'de sınırlı sayıda denendi, çoklu karşılaştırma düzeltmesi yapılmadı; (iii) PPO'nun basit sezgisele üstünlüğü gösterilmedi; (iv) tek seed (ek seed'ler `scripts/run_ds4.sh` ile sürüyor).
+
+## D13 — Depo
+Eski brifing dosyaları `docs/` altına taşındı. Büyük/yeniden üretilebilir veri (`ai2d_data/`) ve loglar `.gitignore`'da.
