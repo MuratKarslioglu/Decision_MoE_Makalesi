@@ -1,4 +1,4 @@
-# Does Expert Selection Matter? Multi-Criteria and Reinforcement-Learned Routing in a Sparsely Upcycled Vision-Language MoE
+# When Does Expert Routing Matter? Multi-Criteria and Reinforcement-Learned Routing in Two Vision-Language MoE Models
 
 *Taslak (iskelet + gerçek sayılar). Tablolar `paper/tables/t1–t5.tex`, figürler `paper/figures/f2–f7`. Sayılar test setinden
 (1321 soru) ve `experiments/results/` dosyalarındandır; işaretli yerler ek koşular bitince güncellenir.*
@@ -19,42 +19,40 @@ demonstrably wrong and 44% of flagged "hallucinations" are broken traps, which c
 We argue that routing research should report such sensitivity analyses and token-weighted costs.
 
 ## 1 Introduction
-- Motivation: MoE VLMs (MoE-LLaVA) spend 2 of 4 experts per token; smarter routing (MCDM, RL) promises accuracy/efficiency gains.
-- Question: is there routing signal to exploit? Contributions:
-  1. **Sensitivity analysis** showing routing-insensitivity of an upcycled VLM-MoE (Table 5) and its weight-space cause.
-  2. **DecisionMoE**: TOPSIS + PPO (weights and Dynamic-K) router; 12 ablation variants, 3 seeds for the main one.
-  3. **Reward-hacking case study**: step-averaged FLOPs reward is exploited (Fig. 2); token-weighted reward fixes it.
-  4. **Benchmark audit**: label-noise and broken-trap analysis changes the hallucination conclusions.
-  5. Controlled latency study: where MCDM routing cost comes from (decision matrix 57%, TOPSIS 36%).
-  6. **Two-backbone comparison**: on MoE-LLaVA (4 near-interchangeable experts) routing is irrelevant; on DeepSeek-VL2-Tiny (64 diverse experts) it is decisive, Top-3 keeps accuracy at half the FLOPs, and a PPO Dynamic-K policy sits on or marginally above the Top-K frontier (§5.8).
+Sparse Mixture-of-Experts (MoE) vision-language models activate only a few experts per token, and a growing literature proposes smarter routers: multi-criteria decision making (MCDM), reinforcement learning, and adaptive numbers of active experts. Each proposal presupposes that there is routing signal to exploit, i.e. that *which* experts, and *how many*, changes the answer. We test that premise before building on it.
+
+We study two frozen backbones on one 8 GB GPU: MoE-LLaVA-Phi2-2.7B×4 (a sparsely upcycled model with four near-interchangeable experts) and DeepSeek-VL2-Tiny (64 natively trained routed experts, top-6). On both we implement DecisionMoE, a router that ranks experts with TOPSIS and lets a PPO policy choose criterion weights and a per-step number of active experts K, and we compare it with the gate's own Top-K at matched, token-weighted expert FLOPs.
+
+Contributions.
+1. **Sensitivity analysis on two backbones.** On the upcycled model accuracy is insensitive to expert selection (Table 5) and the cause is visible in weight space; on DeepSeek-VL2-Tiny expert identity matters enormously (random experts give 0.000 accuracy), yet Top-3 keeps accuracy at half the FLOPs (§5.8).
+2. **A router that does not beat the gate, and why.** DecisionMoE (TOPSIS + PPO) never beats Top-K on short answers; TOPSIS re-ranking adds nothing even with an oracle domain label, because its informative criteria are what the gate already encodes (§5.2, §5.8).
+3. **When adaptive K does help.** Only with long generation (brief chain-of-thought on AI2D and ScienceQA-IMG), where a retrained PPO policy beats the matched-FLOPs Top-K mixture by about 1–3 points, with seed- and task-dependence and without a demonstrated edge over a gate-mass heuristic (§5.9).
+4. **Reward-hacking case study.** A step-averaged FLOPs reward is exploited (reported 0.33, true 0.99); a token-weighted reward fixes it (§5.3).
+5. **Benchmark audit.** 7.5% of references in our synthetic benchmark are wrong and 44% of flagged hallucinations are broken traps (§5.6).
+6. Negative pilots (expert pools for IO savings, token-level top-p K in the short-answer regime) reported rather than discarded (§5.9).
 
 ## 2 Related work
-Sparse upcycling and MoE VLMs (MoE-LLaVA); routing analyses (expert similarity after upcycling, DeRS); adaptive-K routing
-(Ada-K, dynamic expert allocation); RL for routing; MCDM/TOPSIS; hallucination benchmarks (POPE); reward hacking in RL.
-*(Tüm 12 künye `references.bib` içinde web ile doğrulandı: upcycling \cite{komatsuzaki2023upcycling}, MoE-LLaVA \cite{lin2024moellava}, DeepSeek-VL2 \cite{wu2024deepseekvl2}, DeRS \cite{huang2025ders}, Ada-K \cite{yue2025adak}, POPE \cite{li2023pope}, PPO/GAE \cite{schulman2017ppo,schulman2016gae}, TOPSIS \cite{hwang1981madm}, reward gaming \cite{skalse2022reward,amodei2016concrete}.)*
+**Sparse upcycling and MoE VLMs.** Sparse upcycling \cite{komatsuzaki2023upcycling} initialises every expert from one dense feed-forward block; MoE-LLaVA \cite{lin2024moellava} applies it to a vision-language model. DeRS \cite{huang2025ders} and related analyses show that upcycled experts remain close in weight space, which is consistent with our finding that their selection is irrelevant. DeepSeek-VL2 \cite{wu2024deepseekvl2} instead trains fine-grained experts natively.
+**Adaptive and learned routing.** Ada-K \cite{yue2025adak} and related work vary the number of active experts per token, in some cases with reinforcement learning. We differ by comparing against the gate's Top-K at matched token-weighted cost on a frozen model and by reporting where such policies fail.
+**MCDM.** TOPSIS \cite{hwang1981madm} ranks alternatives by closeness to an ideal solution over weighted criteria; we use it as an expert ranker.
+**Evaluation pitfalls.** POPE \cite{li2023pope} measures object hallucination; reward misspecification and gaming \cite{skalse2022reward,amodei2016concrete} motivate our reward-hacking analysis; the policy is trained with PPO and GAE \cite{schulman2017ppo,schulman2016gae}.
 
 ## 3 Method
-**Setting.** Frozen MoE-LLaVA-Phi2-2.7B×4 (4 experts per MoE layer, nf4-quantised, 8 GB GPU). The router replaces the gate
-decision at every MoE layer; one decision (w_t, K_t) per generation step is shared by all layers (design A). Prefill is one step;
-each decoded token is one step.
+**Routing interface.** Both backbones are frozen and nf4-quantised. A router replaces the gate decision at every MoE layer. One decision per generation step (prefill is one step, each decoded token another) is shared by all layers. The cost measure is the **token-weighted fraction of routed-expert FLOPs**, K/K_max averaged over tokens, so the ≈600-token prefill dominates (this is what the step-averaged reward got wrong, §5.3).
 
-**Criteria.** For each expert: task utility (cosine to a per-layer task prototype), modality match, specialisation
-(1 − H(phase | expert)/log 4), reliability, latency, FLOPs share, load balance. Reliability and latency are constant tables
-(not measured; `DEVIATIONS.md` C1–C2).
+**TOPSIS expert ranking.** For each candidate expert a decision matrix of criteria is built, normalised, weighted and scored by closeness to the ideal solution; the top-K by closeness are selected and their gate probabilities renormalised. On MoE-LLaVA (4 experts) the seven criteria are task utility, modality match, specialisation, reliability, latency, FLOPs share and load (reliability and latency are constant tables; `DEVIATIONS.md` C1–C2). On DeepSeek-VL2-Tiny (64 experts) the criteria are gate probability, a domain prior (train usage share, given by an oracle domain label), specialisation and load.
 
-**TOPSIS.** Weighted normalised decision matrix → closeness coefficient; top-K by closeness; selected gate probabilities renormalised.
+**PPO policy.** On MoE-LLaVA the state (dim 78) comprises a projected hidden state, modality, entropy, uncertainty, phase, load and budget; the action is a Dirichlet distribution over criterion weights plus K∈{1..4}. On DeepSeek-VL2-Tiny (`DynKPolicy`) the action is K∈{1..6} per step. Reward = accuracy − λ·(token-weighted FLOPs fraction) (MoE-LLaVA adds latency, imbalance and hallucination terms), GAE(γ=1, λ=0.95), clipped PPO. Variants: Top-K, Fixed-MCDM, PPO-fixed-K, PPO-direct, DecisionMoE-B (Dynamic-K).
 
-**PPO policy.** State (dim 78): projected hidden state, modality, entropy, uncertainty, phase, load, budget. Action: Dirichlet
-weights over criteria and K∈{1..4}. Reward = λ₁·accuracy − λ₂·FLOPs − λ₃·latency − λ₄·imbalance − λ₅·hallucination,
-GAE(γ=1, λ=0.95). **FLOPs is token-weighted** (§5.3). Variants: Top-K, Fixed-MCDM, PPO-fixed-K, PPO-direct, DecisionMoE-B (Dynamic-K).
+**Heuristic baseline.** "Top-p": per token and layer, the smallest j such that the top-6 gate mass reaches τ. It has no learned parameters and tests whether a policy is needed at all.
 
 ## 4 Experimental setup
-- **Data.** 8,803 questions (COCO, GQA, AI2D, TextVQA images; T1 perception, T2 spatial, T3 multi-hop, T4 hallucination trap,
-  T5 OCR+reasoning), generated by Qwen2.5-VL, image-level 70/15/15 split (no image shared across splits). Test 1,321.
-- **Metrics.** Strict exact-match accuracy (primary), T4 hallucination rate, K, **token-weighted FLOPs fraction**, latency ratio
-  (controlled benchmark, GPU-synchronised, 100 questions × 3 repeats), paired bootstrap 95% CIs (10k resamples).
+- **Synthetic benchmark (both backbones).** 8,803 questions (COCO, GQA, AI2D, TextVQA images; T1 perception, T2 spatial, T3 multi-hop, T4 hallucination trap, T5 OCR+reasoning), generated by Qwen2.5-VL, image-level 70/15/15 split. Test 1,321. Answers are short.
+- **Reasoning benchmarks (DeepSeek-VL2-Tiny).** AI2D multiple choice (3,088 questions, split by image hash: train 2,150 / val 341 / test 597) and ScienceQA-IMG (2–4 options; same sizes; official splits subsampled with a fixed seed). A brief chain-of-thought prompt ("Think step by step briefly, then finish with 'Answer: <letter>'", ≤128 new tokens); the last stated letter is scored.
 - **External benchmark.** POPE (random/popular/adversarial, 1,000 each).
-- **Seeds.** DecisionMoE-B: seeds 42, 1, 2. Baselines and fixed-MCDM are deterministic.
+- **Metrics.** Exact-match accuracy, K, token-weighted FLOPs fraction, latency ratio (GPU-synchronised, 100 questions × 3 repeats), and paired bootstrap 95% CIs (10k resamples). The matched-FLOPs baseline is the linear mixture of the two adjacent Top-K points; where the Top-K frontier is non-convex (ScienceQA) we also compare with the real Top-K points.
+- **Seeds and selection.** DecisionMoE-B on MoE-LLaVA: seeds 42, 1, 2. PPO on DeepSeek-VL2-Tiny: 80 updates × 48 episodes, seeds 0–2 at λ=0.4. Hyper-parameters are chosen on validation and evaluated once on test. We report all runs, not the best seed, and do not correct for multiple comparisons (§6).
+- **Hardware and reproducibility.** One 8 GB RTX 5060; training and evaluation scripts resume from checkpoints after interruption.
 
 ## 5 Results
 ### 5.1 Expert selection does not matter (Table 5, validation)
