@@ -1,3 +1,4 @@
+\begin{table}[t]\centering\small
 \begin{tabular}{lccc}\toprule
 Policy & FLOPs & Acc. & $\Delta$ vs Top-6 (pp)\\\midrule
 topk-k6 & 1.000 & 0.471 & --\\
@@ -9,3 +10,6 @@ dyn-l005 & 0.667 & 0.466 & -0.5 [-1.5,+0.6]\\
 dyn-l015 & 0.335 & 0.447 & -2.4 [-4.0,-0.8]\\
 dyn-l040 & 0.168 & 0.413 & --\\
 \bottomrule\end{tabular}
+\caption{DeepSeek-VL2-Tiny on the synthetic test set (1,321 questions): accuracy and token-weighted expert FLOPs; $\Delta$ is the paired difference to Top-6 in points with 95\% CI.}
+\label{tab:ds}
+\end{table}

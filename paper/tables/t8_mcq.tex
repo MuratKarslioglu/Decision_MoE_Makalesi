@@ -1,3 +1,4 @@
+\begin{table}[t]\centering\small
 \begin{tabular}{lccc}\toprule
 Policy & FLOPs & Acc. & Gain vs matched Top-K (pp)\\\midrule
 \multicolumn{4}{l}{\textit{ai2d}}\\
@@ -25,3 +26,5 @@ dyn-q040 & 0.495 & 0.786 & +3.5 [+1.6,+5.5]\\
 dyn-q040s1 & 0.502 & 0.765 & +1.0 [-0.7,+2.7]\\
 dyn-q040s2 & 0.401 & 0.727 & +8.2 [+5.7,+10.8]\\
 \bottomrule\end{tabular}
+\caption{AI2D and ScienceQA-IMG test sets (597 questions each): gain in accuracy points over the matched-FLOPs mixture of adjacent Top-K points, with paired-bootstrap 95\% CIs. PPO policies named a$\cdot$ were trained on AI2D, q$\cdot$ on ScienceQA.}\label{tab:mcq}
+\end{table}

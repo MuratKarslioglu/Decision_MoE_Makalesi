@@ -56,4 +56,4 @@ for ax, (task, fn) in zip(axes, FILES.items(), strict=True):
 axes[0].set_ylabel("test accuracy"); axes[0].legend(fontsize=7)
 fig.tight_layout(); fig.savefig(ROOT / "paper/figures/f9_mcq_pareto.png", dpi=200); fig.savefig(ROOT / "paper/figures/f9_mcq_pareto.pdf")
 (ROOT / "experiments/results/ds_mcq_summary.json").write_text(json.dumps(summary, indent=1))
-(ROOT / "paper/tables/t8_mcq.tex").write_text("\\begin{tabular}{lccc}\\toprule\nPolicy & FLOPs & Acc. & Gain vs matched Top-K (pp)\\\\\\midrule\n" + "\n".join(tables) + "\n\\bottomrule\\end{tabular}")
+(ROOT / "paper/tables/t8_mcq.tex").write_text("\\begin{table}[t]\\centering\\small\n\\begin{tabular}{lccc}\\toprule\nPolicy & FLOPs & Acc. & Gain vs matched Top-K (pp)\\\\\\midrule\n" + "\n".join(tables) + "\n\\bottomrule\\end{tabular}\n\\caption{AI2D and ScienceQA-IMG test sets (597 questions each): gain in accuracy points over the matched-FLOPs mixture of adjacent Top-K points, with paired-bootstrap 95\\% CIs. PPO policies named a$\\cdot$ were trained on AI2D, q$\\cdot$ on ScienceQA.}\\label{tab:mcq}\n\\end{table}")

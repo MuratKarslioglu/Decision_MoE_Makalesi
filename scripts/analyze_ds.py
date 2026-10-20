@@ -31,13 +31,13 @@ out = {"n": N, "configs": {k: {"acc": v["accuracy"], "flops": v["flops"], "k_pre
 for k, v in out["paired_pp"].items():
     print(f"{k:22s} {v['d']:+.2f} [{v['lo']:+.2f},{v['hi']:+.2f}]")
 
-rows = ["\\begin{tabular}{lccc}\\toprule", "Policy & FLOPs & Acc. & $\\Delta$ vs Top-6 (pp)\\\\\\midrule"]
+rows = ["\\begin{table}[t]\\centering\\small", "\\begin{tabular}{lccc}\\toprule", "Policy & FLOPs & Acc. & $\\Delta$ vs Top-6 (pp)\\\\\\midrule"]
 for k in ("topk_k6", "topk_k4", "topk_k3", "topk_k2", "topk_k1", "dyn_l005", "dyn_l015", "dyn_l040"):
     c = out["configs"][k]
     d = out["paired_pp"].get(f"{k}-topk_k6")
     ds = f"{d['d']:+.1f} [{d['lo']:+.1f},{d['hi']:+.1f}]" if d else "--"
     rows.append(f"{k.replace('_', '-')} & {c['flops']:.3f} & {c['acc']:.3f} & {ds}\\\\")
-rows.append("\\bottomrule\\end{tabular}")
+rows += ["\\bottomrule\\end{tabular}", "\\caption{DeepSeek-VL2-Tiny on the synthetic test set (1,321 questions): accuracy and token-weighted expert FLOPs; $\\Delta$ is the paired difference to Top-6 in points with 95\\% CI.}", "\\label{tab:ds}", "\\end{table}"]
 (ROOT / "paper/tables/t7_ds_pareto.tex").write_text("\n".join(rows))
 
 fig, ax = plt.subplots(figsize=(4.5, 3.4))
