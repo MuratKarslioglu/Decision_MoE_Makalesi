@@ -1,4 +1,4 @@
-"""Görev soyutlaması: DS_TASK=synth (varsayılan; sentetik kısa cevap) | ai2d (AI2D çoktan seçmeli, kısa akıl yürütme zinciri).
+"""Görev soyutlaması: DS_TASK=synth (varsayılan; sentetik kısa cevap) | ai2d | sqa (AI2D / ScienceQA-IMG çoktan seçmeli, kısa akıl yürütme zinciri).
 get(split) -> (items, run) ; run(proc, model, item) -> 0/1 doğru. Eğitim/değerlendirme betikleri yalnızca bunu kullanır."""
 import json
 import os
@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 TASK = os.environ.get("DS_TASK", "synth")
 COT = "\nThink step by step briefly, then finish with 'Answer: <letter>'."
 MAXNEW = 128
+MCQ = {"ai2d": ("ai2d_data", "ai2d.json"), "sqa": ("sqa_data", "sqa.json")}
 
 
 def parse(txt: str) -> str:
@@ -37,12 +38,13 @@ def generate(proc, model, img_path, prompt, max_new=MAXNEW) -> str:
 
 
 def get(split: str):
-    if TASK == "ai2d":
-        items = [d for d in json.loads((ROOT / "ai2d_data" / "ai2d.json").read_text()) if d["split"] == split]
+    if TASK in MCQ:
+        folder, fname = MCQ[TASK]
+        items = [d for d in json.loads((ROOT / folder / fname).read_text()) if d["split"] == split]
 
         def run(proc, model, it) -> int:
             opts = "\n".join(f"{'ABCD'[i]}. {o}" for i, o in enumerate(it["options"]))
-            txt = generate(proc, model, ROOT / "ai2d_data" / it["image_path"], f"{it['question']}\n{opts}{COT}")
+            txt = generate(proc, model, ROOT / folder / it["image_path"], f"{it['question']}\n{opts}{COT}")
             return int(parse(txt) == it["answer"])
         return items, run
     from src.data.dataset import DecisionMoEDataset

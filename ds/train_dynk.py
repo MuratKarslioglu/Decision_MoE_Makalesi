@@ -1,6 +1,7 @@
 """DeepSeek-VL2 Dynamic-K PPO eğitimi (train split). Kullanım: venv_ds/bin/python ds/train_dynk.py <ad> <lambda_flops> [güncelleme=60] [bölüm/güncelleme=48] [seed=0]
 Çıktı: artifacts/ds_dynk_<ad>.pt + logs/ds_train_<ad>.json (güncelleme başına doğruluk, ortalama K, FLOPs payı)"""
 import json
+import os
 import random
 import sys
 import time
@@ -30,8 +31,15 @@ def main() -> None:
     policy = DynKPolicy().cuda()
     opt = torch.optim.Adam(policy.parameters(), lr=3e-4)
     router = DSRouter(model, "dyn", policy=policy)
-    log, t0 = [], time.time()
-    for u in range(UPDATES):
+    log, t0, u0 = [], time.time(), 0
+    ck = ROOT / "artifacts" / f"ckpt_{task.TASK}_{NAME}.pt"             # her güncellemede tam durum: kapanma sonrası kaldığı yerden
+    if ck.exists():
+        c = torch.load(ck, weights_only=False)
+        policy.load_state_dict(c["policy"]); opt.load_state_dict(c["opt"]); log, u0 = c["log"], c["u"]
+        random.setstate(c["py_rng"]); torch.set_rng_state(c["torch_rng"]); torch.cuda.set_rng_state(c["cuda_rng"])
+        t0 -= log[-1]["t"] if log else 0
+        print(f"checkpoint'ten devam: {u0}/{UPDATES}", flush=True)
+    for u in range(u0, UPDATES):
         eps, accs, fl, kp, kd = [], [], [], [], []
         for it in random.sample(items, EPS):
             router.begin_episode()
@@ -48,6 +56,9 @@ def main() -> None:
         print(json.dumps({k: round(v, 3) for k, v in rec.items()}), flush=True)
         torch.save(policy.state_dict(), ROOT / "artifacts" / f"ds_dynk_{NAME}.pt")
         (ROOT / "logs" / f"ds_train_{NAME}.json").write_text(json.dumps(log))
+        torch.save({"policy": policy.state_dict(), "opt": opt.state_dict(), "log": log, "u": u + 1, "py_rng": random.getstate(),
+                    "torch_rng": torch.get_rng_state(), "cuda_rng": torch.cuda.get_rng_state()}, str(ck) + ".tmp")
+        os.replace(str(ck) + ".tmp", ck)
     print("EGITIM_TAMAM", flush=True)
 
 

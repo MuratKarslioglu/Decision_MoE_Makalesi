@@ -1,6 +1,7 @@
 """DeepSeek-VL2 test değerlendirmesi: Top-K tabanları + Dynamic-K politikaları. Kullanım: venv_ds/bin/python ds/eval_test.py <split=test> <politika adları...>
 Çıktı: experiments/results/ds_eval_<split>.json (soru bazında correct; token-ağırlıklı expert FLOPs payı; ortalama K)"""
 import json
+import os
 import sys
 import time
 from pathlib import Path
@@ -21,6 +22,12 @@ POLS = sys.argv[2:]
 OUT = ROOT / "experiments" / "results" / (f"ds_eval_{SPLIT}.json" if task.TASK == "synth" else f"ds_eval_{task.TASK}_{SPLIT}.json")
 
 
+def save_atomic(path: Path, text: str) -> None:
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(text)
+    os.replace(tmp, path)                                              # kapanma anında yarım dosya kalmasın
+
+
 def main() -> None:
     proc, model = dsloader.load_ds()
     items, run = task.get(SPLIT)
@@ -37,12 +44,22 @@ def main() -> None:
         if name in res:
             continue
         r = DSRouter(model, **kw)
-        ok, fl, kp, kd, t0 = [], [], [], [], time.time()
-        for it in items:
+        ck = ROOT / "logs" / f"evalckpt_{task.TASK}_{SPLIT}_{name}.json"   # soru bazlı ara kayıt: kapanma sonrası kaldığı yerden
+        st = json.loads(ck.read_text()) if ck.exists() else {"ok": [], "fl": [], "kp": [], "kd": [], "ksum": 0, "kcnt": 0, "sec": 0.0}
+        ok, fl, kp, kd = st["ok"], st["fl"], st["kp"], st["kd"]
+        r.ksum, r.kcnt = st["ksum"], st["kcnt"]
+        if ok:
+            print(f"{name}: {len(ok)}/{len(items)} sorudan devam", flush=True)
+        t0 = time.time() - st["sec"]
+        for i, it in enumerate(items):
+            if i < len(ok):
+                continue
             r.begin_episode()
             ok.append(run(proc, model, it))
             if kw["mode"] == "dyn":
                 fl.append(flops_fraction(r.steps)); kp.append(r.steps[0]["k"]); kd += [s["k"] for s in r.steps[1:]]
+            if len(ok) % 20 == 0:
+                save_atomic(ck, json.dumps({"ok": ok, "fl": fl, "kp": kp, "kd": kd, "ksum": r.ksum, "kcnt": r.kcnt, "sec": time.time() - t0}))
         r.close()
         k0 = kw.get("k") if kw["mode"] == "topk" else None
         if kw["mode"] == "topp":
@@ -53,7 +70,8 @@ def main() -> None:
                      "k_decode": k0 or (sum(kd) / max(1, len(kd))), "seconds": time.time() - t0}
         print(f"{name:14s} acc={res[name]['accuracy']:.3f} flops={res[name]['flops']:.3f} kP={res[name]['k_prefill']:.2f} "
               f"kD={res[name]['k_decode']:.2f} {res[name]['seconds']:.0f}s", flush=True)
-        OUT.write_text(json.dumps(res))
+        save_atomic(OUT, json.dumps(res))
+        ck.unlink(missing_ok=True)
 
 
 if __name__ == "__main__":
