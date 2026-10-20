@@ -39,3 +39,7 @@ artifacts/experts_*/lora.pt
 logs/
 
 ai2d_data/
+
+artifacts/ckpt_*.pt
+logs/evalckpt_*.json
+sqa_data/
