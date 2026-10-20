@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
-# Ek POPE değerlendirmeleri: decisionmoe_b seed 1/2 politikaları ve fixed_mcdm_cosine. Takip: tail -f extra_log.txt
+# İSTEĞE BAĞLI pekiştirme: ScienceQA'da λ=0.4 için 2 ek seed (3 ve 4) + test. Idempotent: kapanırsa aynı komutla devam eder. Takip: python3 scripts/progress.py
 cd "$(dirname "${BASH_SOURCE[0]}")/.."
-PY=./venv_moe/bin/python
-for s in 1 2; do $PY scripts/evaluate_pope.py --variants decisionmoe_b --policy-seed $s 2>&1 | grep -a -E "GENEL|HATA|Error|Traceback" || echo "HATA pope s$s"; done
-$PY scripts/evaluate_pope.py --variants fixed_mcdm_cosine ppo_direct_fixedk 2>&1 | grep -a -E "GENEL|HATA|Error|Traceback"
+PY=./venv_ds/bin/python
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True DS_TASK=sqa
+for cfg in "q040s3 0.4 3" "q040s4 0.4 4"; do
+  set -- $cfg
+  echo "=== TRAIN $1 λ=$2 seed $3 $(date +%T)"
+  $PY ds/train_dynk.py $1 $2 80 48 $3 2>&1 | grep -a -E "TAMAM|devam|Error|Traceback"
+done
+echo "=== EVAL $(date +%T)"
+$PY ds/eval_test.py test q040s3 q040s4 2>&1 | grep -a -E "acc=|devam|Error|Traceback"
 echo EXTRA_TAMAM
