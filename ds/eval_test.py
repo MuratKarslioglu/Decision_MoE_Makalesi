@@ -37,6 +37,10 @@ def main() -> None:
         if p.startswith("topp"):                                       # örn. topp0.5: token düzeyi uyarlanır K sezgiseli
             runs.append((p, dict(mode="topp", k=6, tau=float(p[4:]))))
             continue
+        if p.startswith("st"):                                          # örn. st2_4: sabit asimetrik K (prefill 2, decode 4)
+            kp_, kd_ = p[2:].split("_")
+            runs.append((p, dict(mode="topk", k=int(kp_), k_dec=int(kd_))))
+            continue
         pol = DynKPolicy().cuda()
         pol.load_state_dict(torch.load(ROOT / "artifacts" / f"ds_dynk_{p}.pt"))
         runs.append((f"dyn_{p}", dict(mode="dyn", policy=pol, deterministic=True)))
@@ -61,10 +65,12 @@ def main() -> None:
             if len(ok) % 20 == 0:
                 save_atomic(ck, json.dumps({"ok": ok, "fl": fl, "kp": kp, "kd": kd, "ksum": r.ksum, "kcnt": r.kcnt, "sec": time.time() - t0}))
         r.close()
-        k0 = kw.get("k") if kw["mode"] == "topk" else None
-        if kw["mode"] == "topp":
+        k0 = kw.get("k") if kw["mode"] == "topk" and not name.startswith("st") else None
+        if kw["mode"] == "topp" or name.startswith("st"):
             fl = [r.ksum / (r.kcnt * 6)]
             kp = kd = [r.ksum / r.kcnt]
+            if name.startswith("st"):
+                kp, kd = [kw["k"]], [kw["k_dec"]]
         res[name] = {"ids": [it["id"] for it in items], "correct": ok, "accuracy": sum(ok) / len(ok),
                      "flops": (k0 / 6) if k0 else sum(fl) / len(fl), "k_prefill": k0 or sum(kp) / len(kp),
                      "k_decode": k0 or (sum(kd) / max(1, len(kd))), "seconds": time.time() - t0}
