@@ -4,19 +4,12 @@
 (1321 soru) ve `experiments/results/` dosyalarındandır; işaretli yerler ek koşular bitince güncellenir.*
 
 ## Abstract
-Mixture-of-Experts vision-language models route every token to a few experts, and a growing literature proposes smarter
-routers. We ask a prior question: *does the choice of experts matter at all?* We build DecisionMoE, a router that ranks experts
-with TOPSIS over seven criteria whose weights, and the number of active experts K, are chosen per step by a PPO policy,
-and evaluate it on MoE-LLaVA-Phi2-2.7B×4 with 8,803 synthetic questions over five question types and with POPE.
-(i) On this backbone, accuracy is insensitive to expert selection: Top-K for K=1..4, random routing, every single expert
-alone and fixed MCDM routing all land in a 2.5-point band (0.380–0.405), because the experts of a sparsely upcycled model
-differ by only 3–4% in weights. (ii) Top-1 matches Top-2 at half the FLOPs. (iii) A learned Dynamic-K policy discovers
-this by itself — K→1 on prefill — but never beats the Top-1 baseline, and our first reward silently let the policy
-*game* the efficiency term (reported FLOPs 0.33, true token-weighted 0.99). (iv) 7.5% of references in our benchmark are
-demonstrably wrong and 44% of flagged "hallucinations" are broken traps, which changes conclusions about hallucination.
-(v) Even after we *manufacture* expert specialisation (per-domain expert LoRA with a contrastive loss), the right expert beats the wrong one by only 3–6 points, an oracle router gains at most 2.6 points over Top-2, and neither fixed MCDM nor a PPO policy beats Top-2 on the specialised model (Δ ≤ 0.4 points, CIs include 0).
-(vi) On a second backbone with natural, much larger expert diversity (DeepSeek-VL2-Tiny, 64 routed experts, top-6), the picture reverses: random expert choice drops accuracy to 0, removing the single best expert costs 8.8 points, and Top-3 (half the FLOPs) is within 0.8 points of Top-6. A PPO Dynamic-K policy lands on or marginally above the Top-K accuracy/FLOPs curve (+0.3 to +0.6 points at matched cost, only one of three CIs excluding 0), but expert usage is only weakly domain-specific. Routing matters when experts are diverse. A learned Dynamic-K policy helps only when generation is long (brief chain-of-thought on AI2D and ScienceQA-IMG): there, retrained policies beat the matched-FLOPs Top-K mixture by about 1–3 points (positive in 5 of 6 seeds at λ=0.4, CIs excluding 0 in 3 of 6; a heuristic of comparable quality exists), the policies do not transfer across datasets, and TOPSIS/MCDM re-ranking of the gate never adds accuracy. Whether routing can be *improved* substantially beyond gate Top-K remains open.
-We argue that routing research should report such sensitivity analyses and token-weighted costs.
+Sparse Mixture-of-Experts (MoE) vision-language models route each token to a few experts, and many proposals promise smarter routers. We test the premise that routing carries exploitable signal, on two frozen backbones and one 8 GB GPU, with DecisionMoE: a router that ranks experts with TOPSIS and lets a PPO policy choose criterion weights and the number of active experts K per step, compared with the gate's Top-K at matched, token-weighted expert FLOPs.
+(i) On a sparsely upcycled model (MoE-LLaVA-Phi2-2.7B×4, 8,803 synthetic questions, POPE) accuracy is insensitive to expert selection: Top-K for K=1..4, random routing, single experts and fixed MCDM routing all fall in a 2.5-point band, and a learned policy only rediscovers K=1.
+(ii) On a model with 64 natively trained experts (DeepSeek-VL2-Tiny) the picture reverses: random experts give 0.000 accuracy and dropping the best expert costs 8.8 points, yet Top-3 is within 0.8 points of Top-6 at half the FLOPs. TOPSIS re-ranking adds nothing, even with an oracle domain label.
+(iii) Adaptive K helps only with long generation. With brief chain-of-thought on AI2D and ScienceQA-IMG, retrained PPO policies beat the matched-FLOPs Top-K mixture by about 1–3 points at λ=0.4 (positive in all six seeds, CIs excluding zero in four), but the gain is task-specific (AI2D policies do not transfer), unstable at stronger cost pressure, and a gate-mass heuristic matches it at one setting.
+(iv) A step-averaged FLOPs reward is gamed by the policy (reported 0.33, true token-weighted 0.99), and 7.5% of benchmark references are wrong, with 44% of flagged hallucinations being broken traps.
+Routing matters when experts are diverse, but beyond the gate's Top-K the achievable gain is small; we recommend reporting sensitivity analyses and token-weighted costs.
 
 ## 1 Introduction
 Sparse Mixture-of-Experts (MoE) vision-language models activate only a few experts per token, and a growing literature proposes smarter routers: multi-criteria decision making (MCDM), reinforcement learning, and adaptive numbers of active experts. Each proposal presupposes that there is routing signal to exploit, i.e. that *which* experts, and *how many*, changes the answer. We test that premise before building on it.
