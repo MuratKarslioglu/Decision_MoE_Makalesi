@@ -52,7 +52,7 @@ def render() -> str:
             lines += ["", f"EĞİTİM {name} [{tsk}]", "  " + bar(u, upd) + f"  kalan ≈ {fmt(eta)}" + last]
         else:
             split, pols = a[0], a[1:]
-            names = [f"topk_k{k}" for k in (6, 5, 4, 3, 2, 1)] + [p if p.startswith("topp") else f"dyn_{p}" for p in pols]
+            names = [f"topk_k{k}" for k in (6, 5, 4, 3, 2, 1)] + [p if p.startswith(("topp", "st")) else f"dyn_{p}" for p in pols]
             out = ROOT / "experiments/results" / (f"ds_eval_{split}.json" if tsk == "synth" else f"ds_eval_{tsk}_{split}.json")
             res = json.loads(out.read_text()) if out.exists() else {}
             n = len(next(iter(res.values()))["correct"]) if res else 597
