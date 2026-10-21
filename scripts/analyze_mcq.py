@@ -10,10 +10,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-FILES = {"ai2d": "ds_eval_ai2d_test.json", "sqa": "ds_eval_sqa_test.json"}
+FILES = {"ai2d": "ds_eval_ai2d_test.json", "sqa": "ds_eval_sqa_test.json", "aok": "ds_eval_aok_test.json"}
 rng = np.random.default_rng(0)
 summary, tables = {}, []
-fig, axes = plt.subplots(1, 2, figsize=(8, 3.3))
+fig, axes = plt.subplots(1, 3, figsize=(11.5, 3.3))
 
 
 def baseline(res, f):

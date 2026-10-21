@@ -1,4 +1,4 @@
-"""Görev soyutlaması: DS_TASK=synth (varsayılan; sentetik kısa cevap) | ai2d | sqa (AI2D / ScienceQA-IMG çoktan seçmeli, kısa akıl yürütme zinciri).
+"""Görev soyutlaması: DS_TASK=synth (varsayılan; sentetik kısa cevap) | ai2d | sqa | aok (AI2D / ScienceQA-IMG / A-OKVQA çoktan seçmeli, kısa akıl yürütme zinciri).
 get(split) -> (items, run) ; run(proc, model, item) -> 0/1 doğru. Eğitim/değerlendirme betikleri yalnızca bunu kullanır."""
 import json
 import os
@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 TASK = os.environ.get("DS_TASK", "synth")
 COT = "\nThink step by step briefly, then finish with 'Answer: <letter>'."
 MAXNEW = 128
-MCQ = {"ai2d": ("ai2d_data", "ai2d.json"), "sqa": ("sqa_data", "sqa.json")}
+MCQ = {"ai2d": ("ai2d_data", "ai2d.json"), "sqa": ("sqa_data", "sqa.json"), "aok": ("aok_data", "aok.json")}
 
 
 def parse(txt: str) -> str:
