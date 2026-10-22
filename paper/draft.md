@@ -97,7 +97,7 @@ between variants (raw 0.128–0.143; Table 1).
 **Seeds (Table 3).** Accuracy 0.398/0.398/0.396, prefill K = 1.00 in all seeds, token-FLOPs 0.252/0.252/0.253;
 only decode K varies by seed (1.40/1.39/1.73), and decode carries little weight in token-weighted cost.
 **Fig. 3/4.** K and expert-activation shares are essentially identical across question types: the policy does not specialise
-by task, consistent with §5.1 — there is no routing signal to learn.
+by task, consistent with the sensitivity result above — there is no routing signal to learn.
 
 **External validity: POPE (Table 4).**
 Top-1 0.861, Top-2 0.856, Fixed-MCDM 0.861, PPO-direct (K=2) 0.852; DecisionMoE-B 0.850/0.848/0.846 (seeds 42/1/2; mean K 1.51/1.42/1.50).
