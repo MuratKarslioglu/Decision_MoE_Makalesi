@@ -205,7 +205,7 @@ ruff check src scripts tests paper
 ## Uzmanlaşma deneyi (ek)
 `scripts/diagnose_experts.py` (expert çıktı benzerliği) → `scripts/train_experts.py` (alan başına expert LoRA, isteğe bağlı kontrast) →
 `scripts/domain_sensitivity.py` (alan × expert doğruluk matrisi) → `scripts/compute_domain_prototypes.py` + `scripts/run_spec.sh` (Top-2, fixed MCDM, PPO-direct; `DM_TAG=spec`) →
-`scripts/analyze_specialization.py` (özet + `paper/tables/t6_specialization.tex`). Sonuç: bkz. `paper/draft.md` §5.7.
+`scripts/analyze_specialization.py` (özet + `paper/tables/t6_specialization.tex`). Sonuç: bkz. `paper/draft.md` §5.6.
 
 ## İkinci backbone: DeepSeek-VL2-Tiny (`ds/`, venv_ds)
 64 doğal uzman expert + 2 paylaşımlı, top-6, 12 katman (3.37B, nf4). Tüm betikler `venv_ds` ile; görev `DS_TASK=synth|ai2d` ortam değişkeniyle seçilir (`ds/task.py`).
@@ -226,7 +226,7 @@ ruff check src scripts tests paper
 
 AI2D verisi `scripts/prepare_ai2d.py` ile indirilir (`ai2d_data/`, depoda yok; bölme görüntü özetine göre: train 2150 / val 341 / test 597).
 
-**Bulgular (ayrıntı: `paper/draft.md` §5.8):** kısa cevaplı sentetik sette Top-3 ≈ Top-6 yarı FLOPs ile ve Dynamic-K Top-K sınırının en fazla +0.3–0.6 puan üstünde (çoğu GA sıfırı kapsıyor). Uzun üretimli AI2D'de sınır eğimli (Top-6 0.633, Top-3 0.518, Top-2 0.461, Top-1 0.313) ve eşleşen FLOPs'ta PPO λ=0.4 +2.1 [+0.3,+4.0], λ=0.8 +2.6 [+0.6,+4.7] puan, ancak basit sezgisel (τ=0.5) de +3.3 [+0.2,+6.2]: kazanç uyarlanır K'dan geliyor, PPO'nun sezgisele üstünlüğü kanıtlanmadı; 3 seed'de λ=0.4 işareti pozitif (+1.3…+2.1), λ=0.8 seed'e bağlı. ScienceQA-IMG'de AI2D politikaları taşınmıyor (−2.5…−3.2); ScienceQA'da 5 seed yeniden eğitilince +1.0…+8.7 (karışım zayıf referans; Top-3'ü eşliyor ya da %14–22 daha az FLOPs ile 1–3.6 puan geride), sezgisel tutarsız. Kazanç küçük, göreve özgü yeniden eğitim gerektiriyor. TOPSIS bileşeni DeepSeek'te ek fayda sağlamadı.
+**Bulgular (ayrıntı: `paper/draft.md` §5.2–5.4):** kısa cevaplı sentetik sette Top-3 ≈ Top-6 yarı FLOPs ile ve Dynamic-K Top-K sınırının en fazla +0.3–0.6 puan üstünde (çoğu GA sıfırı kapsıyor). Uzun üretimli AI2D'de sınır eğimli (Top-6 0.633, Top-3 0.518, Top-2 0.461, Top-1 0.313) ve eşleşen FLOPs'ta PPO λ=0.4 +2.1 [+0.3,+4.0], λ=0.8 +2.6 [+0.6,+4.7] puan, ancak basit sezgisel (τ=0.5) de +3.3 [+0.2,+6.2]: kazanç uyarlanır K'dan geliyor, PPO'nun sezgisele üstünlüğü kanıtlanmadı; 3 seed'de λ=0.4 işareti pozitif (+1.3…+2.1), λ=0.8 seed'e bağlı. ScienceQA-IMG'de AI2D politikaları taşınmıyor (−2.5…−3.2); ScienceQA'da 5 seed yeniden eğitilince +1.0…+8.7 (karışım zayıf referans; Top-3'ü eşliyor ya da %14–22 daha az FLOPs ile 1–3.6 puan geride), sezgisel tutarsız. Kazanç küçük, göreve özgü yeniden eğitim gerektiriyor. TOPSIS bileşeni DeepSeek'te ek fayda sağlamadı.
 
 **Sabit asimetrik K baseline'ı (`scripts/run_static.sh`, 21 Ekim):** AI2D kazancı sabit (K_prefill=2, K_decode=4) kuralıyla açıklanıyor (PPO − Top-K+sabit zarf: +0.05…+0.75, GA'lar 0'ı içeriyor). ScienceQA'da öğrenilmiş politikalar zarfın +1…+8 puan üstünde kalıyor (5 seed'den 4'ünde GA 0'ı dışlıyor): soru başına K seçimi yalnızca burada kanıtlı.
 
